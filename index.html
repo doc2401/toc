@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <title>Document</title>
-  <meta name="description" content="Description">
+  <title>doc2401 文档索引</title>
+  <meta name="description" content="doc2401 公开文档镜像、版本与翻译索引">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5.0.0-rc.4/dist/themes/core.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5.0.0-rc.4/dist/themes/addons/vue.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@5.0.0-rc.4/dist/themes/core.min.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">正在加载文档索引...</div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      name: 'doc2401',
+      homepage: 'README.md',
+      loadNavbar: true,
+      loadSidebar: true,
+      maxLevel: 3,
+      subMaxLevel: 2,
+      auto2top: true,
+      relativePath: true,
+      noCompileLinks: ['\\.\\./.*'],
+      externalLinkTarget: '_self'
     }
   </script>
-  <!-- Docsify resource -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@5.0.0-rc.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@5.0.0-rc.4"></script>
 </body>
 </html>
