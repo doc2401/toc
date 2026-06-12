@@ -132,3 +132,13 @@
 - **[Web Components - MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Web_components)** — 浏览器原生组件技术
 
 
+
+### ⚡ 轻量级与新兴框架
+- **[HTMX](https://htmx.org/)** — 通过 HTML 属性直接访问 AJAX、CSS 过渡和 WebSockets
+- **[Alpine.js](https://alpinejs.dev/)** — 轻量级、声明式的 JavaScript 框架
+- **[SolidJS](https://www.solidjs.com/)** — 基于细粒度响应式的高性能前端框架
+- **[Qwik](https://qwik.dev/)** — 基于可恢复性（Resumability）的超快 Web 框架
+
+### 🛠️ 新一代构建与工具
+- **[Rspack](https://www.rspack.dev/zh/)** — 基于 Rust 的高性能构建工具（Webpack 替代品）
+- **[Zod](https://zod.dev/)** — TypeScript 优先的 Schema 声明与数据校验库

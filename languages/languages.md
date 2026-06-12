@@ -76,3 +76,11 @@
 - **[菜鸟教程 (Runoob)](https://www.runoob.com/)** — 极其全面的编程基础中文入门教程网站，涵盖多种主流开发语言。
 
 
+
+### 🔷 TypeScript
+- **[TypeScript 官方中文文档](https://www.typescriptlang.org/zh/)** — 强类型的 JavaScript 超集，现代前端与 Node.js 开发标准
+
+### ⚙️ WebAssembly 与智能合约
+- **[WebAssembly 官方文档](https://webassembly.org/)** — Wasm 核心规范与指南
+- **[Wasmtime](https://wasmtime.dev/)** — 高效、安全的 WebAssembly 运行时
+- **[Solidity 官方文档](https://docs.soliditylang.org/)** — 以太坊智能合约主流编程语言

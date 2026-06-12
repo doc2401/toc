@@ -47,3 +47,11 @@
 - **[Databricks](https://docs.databricks.com/)** — Lakehouse 数据与 AI 平台 `官方在线`
 
 
+
+### 🚀 LLM 应用开发平台
+- **[Dify](https://dify.ai/zh)** — 开源的 LLM 应用开发平台与编排引擎
+- **[FastGPT](https://fastgpt.in/)** — 基于 LLM 与向量库的开源知识库问答系统
+
+### 🎨 AI 图像生成与流处理
+- **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** — 最强大、模块化的 Stable Diffusion 节点式图形界面
+- **[Ray](https://docs.ray.io/)** — 分布式计算框架，常用于扩展 AI 和机器学习工作负载

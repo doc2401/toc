@@ -62,3 +62,9 @@
 - **[DBeaver](https://dbeaver.com/docs/dbeaver/)** — 通用数据库管理工具
 
 
+
+### 🧠 AI 与向量扩展
+- **[pgvector](https://github.com/pgvector/pgvector)** — 基于 PostgreSQL 的开源向量相似度搜索扩展
+
+### 🚀 其他缓存与中间件
+- **[Memcached](https://memcached.org/)** — 经典的高性能分布式内存对象缓存系统

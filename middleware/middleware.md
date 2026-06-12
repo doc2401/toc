@@ -43,3 +43,10 @@
 - **[Apache SkyWalking](https://skywalking.apache.org/docs/)** — 应用性能监控与分布式追踪平台 `官方在线`
 
 
+
+### 🔄 数据同步与 CDC
+- **[Debezium](https://debezium.io/)** — 分布式变更数据捕获（CDC）平台
+- **[Canal](https://github.com/alibaba/canal)** — 阿里巴巴开源的 MySQL binlog 增量订阅与消费组件
+
+### 📡 实时通信
+- **[Socket.IO](https://socket.io/zh-CN/)** — 支持双向、实时和基于事件的通信库

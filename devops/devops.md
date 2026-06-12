@@ -59,3 +59,7 @@
 
 > 更完整的容器、GitOps、服务网格、可观测性与云平台资料，请参阅[云原生与平台工程](/cloud-native/cloud-native.md)。
 
+
+### 📦 可重现开发环境
+- **[Nix](https://nixos.org/)** — 声明式、可重现的构建系统与包管理器
+- **[Devbox](https://www.jetpack.io/devbox)** — 基于 Nix 的即插即用本地开发环境管理工具
