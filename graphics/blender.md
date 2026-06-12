@@ -8,6 +8,15 @@
 
 ### 🚀 本地离线镜像与对应官网 (Local Mirrors & Official Links)
 
+- Blender 5.1
+
+- [Blender 5.1 参考手册](../../blender.5.1.zh-hans/) ,
+  [官方](https://docs.blender.org/manual/zh-hans/5.1/)
+- [Blender 5.1 Reference Manual](../../blender.5.1/) ,
+  [official](https://docs.blender.org/manual/en/5.1/)
+- [Blender 5.1 Python API Documentation](../../blender.python.5.1/) ,
+  [official](https://docs.blender.org/api/5.1/)
+
 - Blender 4.4
 
 - [Blender 4.4 参考手册](../../blender.4.4.zh-hans/) ,

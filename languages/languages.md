@@ -37,9 +37,33 @@
 - **[Kotlin 官方中文文档](https://kotlinlang.org/docs/home.html)** — 现代 JVM 语言与 Android 首选开发语言官方指南
 - **[菜鸟教程 - Kotlin 教程](https://www.runoob.com/kotlin/kotlin-tutorial.html)** — Kotlin 快速上手指南
 
+### 📱 Dart / Swift
+- **[Dart 官方文档](https://dart.dev/docs)** — Dart 语言、核心库与工具链官方指南
+- **[Swift 官方文档](https://www.swift.org/documentation/)** — Swift 语言与生态文档入口
+- **[The Swift Programming Language 中文版](https://swiftgg.gitbook.io/swift/)** — Swift 编程语言社区中文翻译
+
+### 💎 Ruby
+- **[Ruby 官方文档](https://www.ruby-lang.org/zh_cn/documentation/)** — Ruby 语言文档与学习资源
+- **[Ruby API](https://docs.ruby-lang.org/en/master/)** — Ruby 核心类与标准库 API
+
+### 📊 R / Julia
+- **[R Manuals](https://cran.r-project.org/manuals.html)** — R 语言官方手册
+- **[R for Data Science](https://r4ds.hadley.nz/)** — 使用 R 进行数据科学的系统教程
+- **[Julia Documentation](https://docs.julialang.org/)** — Julia 语言官方文档
+
+### ⚙️ Scala / Elixir / Lua
+- **[Scala 3 文档](https://docs.scala-lang.org/scala3/)** — Scala 3 语言、教程与参考
+- **[Elixir 官方文档](https://elixir-lang.org/docs.html)** — Elixir 语言与标准库文档
+- **[Lua 参考手册](https://www.lua.org/manual/5.4/)** — Lua 5.4 官方语言参考
+
+### 🧪 新兴系统语言
+- **[Zig 官方文档](https://ziglang.org/documentation/master/)** — Zig 语言与标准库参考
+- **[Nim 官方文档](https://nim-lang.org/documentation.html)** — Nim 语言、标准库与工具文档
+
 ### 🐚 Shell 脚本编程
 - **[Bash 脚本教程](https://wangdoc.com/bash/)** — 阮一峰老师编写的系统 Bash 命令行与脚本教程
 - **[菜鸟教程 - Shell 教程](https://www.runoob.com/linux/linux-shell.html)** — 快速掌握 Linux 脚本编写
+- **[PowerShell 官方文档](https://learn.microsoft.com/zh-cn/powershell/)** — PowerShell 语言、模块与命令参考
 
 ### 📚 综合教程
 - **[菜鸟教程 (Runoob)](https://www.runoob.com/)** — 极其全面的编程基础中文入门教程网站，涵盖多种主流开发语言。

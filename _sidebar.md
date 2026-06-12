@@ -12,6 +12,7 @@
   - [Framework 详细目录](/spring/spring-framework-toc.md)
   - [Boot 详细目录](/spring/spring-boot-toc.md)
   - [Spring Cloud & 其他](/spring/spring-cloud.md)
+  - [Spring AI](/spring/spring-ai.md)
 
 - **主流开发语言**
   - [语言参考手册](/languages/languages.md)
@@ -19,10 +20,28 @@
 - **前端与网页技术**
   - [前端技术索引](/frontend/frontend.md)
 
-- **数据库与中间件**
+- **后端框架与运行时**
+  - [框架与数据访问](/backend/frameworks.md)
+
+- **数据库与搜索**
   - [数据库文档](/databases/databases.md)
+
+- **中间件与分布式系统**
+  - [中间件索引](/middleware/middleware.md)
   - [Kafka](/databases/kafka.md)
   - [RabbitMQ](/databases/rabbitmq.md)
+
+- **云原生与平台工程**
+  - [云原生技术索引](/cloud-native/cloud-native.md)
+
+- **API、身份与安全**
+  - [API 与安全索引](/api-security/api-security.md)
+
+- **AI 与数据工程**
+  - [AI 与数据技术索引](/ai-data/ai-data.md)
+
+- **测试与代码质量**
+  - [测试与质量工具](/testing/testing.md)
 
 - **开发工具与运维**
   - [运维与构建工具](/devops/devops.md)
@@ -33,4 +52,3 @@
 
 - **文章与归档**
   - [我的文章](/articles/README.md)
-

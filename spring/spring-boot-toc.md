@@ -1,5 +1,19 @@
 # Spring Boot 详细目录
 
+## Spring Boot 4.0.0
+
+- [Documentation Index](../../spring-boot.4.0.0/)
+- [Reference Documentation](../../spring-boot.4.0.0/reference/)
+- [Java API](../../spring-boot.4.0.0/api/java/)
+- [Kotlin API](../../spring-boot.4.0.0/api/kotlin/)
+
+## Spring Boot 3.5.8
+
+- [Documentation Index](../../spring-boot.3.5.8/)
+- [Reference Documentation](../../spring-boot.3.5.8/reference/)
+- [Java API](../../spring-boot.3.5.8/api/java/)
+- [Kotlin API](../../spring-boot.3.5.8/api/kotlin/)
+
 ## Spring Boot 3.2.9
 
 

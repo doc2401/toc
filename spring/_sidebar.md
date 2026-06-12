@@ -5,3 +5,4 @@
   - [Framework 详细目录](/spring/spring-framework-toc.md)
   - [Boot 详细目录](/spring/spring-boot-toc.md)
   - [Spring Cloud & 其他](/spring/spring-cloud.md)
+  - [Spring AI](/spring/spring-ai.md)
