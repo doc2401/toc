@@ -28,3 +28,8 @@
 
 - **图形与创意设计**
   - [Blender](/graphics/blender.md)
+
+- **文章与归档**
+  - [我的文章](/articles/README.md)
+  - [关于本站](/about.md)
+  - [更新记录](/changelog.md)

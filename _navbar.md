@@ -21,5 +21,9 @@
   - [Eclipse IDE](/devops/eclipse.md)
 - 图形与创意设计
   - [Blender](/graphics/blender.md)
+- 我的文章
+  - [文章列表](/articles/README.md)
+- [关于](/about.md)
+- [更新记录](/changelog.md)
 
 - <a href="javascript:void(0)"  onclick="localStorage.clear();v='?v='+Date.now();h=window.location.hash.split('?')[0]; window.location.href=window.location.pathname+v+h;"> 🔄刷新 </a>
