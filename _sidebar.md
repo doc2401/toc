@@ -48,6 +48,7 @@
   - [Eclipse IDE](/devops/eclipse.md)
 
 - **图形与创意设计**
+  - [图形与游戏索引](/graphics/graphics.md)
   - [Blender](/graphics/blender.md)
 
 - **文章与归档**

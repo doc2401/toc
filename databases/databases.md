@@ -20,13 +20,17 @@
 - **[Redis 官方文档](https://redis.io/)** — Redis 官方技术参考与新特性介绍
 - **[Redis 中文参考手册](https://redis.com.cn/)** — 方便快速查阅的中文 Redis 命令与高可用设计手册
 - **[Valkey 官方文档](https://valkey.io/topics/)** — 开源键值数据存储
+- **[Dragonfly](https://www.dragonflydb.io/docs)** — Redis 兼容的高性能现代内存数据存储
 
 ### 📁 文档与搜索引擎 (NoSQL & Search)
 - **[MongoDB 官方开发指南](https://www.mongodb.com/docs/)** — MongoDB 数据建模、聚合查询及驱动程序配置
 - **[Elasticsearch 官方参考文档](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)** — ES 索引管理、全文检索、Query DSL 语法文档
 - **[OpenSearch 官方文档](https://docs.opensearch.org/latest/)** — 开源搜索与分析套件
 - **[Apache Cassandra](https://cassandra.apache.org/doc/latest/)** — 分布式宽列数据库
+- **[ScyllaDB](https://docs.scylladb.com/)** — Cassandra 兼容的高性能 C++ NoSQL 数据库
 - **[Couchbase](https://docs.couchbase.com/)** — 分布式 JSON 文档数据库
+- **[SurrealDB](https://surrealdb.com/docs)** — 多模型数据库（文档/图/关系/时序）
+- **[RethinkDB](https://rethinkdb.com/docs)** — 实时推送的开源文档数据库
 
 ### 📈 分析型与时序数据库
 - **[ClickHouse](https://clickhouse.com/docs/zh)** — 面向实时分析的列式数据库
@@ -40,16 +44,21 @@
 - **[Neo4j](https://neo4j.com/docs/)** — 图数据库与 Cypher 查询语言
 - **[CockroachDB](https://www.cockroachlabs.com/docs/)** — 分布式 SQL 数据库
 - **[TiDB](https://docs.pingcap.com/zh/tidb/stable)** — MySQL 兼容的分布式 SQL 数据库
+- **[YugabyteDB](https://docs.yugabyte.com/)** — 分布式 PostgreSQL 兼容数据库
+- **[FoundationDB](https://apple.github.io/foundationdb/contents.html)** — Apple 开源的分布式有序键值数据库
 
 ### ☁️ 云数据库与后端服务
 - **[Amazon DynamoDB](https://docs.aws.amazon.com/zh_cn/dynamodb/)** — AWS Serverless NoSQL 数据库
 - **[Google Cloud Firestore](https://firebase.google.com/docs/firestore?hl=zh-cn)** — 文档型云数据库
 - **[Supabase](https://supabase.com/docs)** — 基于 PostgreSQL 的开源后端平台
 - **[Firebase](https://firebase.google.com/docs?hl=zh-cn)** — Google 应用开发后端平台
+- **[Neon](https://neon.tech/docs)** — Serverless PostgreSQL 平台
+- **[PlanetScale](https://planetscale.com/docs)** — Serverless MySQL（基于 Vitess）
 
 ### 🧰 数据库工具与设计
 - **[Prisma ORM](https://www.prisma.io/docs)** — TypeScript 类型安全 ORM
 - **[Liquibase](https://docs.liquibase.com/)** — 数据库版本与变更管理
 - **[Flyway](https://documentation.red-gate.com/flyway)** — 数据库迁移工具
 - **[DBeaver](https://dbeaver.com/docs/dbeaver/)** — 通用数据库管理工具
+
 

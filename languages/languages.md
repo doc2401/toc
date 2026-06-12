@@ -51,14 +51,21 @@
 - **[R for Data Science](https://r4ds.hadley.nz/)** — 使用 R 进行数据科学的系统教程
 - **[Julia Documentation](https://docs.julialang.org/)** — Julia 语言官方文档
 
-### ⚙️ Scala / Elixir / Lua
+### ⚙️ Scala / Groovy / Clojure
 - **[Scala 3 文档](https://docs.scala-lang.org/scala3/)** — Scala 3 语言、教程与参考
+- **[Groovy 官方文档](https://groovy-lang.org/documentation.html)** — JVM 脚本语言，Gradle 构建脚本的基础
+- **[Clojure 官方文档](https://clojure.org/reference)** — JVM 上的 Lisp 方言，函数式编程语言
+
+### 🧬 函数式与并发语言
 - **[Elixir 官方文档](https://elixir-lang.org/docs.html)** — Elixir 语言与标准库文档
+- **[Erlang 官方文档](https://www.erlang.org/docs)** — 并发与分布式系统语言（BEAM 虚拟机）
+- **[Haskell 官方文档](https://www.haskell.org/documentation/)** — 纯函数式编程语言
 - **[Lua 参考手册](https://www.lua.org/manual/5.4/)** — Lua 5.4 官方语言参考
 
 ### 🧪 新兴系统语言
 - **[Zig 官方文档](https://ziglang.org/documentation/master/)** — Zig 语言与标准库参考
 - **[Nim 官方文档](https://nim-lang.org/documentation.html)** — Nim 语言、标准库与工具文档
+- **[V 语言官方文档](https://docs.vlang.io/)** — 简单、快速的新兴系统编程语言
 
 ### 🐚 Shell 脚本编程
 - **[Bash 脚本教程](https://wangdoc.com/bash/)** — 阮一峰老师编写的系统 Bash 命令行与脚本教程

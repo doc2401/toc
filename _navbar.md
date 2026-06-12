@@ -34,6 +34,7 @@
   - [运维与构建工具](/devops/devops.md)
   - [Eclipse IDE](/devops/eclipse.md)
 - 图形与创意设计
+  - [图形与游戏索引](/graphics/graphics.md)
   - [Blender](/graphics/blender.md)
 - 我的文章
   - [文章列表](/articles/README.md)

@@ -13,7 +13,14 @@
 - **[scikit-learn](https://scikit-learn.org/stable/user_guide.html)** — 经典机器学习工具库 `官方在线`
 - **[PyTorch](https://pytorch.org/docs/stable/index.html)** — 深度学习框架 `官方在线`
 - **[TensorFlow](https://www.tensorflow.org/guide?hl=zh-cn)** — 机器学习平台 `官方在线`
+- **[JAX](https://docs.jax.dev/)** — Google 高性能数值计算与自动微分库 `官方在线`
 - **[Hugging Face](https://huggingface.co/docs)** — Transformers、Datasets 与模型平台 `官方在线`
+- **[OpenCV](https://docs.opencv.org/)** — 计算机视觉库 `官方在线`
+- **[ONNX Runtime](https://onnxruntime.ai/docs/)** — 跨平台机器学习推理引擎 `官方在线`
+
+### LLM 推理与本地部署
+- **[Ollama](https://github.com/ollama/ollama/blob/main/docs/README.md)** — 本地大模型运行平台 `官方在线`
+- **[vLLM](https://docs.vllm.ai/)** — 高性能 LLM 推理与服务引擎 `官方在线`
 
 ### LLM 应用与向量检索
 - **[LangChain](https://python.langchain.com/docs/)** — LLM 应用开发框架 `官方在线`
@@ -21,6 +28,16 @@
 - **[Milvus](https://milvus.io/docs)** — 分布式向量数据库 `官方在线`
 - **[Qdrant](https://qdrant.tech/documentation/)** — 向量搜索引擎 `官方在线`
 - **[Weaviate](https://docs.weaviate.io/)** — 开源向量数据库 `官方在线`
+- **[Chroma](https://docs.trychroma.com/)** — 开源嵌入式向量数据库 `官方在线`
+- **[Pinecone](https://docs.pinecone.io/)** — 托管向量数据库 `官方在线`
+
+### 多 Agent 与编排
+- **[CrewAI](https://docs.crewai.com/)** — 多 Agent 编排框架 `官方在线`
+- **[AutoGen](https://microsoft.github.io/autogen/)** — 微软多 Agent 对话框架 `官方在线`
+
+### ML 实验与模型管理
+- **[MLflow](https://mlflow.org/docs/latest/)** — ML 实验跟踪与模型管理平台 `官方在线`
+- **[Weights & Biases](https://docs.wandb.ai/)** — ML 实验跟踪与可视化 `官方在线`
 
 ### 数据处理与分析
 - **[Apache Spark](https://spark.apache.org/docs/latest/)** — 大规模统一数据分析引擎 `官方在线`
@@ -28,4 +45,5 @@
 - **[Apache Beam](https://beam.apache.org/documentation/)** — 批处理与流处理统一模型 `官方在线`
 - **[dbt](https://docs.getdbt.com/docs/introduction)** — 分析工程与数据转换工具 `官方在线`
 - **[Databricks](https://docs.databricks.com/)** — Lakehouse 数据与 AI 平台 `官方在线`
+
 
