@@ -14,14 +14,19 @@
   - [Spring Cloud & 其他](/spring/spring-cloud.md)
   - [Spring AI](/spring/spring-ai.md)
 
-- **主流开发语言**
-  - [语言参考手册](/languages/languages.md)
-
+- **开发语言与后端生态**
+  - [Node.js 与 JS/TS](/languages/nodejs.md)
+  - [Python 生态](/languages/python.md)
+  - [Go 语言生态](/languages/go.md)
+  - [Rust 生态](/languages/rust.md)
+  - [C# 与 .NET](/languages/dotnet.md)
+  - [C 与 C++](/languages/c-cpp.md)
+  - [PHP 生态](/languages/php.md)
+  - [Ruby 生态](/languages/ruby.md)
+  - [其他综合语言](/languages/others.md)
+  - [API 规范与身份认证](/languages/api-auth.md)
 - **前端与网页技术**
   - [前端技术索引](/frontend/frontend.md)
-
-- **后端框架与运行时**
-  - [框架与数据访问](/backend/frameworks.md)
 
 - **数据库与搜索**
   - [数据库文档](/databases/databases.md)
@@ -33,9 +38,6 @@
 
 - **云原生与平台工程**
   - [云原生技术索引](/cloud-native/cloud-native.md)
-
-- **API、身份与安全**
-  - [API 与安全索引](/api-security/api-security.md)
 
 - **AI 与数据工程**
   - [AI 与数据技术索引](/ai-data/ai-data.md)

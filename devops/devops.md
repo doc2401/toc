@@ -1,6 +1,6 @@
 # 运维与构建工具
 
-> 现代 DevOps 容器化、服务器配置、版本控制及构建系统的核心参考文档。
+> 现代 DevOps 容器化、服务器配置、构建系统及安全策略的核心参考文档。
 
 ### 🐳 容器化与集群 (Containers & Orchestration)
 - **[Docker 官方文档](https://docs.docker.com/)** — Docker 引擎安装、Dockerfile 编写与 Compose 容器编排指南
@@ -63,3 +63,12 @@
 ### 📦 可重现开发环境
 - **[Nix](https://nixos.org/)** — 声明式、可重现的构建系统与包管理器
 - **[Devbox](https://www.jetpack.io/devbox)** — 基于 Nix 的即插即用本地开发环境管理工具
+
+### 🛡️ DevSecOps 与安全策略
+- **[Open Policy Agent](https://www.openpolicyagent.org/docs/latest/)** — 通用策略引擎 `官方在线`
+- **[Falco](https://falco.org/docs/)** — 云原生运行时威胁检测 `官方在线`
+- **[Trivy](https://trivy.dev/latest/docs/)** — 容器、代码与 IaC 漏洞扫描 `官方在线`
+- **[Sigstore](https://docs.sigstore.dev/)** — 软件供应链签名与验证 `官方在线`
+- **[cert-manager](https://cert-manager.io/docs/)** — Kubernetes TLS 证书自动管理 `官方在线`
+- **[OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)** — Web 安全测试指南 `官方在线`
+- **[OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)** — 应用安全实践速查 `官方在线`
