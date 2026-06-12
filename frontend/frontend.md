@@ -19,9 +19,24 @@
 ### 🛠️ 构建与样式
 - **[Vite 官方中文文档](https://cn.vitejs.dev/)** — 极速的前端开发与构建工具官方中文指南
 - **[Tailwind CSS 中文文档](https://www.tailwindcss.cn/)** — 实用优先的原子化 CSS 框架使用手册
+- **[Sass 官方中文文档](https://www.sass.hk/docs/)** — 功能强大的 CSS 扩展预处理器语言
+- **[Less 中文文档](https://lesscss.cn/)** — 简单易用的 CSS 预编译开发框架
+
+### 📊 数据可视化
+- **[Apache ECharts 官方中文文档](https://echarts.apache.org/zh/index.html)** — 最流行的前端数据可视化图表库指南
+
+### 📱 跨平台与小程序
+- **[Electron 官方中文文档](https://www.electronjs.org/zh/docs/latest/)** — 使用 Web 技术开发跨平台桌面应用的官方文档
+- **[微信小程序开发文档](https://developers.weixin.cn/miniprogram/dev/framework/)** — 官方微信小程序开发与 API 参考指南
+- **[uni-app 官方文档](https://uniapp.dcloud.net.cn/)** — 基于 Vue 3 的多端发布跨平台开发框架
+
+### 📚 经典 JS 库
+- **[jQuery API 中文文档](https://jquery.cuishifeng.com/)** — 传统网页开发利器，快速查阅 DOM 操作
+- **[菜鸟教程 - jQuery 教程](https://www.runoob.com/jquery/jquery-tutorial.html)** — 精炼实用的 jQuery 中文入门基础
 
 ### 🔍 兼容性与辅助工具
 - **[Can I Use](https://caniuse.com/)** — Web 前端各类 HTML5/CSS3 特性在各大浏览器中的兼容性对比查询
 - **[Nuxt.js](https://nuxt.com/)** — 基于 Vue 3 的 SSR / 全栈开发框架
 - **[Next.js](https://nextjs.org/)** — 基于 React 的生产级 SSR / 全栈开发框架
+
 

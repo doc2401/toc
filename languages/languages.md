@@ -25,6 +25,22 @@
 ### 📘 C / C++
 - **[Cppreference 中文网](https://zh.cppreference.com/)** — 最权威、最全面的 C 和 C++ 标准库与核心语法中文在线手册
 
+### 🟣 C# / .NET
+- **[C# 官方中文文档](https://learn.microsoft.com/zh-cn/dotnet/csharp/)** — 微软官方权威 C# 语言指南与 API 参考
+- **[菜鸟教程 - C# 教程](https://www.runoob.com/csharp/csharp-tutorial.html)** — 简单易懂的 C# 语法入门
+
+### 🐘 PHP Web 开发
+- **[PHP 官方中文手册](https://www.php.net/manual/zh/)** — 经典 Web 开发语言的官方参考手册
+- **[菜鸟教程 - PHP 教程](https://www.runoob.com/php/php-tutorial.html)** — 适合初学者的 PHP 基础语法与实战
+
+### 🟤 Kotlin
+- **[Kotlin 官方中文文档](https://kotlinlang.org/docs/home.html)** — 现代 JVM 语言与 Android 首选开发语言官方指南
+- **[菜鸟教程 - Kotlin 教程](https://www.runoob.com/kotlin/kotlin-tutorial.html)** — Kotlin 快速上手指南
+
+### 🐚 Shell 脚本编程
+- **[Bash 脚本教程](https://wangdoc.com/bash/)** — 阮一峰老师编写的系统 Bash 命令行与脚本教程
+- **[菜鸟教程 - Shell 教程](https://www.runoob.com/linux/linux-shell.html)** — 快速掌握 Linux 脚本编写
+
 ### 📚 综合教程
 - **[菜鸟教程 (Runoob)](https://www.runoob.com/)** — 极其全面的编程基础中文入门教程网站，涵盖多种主流开发语言。
 
