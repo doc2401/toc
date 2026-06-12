@@ -1,4 +1,8 @@
 - [首页](/README.md)
+  - [关于](/about.md)
+  - [更新记录](/changelog.md)
+  - <a href="javascript:void(0)"  onclick="localStorage.clear();v='?v='+Date.now();h=window.location.hash.split('?')[0]; window.location.href=window.location.pathname+v+h;"> 🔄刷新 </a>
+
 - Java 生态
   - [Java 教程](/java/java.md)
   - [JDK 核心文档](/java/jdk.md)
@@ -23,7 +27,4 @@
   - [Blender](/graphics/blender.md)
 - 我的文章
   - [文章列表](/articles/README.md)
-- [关于](/about.md)
-- [更新记录](/changelog.md)
 
-- <a href="javascript:void(0)"  onclick="localStorage.clear();v='?v='+Date.now();h=window.location.hash.split('?')[0]; window.location.href=window.location.pathname+v+h;"> 🔄刷新 </a>

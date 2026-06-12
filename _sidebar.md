@@ -1,4 +1,6 @@
 - [首页](/README.md)
+  - [关于本站](/about.md)
+  - [更新记录](/changelog.md)
 
 - **Java 生态**
   - [Java 教程](/java/java.md)
@@ -31,5 +33,4 @@
 
 - **文章与归档**
   - [我的文章](/articles/README.md)
-  - [关于本站](/about.md)
-  - [更新记录](/changelog.md)
+
