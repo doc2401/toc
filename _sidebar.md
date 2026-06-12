@@ -25,16 +25,19 @@
   - [Ruby 生态](/languages/ruby.md)
   - [其他综合语言](/languages/others.md)
   - [API 规范与身份认证](/languages/api-auth.md)
+
 - **前端与网页技术**
-  - [前端技术索引](/frontend/frontend.md)
+  - [前端与全栈框架](/frontend/frameworks.md)
+  - [UI、CSS 与构建工具](/frontend/ui-build.md)
+  - [移动与跨平台开发](/frontend/cross-platform.md)
 
 - **数据库与搜索**
   - [数据库文档](/databases/databases.md)
 
 - **中间件与分布式系统**
   - [中间件索引](/middleware/middleware.md)
-  - [Kafka](/databases/kafka.md)
-  - [RabbitMQ](/databases/rabbitmq.md)
+  - [Kafka](/middleware/kafka.md)
+  - [RabbitMQ](/middleware/rabbitmq.md)
 
 - **云原生与平台工程**
   - [云原生技术索引](/cloud-native/cloud-native.md)
@@ -49,7 +52,6 @@
 
 - **开发工具与运维**
   - [运维与构建工具](/devops/devops.md)
-  - [Eclipse IDE](/devops/eclipse.md)
 
 - **图形与创意设计**
   - [图形与游戏索引](/graphics/graphics.md)
