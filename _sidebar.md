@@ -39,8 +39,10 @@
 - **云原生与平台工程**
   - [云原生技术索引](/cloud-native/cloud-native.md)
 
-- **AI 与数据工程**
-  - [AI 与数据技术索引](/ai-data/ai-data.md)
+- **AI 与大数据工程**
+  - [AI 与大模型生态](/ai-data/llm.md)
+  - [传统机器学习](/ai-data/machine-learning.md)
+  - [大数据与处理](/ai-data/big-data.md)
 
 - **测试与代码质量**
   - [测试与质量工具](/testing/testing.md)
