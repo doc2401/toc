@@ -16,4 +16,6 @@
 ### 💻 版本控制与系统命令 (Version Control & OS)
 - **[Git Pro 官方中文教程](https://git-scm.com/book/zh/v2)** — 权威的 Git 版本控制系统原理及命令使用指南
 - **[Linux 命令速查手册](https://wangchujiang.com/linux-command/)** — 极佳的 Linux 常用命令在线搜索与语法参数速查手册
+- **[菜鸟教程 - Git 教程](https://www.runoob.com/git/git-tutorial.html)** — 简单易懂的 Git 常用指令与流程入门指南
+- **[菜鸟教程 - Linux 教程](https://www.runoob.com/linux/linux-tutorial.html)** — 适合新手的 Linux 常用命令与系统基础教程
 

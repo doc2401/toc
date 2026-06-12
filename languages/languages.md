@@ -25,3 +25,7 @@
 ### 📘 C / C++
 - **[Cppreference 中文网](https://zh.cppreference.com/)** — 最权威、最全面的 C 和 C++ 标准库与核心语法中文在线手册
 
+### 📚 综合教程
+- **[菜鸟教程 (Runoob)](https://www.runoob.com/)** — 极其全面的编程基础中文入门教程网站，涵盖多种主流开发语言。
+
+

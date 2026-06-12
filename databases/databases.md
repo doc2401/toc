@@ -5,6 +5,8 @@
 ### 🐬 关系型数据库 (Relational Databases)
 - **[MySQL 官方参考手册](https://dev.mysql.com/doc/refman/8.0/en/)** — MySQL 官方详细设计、配置与 SQL 函数使用手册
 - **[PostgreSQL 中文文档](http://www.postgres.cn/document)** — PostgreSQL 社区官方维护的系统化中文说明文档与 SQL 指南
+- **[菜鸟教程 - SQL 教程](https://www.runoob.com/sql/sql-tutorial.html)** — 基础 SQL 语法入门指南
+- **[菜鸟教程 - MySQL 教程](https://www.runoob.com/mysql/mysql-tutorial.html)** — 适合初学者的 MySQL 数据库中文教程
 
 ### 🚀 键值内存数据库 (Cache & NoSQL)
 - **[Redis 官方文档](https://redis.io/)** — Redis 官方技术参考与新特性介绍

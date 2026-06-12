@@ -5,6 +5,7 @@
 ### 🌐 Web 基础与规范
 - **[MDN Web Docs](https://developer.mozilla.org/zh-CN/)** — HTML, CSS, JavaScript 的权威开放标准参考
 - **[ECMAScript 6 入门](https://es6.ruanyifeng.com/)** — 经典深入的 ES6+ 标准中文教程（阮一峰）
+- **[菜鸟教程 - HTML/CSS/JS](https://www.runoob.com/)** — 适合快速查阅网页前端基础语法的中文入门指南。
 
 ### 📘 TypeScript
 - **[TypeScript 官方文档](https://www.typescriptlang.org/docs/)** — 核心概念、配置选项与英文参考手册

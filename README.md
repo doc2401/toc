@@ -21,6 +21,7 @@
 - [Go 语言 🌐](https://go.dev/doc/) `官方在线`
 - [Rust 语言圣经 🌐](https://course.rs/) `中文社区`
 - [Node.js 🌐](https://nodejs.cn/api/) `官方在线`
+- [菜鸟教程 🌐](https://www.runoob.com/) `中文社区`
 - [查看更多语言...](/languages/languages.md) `参考分类`
 
 ## 🎨 前端与网页技术
