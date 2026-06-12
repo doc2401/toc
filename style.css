@@ -287,6 +287,7 @@ ul.portal-list li {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex !important;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin: 0 !important;
@@ -302,10 +303,16 @@ ul.portal-list li:hover {
   border-color: #cbd5e1;
 }
 
+ul.portal-list li strong {
+  flex: 1 1 auto;
+  margin-right: 10px;
+  order: 1;
+}
+
 ul.portal-list li a {
-  color: #334155;
-  font-weight: 600;
-  font-size: 0.95rem;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 1rem;
   text-decoration: none !important;
   display: inline-flex;
   align-items: center;
@@ -313,6 +320,21 @@ ul.portal-list li a {
 
 ul.portal-list li a:hover {
   color: var(--theme-color);
+}
+
+ul.portal-list li .portal-desc {
+  width: 100%;
+  flex: 1 1 100%;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.4;
+  order: 3;
+}
+
+ul.portal-list li .badge {
+  flex: 0 0 auto;
+  order: 2;
 }
 
 /* Custom Badges */

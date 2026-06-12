@@ -58,6 +58,25 @@
               // If it contains badges, style it as a portal list
               if (isPortal) {
                 ul.classList.add('portal-list');
+                
+                // Enhance inner layout of each list item
+                ul.querySelectorAll('li').forEach(li => {
+                  Array.from(li.childNodes).forEach(node => {
+                    if (node.nodeType === 3) { // Text node
+                      let text = node.textContent;
+                      // Remove leading dashes/em-dashes and whitespace
+                      text = text.replace(/^[\s\-—]+/, '');
+                      if (text.trim().length > 0) {
+                        const div = document.createElement('div');
+                        div.className = 'portal-desc';
+                        div.textContent = text;
+                        li.replaceChild(div, node);
+                      } else {
+                        li.removeChild(node);
+                      }
+                    }
+                  });
+                });
               }
             });
             
