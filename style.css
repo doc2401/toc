@@ -1,0 +1,373 @@
+/* Modern Custom Styling for doc2401 */
+
+:root {
+  /* Color System */
+  --theme-color: #6366f1; /* Indigo Accent */
+  --theme-color-hover: #4f46e5;
+  --theme-color-light: rgba(99, 102, 241, 0.1);
+  
+  --base-font-size: 16px;
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --code-font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+  /* Docsify UI Overrides */
+  --sidebar-width: 280px;
+  --sidebar-background: #f8fafc;
+  --sidebar-border-color: #e2e8f0;
+  
+  --content-max-width: 960px;
+  
+  --text-color: #334155;
+  --heading-color: #0f172a;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: var(--sidebar-background);
+  border-right: 1px solid var(--sidebar-border-color);
+}
+
+.sidebar-toggle {
+  background-color: transparent !important;
+  bottom: 30px;
+  left: 30px;
+}
+
+.sidebar nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar nav ul ul {
+  padding-left: 8px;
+}
+
+.sidebar nav li strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b; /* Slate Gray */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 22px;
+  margin-bottom: 6px;
+  padding: 0 12px;
+}
+
+.sidebar nav li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 2px 10px;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.sidebar nav li a:hover {
+  background-color: #f1f5f9;
+  color: var(--theme-color-hover);
+  text-decoration: none !important;
+}
+
+.sidebar nav li.active > a {
+  background-color: var(--theme-color-light);
+  color: var(--theme-color);
+  font-weight: 600;
+  border-left: none;
+}
+
+.sidebar-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading-color) !important;
+  letter-spacing: -0.025em;
+  padding: 10px 0;
+}
+
+/* Search Plugin Custom Styling */
+.search {
+  padding: 20px 15px 10px 15px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px 14px !important;
+  font-size: 13px !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 8px !important;
+  background-color: #ffffff !important;
+  color: var(--text-color) !important;
+  transition: all 0.2s ease !important;
+}
+
+.search input:focus {
+  border-color: var(--theme-color) !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15) !important;
+  outline: none;
+}
+
+.search-results-container {
+  padding: 0 15px;
+}
+
+/* Navbar Custom Styling */
+.app-nav {
+  margin: 15px 30px 0 0;
+}
+
+.app-nav li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.app-nav li a:hover,
+.app-nav li.active > a {
+  color: var(--theme-color);
+  background-color: var(--theme-color-light);
+}
+
+/* Content Custom Styling */
+.markdown-section {
+  padding: 40px 15px;
+}
+
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4 {
+  color: var(--heading-color);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.markdown-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.markdown-section h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.markdown-section h3 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.markdown-section a {
+  color: var(--theme-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.markdown-section a:hover {
+  color: var(--theme-color-hover);
+  text-decoration: underline;
+}
+
+.markdown-section blockquote {
+  border-left: 4px solid var(--theme-color);
+  background-color: #f8fafc;
+  color: #475569;
+  padding: 12px 20px;
+  border-radius: 0 8px 8px 0;
+  margin: 20px 0;
+}
+
+/* Code blocks styling */
+.markdown-section pre {
+  background-color: #0f172a !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.markdown-section code {
+  font-family: var(--code-font-family);
+  font-size: 0.9em;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.markdown-section pre code {
+  color: #f8fafc;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* --- Pure Markdown Generated Portal Styling --- */
+
+/* Standard Heading 1 and its Adjacent Blockquote styled as the grand banner */
+.markdown-section > h1:first-child {
+  font-size: 2.6rem;
+  letter-spacing: -0.03em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  background: linear-gradient(to right, #1e293b, #475569);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.markdown-section > h1:first-child + blockquote {
+  border-left: none;
+  background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+  color: white;
+  padding: 28px 32px;
+  border-radius: 16px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.2);
+}
+
+.markdown-section > h1:first-child + blockquote p {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+/* Custom Portal Lists compiled from standard list blocks */
+ul.portal-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  padding-left: 0 !important;
+  list-style: none !important;
+  margin: 15px 0 35px 0 !important;
+}
+
+ul.portal-list li {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px 18px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 !important;
+}
+
+ul.portal-list li::before {
+  content: none !important; /* Remove docsify list bullet points */
+}
+
+ul.portal-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px -10px rgba(99, 102, 241, 0.12);
+  border-color: #cbd5e1;
+}
+
+ul.portal-list li a {
+  color: #334155;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+}
+
+ul.portal-list li a:hover {
+  color: var(--theme-color);
+}
+
+/* Custom Badges */
+.badge {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.badge-local {
+  background-color: #ecfdf5;
+  color: #059669;
+  border-color: #a7f3d0;
+}
+
+.badge-online {
+  background-color: #f5f3ff;
+  color: #7c3aed;
+  border-color: #ddd6fe;
+}
+
+.badge-both {
+  background-color: #eff6ff;
+  color: #2563eb;
+  border-color: #bfdbfe;
+}
+
+/* Styled Blockquote after horizontal rule as the page footer */
+.markdown-section hr + blockquote {
+  border-left: none;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #64748b;
+}
+
+.markdown-section hr + blockquote p {
+  font-size: 0.9rem !important;
+  line-height: 1.6;
+  margin: 6px 0;
+  color: #64748b !important;
+}
+
+.markdown-section hr + blockquote code {
+  background-color: #e2e8f0;
+  color: #334155;
+}
+

@@ -6,6 +6,7 @@
   <meta name="description" content="doc2401 公开文档镜像、版本与翻译索引">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@5.0.0-rc.4/dist/themes/core.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="app">正在加载文档索引...</div>
@@ -16,13 +17,58 @@
       loadNavbar: true,
       loadSidebar: true,
       maxLevel: 3,
-      subMaxLevel: 2,
+      subMaxLevel: 0,
       auto2top: true,
       relativePath: true,
       noCompileLinks: ['\\.\\./.*'],
-      externalLinkTarget: '_self'
+      externalLinkTarget: '_self',
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '输入关键词搜索...',
+        noData: '未找到相关文档',
+        depth: 3,
+        hideOtherSidebarContent: false
+      },
+      plugins: [
+        function(hook, vm) {
+          hook.afterEach(function(html, next) {
+            const div = document.createElement('div');
+            div.innerHTML = html;
+            
+            // Scan all lists
+            const lists = div.querySelectorAll('ul');
+            lists.forEach(ul => {
+              let isPortal = false;
+              const codes = ul.querySelectorAll('code');
+              codes.forEach(code => {
+                const text = code.textContent.trim();
+                if (text === '本地镜像' || text === '本地' || text === '本地离线') {
+                  code.className = 'badge badge-local';
+                  isPortal = true;
+                } else if (text === '官方在线' || text === '官方' || text === '在线' || text === '中文社区' || text === '中文文档' || text === '参考分类') {
+                  code.className = 'badge badge-online';
+                  isPortal = true;
+                } else if (text === '本地 & 在线' || text === '双通道') {
+                  code.className = 'badge badge-both';
+                  isPortal = true;
+                }
+              });
+              
+              // If it contains badges, style it as a portal list
+              if (isPortal) {
+                ul.classList.add('portal-list');
+              }
+            });
+            
+            next(div.innerHTML);
+          });
+        }
+      ]
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@5.0.0-rc.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@5.0.0-rc.4/dist/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@5.0.0-rc.4/dist/plugins/zoom-image.min.js"></script>
 </body>
 </html>
