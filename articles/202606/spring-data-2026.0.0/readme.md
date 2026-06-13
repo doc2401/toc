@@ -7,6 +7,105 @@
 查看 `2026.0.0` 各个项目对应的子版本
 https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-bom/2026.0.0/spring-data-bom-2026.0.0.pom
 
+## 脚本使用
+
+脚本需要在 Bash 环境中运行。开始前可以添加执行权限：
+
+```bash
+chmod +x create-directories.sh \
+  checkout-spring-data-projects.sh \
+  build-spring-data-docs.sh
+```
+
+### 1. 根据 BOM 创建目录
+
+`create-directories.sh` 读取 Maven BOM 中
+`dependencyManagement/dependencies/dependency/artifactId` 的值，并为每个
+`artifactId` 创建一个空目录。
+
+依赖：
+
+- Bash
+- `xmllint`（通常由 `libxml2` 软件包提供）
+
+用法：
+
+```bash
+./create-directories.sh [POM 文件] [输出目录]
+```
+
+不传参数时，默认读取当前目录下的
+`spring-data-bom-2026.0.0.pom`，并在当前目录创建文件夹：
+
+```bash
+./create-directories.sh
+```
+
+指定 POM 和输出目录：
+
+```bash
+./create-directories.sh spring-data-bom-2026.0.0.pom ./artifact-directories
+```
+
+### 2. Checkout 子项目并切换 tag
+
+`checkout-spring-data-projects.sh` 会读取 Spring Data BOM 中每个模块的
+版本，克隆对应的源码仓库，并分别切换到各自的版本 tag。对于已经存在的
+Git 仓库，脚本会先拉取远程 tags。
+
+JDBC 和 R2DBC 共用 `spring-data-relational` 仓库，Envers 位于
+`spring-data-jpa` 仓库中，因此这些仓库不会被重复克隆。
+
+ 
+```bash
+# ./checkout-spring-data-projects.sh [BOM 文件] [输出目录]
+bash checkout-spring-data-projects.sh  spring-data-bom-2026.0.0.pom ./sources
+```
+
+脚本不会把 BOM 版本 `2026.0.0` 当作所有仓库共同的 tag，而是使用各模块
+在 BOM 中声明的版本。例如 Commons、JPA 和 Relational 使用 `4.1.0`，
+Cassandra 使用 `5.1.0`，Neo4j 使用 `8.1.0`。
+
+每个仓库都必须存在 BOM 指定的版本 tag；缺少 tag 时脚本会报错并停止。
+输出目录中如果存在同名但不是 Git 仓库的目录，脚本也会停止。
+
+> 不要让 `create-directories.sh` 和 `checkout-spring-data-projects.sh`
+> 使用同一个输出目录。前者创建的空目录会与后者需要克隆的 Git 仓库目录
+> 冲突。
+
+### 3. 构建 Javadoc 和 Reference
+
+`build-spring-data-docs.sh` 会依次进入各个源码仓库，通过 Maven 的
+`distribute` profile 构建 reference 文档，并执行聚合 Javadoc 构建。
+
+脚本优先使用项目中的 `mvnw`；项目没有 Maven Wrapper 时，使用系统中的
+`mvn`。每个项目的构建日志会单独保存，一个项目失败后仍会继续构建其他
+项目，最后统一列出失败项目。
+
+构建 `./sources` 中的项目，并将日志写入 `./build-logs`：
+
+```bash
+# ./build-spring-data-docs.sh [源码目录] [日志目录]
+bash build-spring-data-docs.sh ./sources ./build-logs
+```
+
+实际执行的主要 Maven 命令为：
+
+```bash
+./mvnw -DskipTests -Dmaven.javadoc.failOnError=false \
+  -Pdistribute clean package javadoc:aggregate
+```
+
+### 完整流程示例
+
+```bash
+# 1. 根据 BOM 克隆项目并分别切换到各模块对应的版本
+./checkout-spring-data-projects.sh spring-data-bom-2026.0.0.pom ./sources
+
+# 2. 构建各项目的 Javadoc 和 reference 文档
+./build-spring-data-docs.sh ./sources ./build-logs
+```
+
  
 - [spring-projects/spring-data-commons: Spring Data Commons. Interfaces and code shared between the various datastore specific implementations. · GitHub](https://github.com/spring-projects/spring-data-commons)
 - [Spring Data JDBC](https://spring.io/projects/spring-data-jdbc)
