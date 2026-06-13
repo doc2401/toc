@@ -17,6 +17,7 @@
 - **[OpenID Connect](https://openid.net/developers/how-connect-works/)** — 基于 OAuth 2.0 的身份层 `官方在线`
 - **[Keycloak](https://www.keycloak.org/documentation)** — 开源身份与访问管理平台 `官方在线`
 - **[Spring Security](https://docs.spring.io/spring-security/reference/)** — Java 身份认证与授权框架 `官方在线`
+- **[Apache Shiro 中文参考手册](https://github.com/waylau/apache-shiro-1.2.x-reference)** — 经典易用的 Java 安全与权限控制框架中文指南
 - **[Auth0](https://auth0.com/docs)** — 身份认证即服务平台 `官方在线`
 - **[Casdoor](https://casdoor.org/docs/overview)** — 开源 SSO/IAM 身份平台 `官方在线`
 - **[WebAuthn / FIDO2](https://webauthn.guide/)** — 无密码认证 Web 标准 `官方在线`

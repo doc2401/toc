@@ -10,7 +10,7 @@
 - **[Java 官方教程](https://docs.oracle.com/javase/tutorial/)** — Oracle 官方最新的 Java 教程
 - **[Baeldung Java Tutorials](https://www.baeldung.com/)** — 业界高质量的 Java 实战步骤指南
 - **[廖雪峰 Java 教程](https://www.liaoxuefeng.com/wiki/1252599548343744)** — 简明易懂的中文 Java 零基础教程
-- **[菜鸟教程 - Java 教程](https://www.runoob.com/java/java-tutorial.html)** — 适合初学者的基础 Java 中文入门教程。
+- **[菜鸟教程 - Java 教程](https://www.runoob.com/java/java-tutorial.html)** — 适合初学者的基础 Java 中文入门教程。
 
 ### 🌐 服务端框架与数据访问
 - **[Spring Boot](https://docs.spring.io/spring-boot/index.html)** — Spring 应用与微服务开发框架 `官方在线`
@@ -18,3 +18,11 @@
 - **[Micronaut](https://docs.micronaut.io/latest/guide/)** — 低内存、快速启动的 JVM 微服务框架 `官方在线`
 - **[Hibernate ORM](https://hibernate.org/orm/documentation/)** — Java ORM 与 Jakarta Persistence 实现 `官方在线`
 - **[MyBatis](https://mybatis.org/mybatis-3/zh_CN/)** — SQL 映射与持久层框架 `官方在线`
+
+### 🎨 模板引擎 (Template Engines)
+- **[Apache FreeMarker 中文手册](http://freemarker.foofun.cn/)** — 经典且功能强大的模板引擎中文开发手册
+- **[Thymeleaf 官方文档](https://www.thymeleaf.org/documentation.html)** — 适用于 Web/独立环境的现代 HTML5 模板引擎 `官方在线`
+
+### 📝 日志与诊断 (Logging)
+- **[Logback 中文参考文档](https://www.docs4dev.com/docs/zh/logback/1.3.0/reference/)** — 经典 Java 日志框架 Logback 的中文指南
+- **[Log4j2 中文参考文档](https://www.docs4dev.com/docs/zh/log4j2/2.x/reference/)** — Apache 高性能日志框架 Log4j2 的中文参考

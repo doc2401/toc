@@ -37,6 +37,7 @@
 - **[DuckDB](https://duckdb.org/docs/stable/)** — 嵌入式分析型数据库
 - **[InfluxDB](https://docs.influxdata.com/)** — 时序数据平台
 - **[TimescaleDB](https://docs.timescale.com/)** — 基于 PostgreSQL 的时序数据库
+- **[OpenTSDB 中文参考](https://www.docs4dev.com/docs/zh/opentsdb/2.4/reference/)** — 基于 HBase 的分布式可伸缩时序数据库中文指南
 - **[Apache Doris](https://doris.apache.org/zh-CN/docs/)** — 实时分析型数据库
 - **[StarRocks](https://docs.starrocks.io/zh/)** — 高性能分析型数据库
 

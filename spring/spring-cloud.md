@@ -14,4 +14,5 @@
 - **[Spring Integration](https://spring.io/projects/spring-integration)** — 企业集成模式（EIP）的轻量级实现
 - **[Spring Session](https://spring.io/projects/spring-session)** — 跨实例分布式 Session 会话管理
 - **[Spring AMQP / Kafka](https://spring.io/projects/spring-amqp)** — 基于 AMQP/Kafka 协议的的高级消息传递与数据流整合
+- **[Spring Batch 中文文档](https://springdoc.tech/spring-batch/)** — 轻量级、全面的批处理框架官方文档中文版
 

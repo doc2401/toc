@@ -35,6 +35,7 @@
 
 ### 网络、网关与服务网格
 - **[Nginx](https://nginx.org/en/docs/)** — Web 服务器与反向代理 `官方在线`
+- **[Apache HTTP Server 中文文档](https://httpd.apache.org/docs/2.4/zh-cn/)** — 经典 Web 服务器与反向代理 2.4 官方中文手册
 - **[Envoy](https://www.envoyproxy.io/docs/envoy/latest/)** — 云原生高性能代理 `官方在线`
 - **[Istio](https://istio.io/latest/zh/docs/)** — Kubernetes 服务网格 `官方在线`
 - **[Linkerd](https://linkerd.io/2/overview/)** — 轻量级 Kubernetes 服务网格 `官方在线`
