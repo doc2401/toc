@@ -342,38 +342,228 @@ api reference 差异过大 所以拆分翻译 并且 选取 reference 作为测�
 
 ## 拆分文件
 
+创建分支
+
+```bash
+
+# 获取文件夹名
+## powershell 7 
+$d = Split-Path -Leaf $PWD
+## bash
+d=$(basename "$PWD")
+
+## 创建新分支
+git worktree add -b lang "../$d.lang" HEAD
+cd "../$d.lang"
+
+# 添加名为 `lang` 的**远端仓库地址**
+## powershell 7 
+$url = git remote get-url origin
+$url = $url -replace '\.git$', ''
+git remote add lang "$url.lang.git"
+## bash
+url=$(git remote get-url origin)
+url=${url%.git}
+git remote add lang "$url.lang.git"
+
+```
+
+重命名文件夹 00.*作为初始化目录
+
+```bash
+mv api 00.api
+git add .
+git commit -m "move: api -> 00.api"
+
+
+mv reference 00.reference
+git add .
+git commit -m "move: reference -> 00.reference"
+
+
+```
+ 
+
+抽离 html 文件
+```powershell
+
+#提取 html
+cd 00.api
+pw2401 dir-copy  -Extension html -DeleteOriginal 
+cd ../
+mv  00.api.copy 01.api.html
+# 提交 git 
+git add .
+git commit -m "move: 00.api(*.html) -> 01.api.html"
+
+#提取 html
+cd 00.reference
+pw2401 dir-copy  -Extension html -DeleteOriginal 
+cd ../
+mv  00.reference.copy 01.reference.html
+# 提交 git 
+git add .
+git commit -m "move: 00.reference(*.html) -> 01.reference.html"
 
 
 
 
 
 
+```
+
+## 开始翻译
+ 
+```bash
+
+
+## 默认 qwen3.5-9b 翻译
+spring-ai.2.0.0.lang\01.reference.html> translate2401.ps1
 
 
 
 
+2026-06-13 15:21:30 - INFO - Total time: 4826.54s
+2026-06-13 15:21:30 - INFO - ==================================================
+2026-06-13 15:21:30 - INFO - 任务完成总结
+2026-06-13 15:21:30 - INFO - ==================================================
+2026-06-13 15:21:30 - INFO - 总共处理文件: 118 个
+2026-06-13 15:21:30 - INFO - 总文件大小: 7.5MB
+2026-06-13 15:21:30 - INFO - API 调用次数: 7574 次
+2026-06-13 15:21:30 - INFO - API 调用全部成功
+2026-06-13 15:21:30 - INFO - 缓存统计: 当前大小 7456/1000000
+2026-06-13 15:21:30 - INFO - 缓存命中: 4551 次, 命中率: 8.4%
+2026-06-13 15:21:30 - INFO - ==================================================
 
 
 
+git add ../01.reference.html.qwen_qwen3.5-9b.202606131401/
+git add  ../01.reference.html.qwen_qwen3.5-9b.pageCache/
+
+git commit -m "qwen3.5-9b"
 
 
 
+## 使用 gemma-4-12b 翻译
+spring-ai.2.0.0.lang\01.reference.html> translate2401.ps1  -Model "google/gemma-4-12b"
+
+>>> 执行命令: python translate.py --api LM-Studio --model google/gemma-4-12b --dir . --pageCache
+
+
+2026-06-13 19:09:32 - INFO - Total time: 13280.16s
+2026-06-13 19:09:32 - INFO - ==================================================
+2026-06-13 19:09:32 - INFO - 任务完成总结
+2026-06-13 19:09:32 - INFO - ==================================================
+2026-06-13 19:09:32 - INFO - 总共处理文件: 118 个
+2026-06-13 19:09:32 - INFO - 总文件大小: 7.5MB
+2026-06-13 19:09:32 - INFO - API 调用次数: 7574 次
+2026-06-13 19:09:32 - INFO - API 调用全部成功
+2026-06-13 19:09:32 - INFO - 缓存统计: 当前大小 7456/1000000
+2026-06-13 19:09:32 - INFO - 缓存命中: 4551 次, 命中率: 8.4%
+2026-06-13 19:09:32 - INFO - ==================================================
 
 
 
+git add ../01.reference.html.google_gemma-4-12b.202606131528/
+git add  ../01.reference.html.google_gemma-4-12b.pageCache/
+
+git commit -m "gemma-4-12b"
 
 
+cd ../
 
 
+mv 01.reference.html.google_gemma-4-12b.202606131528 02.reference.html.google_gemma-4-12b.202606131528
+
+mv 01.reference.html.qwen_qwen3.5-9b.202606131401 02.reference.html.qwen_qwen3.5-9b.202606131401
 
 
+git add  01.reference.html.google_gemma-4-12b.202606131528/
+git add  01.reference.html.qwen_qwen3.5-9b.202606131401/
+
+git add  02.reference.html.google_gemma-4-12b.202606131528/
+git add  02.reference.html.qwen_qwen3.5-9b.202606131401/
 
 
+git commit -m "01 -> 02"
+
+```
+
+## 配置脚本
+
+```bash
+
+## 忽略翻译的日志文件
+echo "/*.log"  >> ".gitignore"
+
+# 下载 lang.json 配置文件
+curl -fsSL https://raw.githubusercontent.com/doc2401/actions/main/lang/lang.json -o lang.json
+
+# 创建目录并下载工作流文件
+mkdir -p .github/workflows && curl -fsSL https://raw.githubusercontent.com/doc2401/actions/main/lang/deploy-example.yml -o .github/workflows/lang-deploy.yml
+
+## 删除原来的静态网站的 action
+rm .github/workflows/static.yml
+
+```
 
 
+## 子目录
+
+忘记了 api 和 reference 应该放子目录 方便合并 
+
+比如 `00.api` 应该是 `00.api/api`
 
 
+## 配置 action
+`lang.json` 
+访问路径和 拼接地址
 
+zh
+zh/(访问地址) = "00.api/"(api的非html部分)+ "00.reference/"(reference的非html部分)+ "01.api.html/"(还未翻译的api)+ "02.reference.html.qwen_qwen3.5-9b.202606131401/"(reference已经翻译的部分)；
+
+因为 api 还没有翻译所以就先不添加api部分
+zh.qwen3.5-9b/(访问地址) = "00.reference/"(reference的非html部分)+ "02.reference.html.qwen_qwen3.5-9b.202606131401/"(reference已经翻译的部分)；
+
+```json
+[
+        {
+            "url": "zh/",
+            "path": [
+                "00.api/",
+                "00.reference/",
+                "01.api.html/",
+                "02.reference.html.qwen_qwen3.5-9b.202606131401/"
+            ]
+        },
+        {
+            "url": "zh.qwen3.5-9b/",
+            "path": [ 
+                "00.reference/", 
+                "02.reference.html.qwen_qwen3.5-9b.202606131401/"
+            ]
+        },
+]
+```
+
+
+## 部署
+
+` git push lang`推送分支等待部署后
+
+
+ 
+
+查看 原文
+https://doc.2401.xyz/spring-ai.2.0.0.lang/en/reference/api/prompt.html
+qwen的翻译
+https://doc.2401.xyz/spring-ai.2.0.0.lang/zh.qwen3.5-9b/reference/api/prompt.html
+gemma-4-12b 翻译
+https://doc.2401.xyz/spring-ai.2.0.0.lang/zh.gemma-4-12b/reference/api/prompt.html
+ 
+
+
+## 翻译javadoc
 
 
 
