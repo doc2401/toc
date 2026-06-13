@@ -23,6 +23,8 @@
 - [Rust 语言圣经 🌐](https://course.rs/) `中文社区`
 - [Node.js 🌐](https://nodejs.cn/api/) `官方在线`
 - [菜鸟教程 🌐](https://www.runoob.com/) `中文社区`
+- [Docs4dev 中文文档 🌐](https://www.docs4dev.com/) `中文社区`
+- [javadoc.io 🌐](https://www.javadoc.io/) `官方在线`
 - [查看更多语言...](/languages/languages.md) `参考分类`
 
 ## 🎨 前端与网页技术
