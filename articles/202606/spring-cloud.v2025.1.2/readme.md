@@ -97,9 +97,107 @@ git push lang
 
 ```
 
-split-spring-cloud-folders.ps1
+## 拆分 Spring Cloud 文档目录
+
+`split-spring-cloud-folders.ps1` 会遍历当前目录下所有 `spring-cloud-*`
+项目目录，再遍历它们的直接子目录；每个子目录移动到
+`00.<项目名>.<子目录名>\<项目名>\<子目录名>`。支持使用 `-WhatIf`
+预览和 `-Copy` 可选复制模式，默认是拆分并移动。例如：
+
+`spring-cloud-build/api` -> `00.spring-cloud-build.api/spring-cloud-build/api`
+
+`spring-cloud-build/reference` -> `00.spring-cloud-build.reference/spring-cloud-build/reference`
+
+不需要指定 `api`、`reference` 等子文件夹名称。先用 `-WhatIf` 预览，
+确认后执行；使用 `-Copy` 时保留原目录。默认处理当前目录，也可以使用
+`-RootPath` 指定其他目录，使用 `-ProjectPattern` 修改项目目录匹配规则：
+
+```powershell
+# 预览当前目录
+.\split-spring-cloud-folders.ps1 -WhatIf
+
+# 拆分并移动当前目录
+.\split-spring-cloud-folders.ps1
+
+# 拆分并复制当前目录
+.\split-spring-cloud-folders.ps1 -Copy
+
+# 指定要处理的目录
+.\split-spring-cloud-folders.ps1 -RootPath "D:\docs"
+
+# 指定目录并预览
+.\split-spring-cloud-folders.ps1 -RootPath "D:\docs" -WhatIf
+
+# 指定目录和项目匹配规则
+.\split-spring-cloud-folders.ps1 `
+  -RootPath "D:\docs" `
+  -ProjectPattern "spring-cloud-*"
+```
 
 
+
+```bash
+
+git add .
+git commit -m "split api/ reference/"
+```
+
+
+**拆分html**
+```powershell
+
+Get-ChildItem -Directory -Filter "00*" | ForEach-Object {
+    Set-Location $_.FullName
+    pw2401 dir-copy -Extension html -DeleteOriginal
+    Set-Location ..
+} 
+
+
+git add .
+git commit -m "split html files"
+
+
+
+Get-ChildItem -Directory -Filter "00.*.copy" | ForEach-Object {
+    $name = $_.Name -replace "^00\.", "01." -replace "\.copy$", ".html"
+    Rename-Item $_.FullName $name
+}
+
+
+git add .
+git commit -m "00.*.copy -> 01.*.html "
+
+
+git push lang
+
+
+
+```
+
+
+**github action**
+```bash
+
+
+
+
+## 忽略翻译的日志文件
+echo "/*.log"  >> ".gitignore"
+
+# 下载 lang.json 配置文件
+curl -fsSL https://raw.githubusercontent.com/doc2401/actions/main/lang/lang.json -o lang.json
+
+# 创建目录并下载工作流文件
+mkdir -p .github/workflows && curl -fsSL https://raw.githubusercontent.com/doc2401/actions/main/lang/deploy-example.yml -o .github/workflows/lang-deploy.yml
+
+## 删除原来的静态网站的 action
+rm .github/workflows/static.yml
+
+git add .
+git commit -m "github action"
+
+
+```
 
 ## end
 
