@@ -67,7 +67,7 @@
 直接在项目根目录下执行编译总入口脚本即可：
 
 ```bash
-./build-all-spring-data-docs.sh
+bash build-all-spring-data-docs.sh
 ```
 
 Antora Git 缓存目录默认使用
@@ -75,12 +75,12 @@ Antora Git 缓存目录默认使用
 设置环境变量：
 
 ```bash
-ANTORA_CACHE_DIR=/path/to/antora/content ./build-all-spring-data-docs.sh
+ANTORA_CACHE_DIR=/path/to/antora/content bash build-all-spring-data-docs.sh
 ```
 
 ### 3. 可复用性设计 (如何应对重新 checkout)
 
 本方案在设计上确保了**完全的可复用性**与**幂等性**，不需要人工介入官方代码的版本控制：
-*   **如果您重新 `checkout` 了干净的官方分支**，本地的 `antora-playbook.yml` 会被还原为未加标签的状态。再次运行 `./build-all-spring-data-docs.sh` 时，`patch-playbooks.js` 会自动检测并重新打上标签补丁。
+*   **如果您重新 `checkout` 了干净的官方分支**，本地的 `antora-playbook.yml` 会被还原为未加标签的状态。再次运行 `bash build-all-spring-data-docs.sh` 时，`patch-playbooks.js` 会自动检测并重新打上标签补丁。
 *   **如果您清理了 `node_modules` 缓存**，脚本在编译前会通过 `npm install` 自动下回官方干净的包，并立即用 `patch-toolchain.js` 重新实施 Node 24 兼容性修补。
 *   **如果您在任何外部目录运行**，脚本均能正确识别路径并把编译产物完美复制到统一的目录 `target/antora/site/` 下。

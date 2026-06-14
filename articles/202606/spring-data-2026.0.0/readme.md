@@ -9,13 +9,7 @@ https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-bom/20
 
 ## 脚本使用
 
-脚本需要在 Bash 环境中运行。开始前可以添加执行权限：
-
-```bash
-chmod +x collect-spring-data-docs.sh \
-  checkout-spring-data-projects.sh \
-  build-spring-data-docs.sh
-```
+脚本均作为普通文件保存，不需要添加执行权限，统一通过 `bash` 运行。
 
 ### 1. 收集构建产物
 
@@ -25,7 +19,7 @@ Reference/API 源路径和目标路径，创建目标目录并复制已经生成
  
  
 ```bash
-# ./collect-spring-data-docs.sh [JSON 配置] [源码/构建目录] [文档输出目录]
+# bash collect-spring-data-docs.sh [JSON 配置] [源码/构建目录] [文档输出目录]
 bash ./collect-spring-data-docs.sh spring-data-projects.json ./sources .
 ```
 
@@ -54,7 +48,7 @@ JDBC 和 R2DBC 共用 `spring-data-relational` 仓库，Envers 位于
 
  
 ```bash
-# ./checkout-spring-data-projects.sh [BOM 文件] [输出目录]
+# bash checkout-spring-data-projects.sh [BOM 文件] [输出目录]
 bash checkout-spring-data-projects.sh  spring-data-bom-2026.0.0.pom ./sources
 ```
 
@@ -86,7 +80,7 @@ Antora 与扩展版本固定在 `antora-tooling/package.json` 中，不依赖 `n
 构建，不复制文档产物：
 
 ```bash
-# ./build-spring-data-docs.sh [JSON 配置] [源码目录] [日志目录]
+# bash build-spring-data-docs.sh [JSON 配置] [源码目录] [日志目录]
 bash build-spring-data-docs.sh \
   spring-data-projects.json \
   ./sources \
@@ -114,16 +108,16 @@ Reference 和 API 的构建产物位置由 `spring-data-projects.json` 中各项
 
 ```bash
 # 1. 根据 BOM 克隆项目并分别切换到各模块对应的版本
-./checkout-spring-data-projects.sh spring-data-bom-2026.0.0.pom ./sources
+bash checkout-spring-data-projects.sh spring-data-bom-2026.0.0.pom ./sources
 
 # 2. 构建各项目的 Javadoc 和 Reference
-./build-spring-data-docs.sh \
+bash build-spring-data-docs.sh \
   spring-data-projects.json \
   ./sources \
   ./build-logs
 
 # 3. 创建目标目录并复制构建产物
-./collect-spring-data-docs.sh spring-data-projects.json ./sources .
+bash collect-spring-data-docs.sh spring-data-projects.json ./sources .
 ```
 
  

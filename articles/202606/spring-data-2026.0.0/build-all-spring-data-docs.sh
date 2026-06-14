@@ -90,11 +90,11 @@ echo "  使用 Maven 命令: ${maven_cmd[*]}"
 # 6. 运行 build-spring-data-docs.sh 构建各个项目的 Javadoc 和 Antora 文档
 echo "6. 开始编译各个项目文档..."
 # spring-data-projects.json 已按依赖顺序排列。
-"$script_dir/build-spring-data-docs.sh" "$config_file" "$source_dir" "$log_dir"
+bash "$script_dir/build-spring-data-docs.sh" "$config_file" "$source_dir" "$log_dir"
 
 # 7. 收集构建好的文档产物
 echo "7. 收集并整理编译好的 API Javadoc 与 Reference 网页到 target/antora/site ..."
-"$script_dir/collect-spring-data-docs.sh" "$config_file" "$source_dir" "$output_dir"
+bash "$script_dir/collect-spring-data-docs.sh" "$config_file" "$source_dir" "$output_dir"
 
 echo "================================================================="
 echo " 构建和收集全部成功！"
