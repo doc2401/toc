@@ -1,6 +1,13 @@
 - [返回首页](/)
 
-- **Spring 家族**
-
-  - [spring-data](/local/spring-data.md) 
-
+- **本地离线镜像**
+  - [Java 教程](/local/java.md)
+  - [JDK 核心文档](/local/jdk.md)
+  - [Jakarta EE](/local/jakarta-ee.md)
+  - [Spring 版本汇总](/local/spring-framework.md)
+  - [Spring Data 模块](/local/spring-data.md)
+  - [Spring Cloud 模块](/local/spring-cloud.md)
+  - [Spring AI 文档](/local/spring-ai.md)
+  - [Apache Kafka 文档](/local/kafka.md)
+  - [RabbitMQ 文档](/local/rabbitmq.md)
+  - [Blender 3D 建模](/local/blender.md)

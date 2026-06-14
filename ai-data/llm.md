@@ -39,4 +39,4 @@
 
 ### ☕ Spring AI 集成
 - **[Spring AI 官方文档](https://docs.spring.io/spring-ai/reference/)** — 模型、向量库、工具调用与 RAG `官方在线`
-- **[Spring AI 本地镜像](../../spring-ai.1.1.7/)** — Spring AI 1.1.7 文档 `本地镜像`
+- **[Spring AI 本地镜像](/local/spring-ai.md)** — Spring AI 1.1.7 本地镜像入口
