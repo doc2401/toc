@@ -144,15 +144,15 @@ bash collect-spring-data-docs.sh \
 
 ### 按项目构建
 
-`build-all-spring-data-docs.sh` 不传项目名时构建全部项目。传入一个或多个
+`build-spring-data-docs-with-patch.sh` 不传项目名时构建全部项目。传入一个或多个
 项目名时，只构建并收集指定项目：
 
 ```bash
 # 只构建 MongoDB
-bash build-all-spring-data-docs.sh spring-data-mongodb
+bash build-spring-data-docs-with-patch.sh spring-data-mongodb
 
 # 构建多个项目
-bash build-all-spring-data-docs.sh \
+bash build-spring-data-docs-with-patch.sh \
   spring-data-commons \
   spring-data-mongodb
 ```
