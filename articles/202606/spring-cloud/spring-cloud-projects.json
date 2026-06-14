@@ -4,87 +4,155 @@
     {
       "name": "spring-cloud-release",
       "repository": "https://github.com/spring-cloud/spring-cloud-release.git",
-      "tag": "v2025.1.2"
+      "tag": "v2025.1.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-netflix",
       "repository": "https://github.com/spring-cloud/spring-cloud-netflix.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-stream",
       "repository": "https://github.com/spring-cloud/spring-cloud-stream.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-config",
       "repository": "https://github.com/spring-cloud/spring-cloud-config.git",
-      "tag": "v5.0.4"
+      "tag": "v5.0.4",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-consul",
       "repository": "https://github.com/spring-cloud/spring-cloud-consul.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-circuitbreaker",
       "repository": "https://github.com/spring-cloud/spring-cloud-circuitbreaker.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-build",
       "repository": "https://github.com/spring-cloud/spring-cloud-build.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-gateway",
       "repository": "https://github.com/spring-cloud/spring-cloud-gateway.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-bus",
       "repository": "https://github.com/spring-cloud/spring-cloud-bus.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-contract",
       "repository": "https://github.com/spring-cloud/spring-cloud-contract.git",
-      "tag": "v5.0.3"
+      "tag": "v5.0.3",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-vault",
       "repository": "https://github.com/spring-cloud/spring-cloud-vault.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-task",
       "repository": "https://github.com/spring-cloud/spring-cloud-task.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-function",
       "repository": "https://github.com/spring-cloud/spring-cloud-function.git",
-      "tag": "v5.0.3"
+      "tag": "v5.0.3",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-kubernetes",
       "repository": "https://github.com/spring-cloud/spring-cloud-kubernetes.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-commons",
       "repository": "https://github.com/spring-cloud/spring-cloud-commons.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-openfeign",
       "repository": "https://github.com/spring-cloud/spring-cloud-openfeign.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     },
     {
       "name": "spring-cloud-zookeeper",
       "repository": "https://github.com/spring-cloud/spring-cloud-zookeeper.git",
-      "tag": "v5.0.2"
+      "tag": "v5.0.2",
+      "documentation": {
+        "reference": { "source": "docs/target/antora/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
     }
   ]
 }
