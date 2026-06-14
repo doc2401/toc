@@ -15,7 +15,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] >>> javadoc:3.12.0:aggregate (default-cli) > compile @ spring-data-neo4j >>>
 [INFO] 
 [INFO] --- sortpom:4.0.0:verify (default) @ spring-data-neo4j ---
-[INFO] Verifying file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/pom.xml
+[INFO] Verifying file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/pom.xml
 [INFO] 
 [INFO] --- license:5.0.0:check (validate) @ spring-data-neo4j ---
 [INFO] Checking licenses...
@@ -33,7 +33,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
 [INFO] 
 [INFO] --- jacoco:0.8.15:prepare-agent (prepare-agent) @ spring-data-neo4j ---
-[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/target/jacoco.exec,append=true
+[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/target/jacoco.exec,append=true
 [INFO] 
 [INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-neo4j ---
 [INFO] Copying 8 resources from src/main/resources to target/classes
@@ -50,8 +50,8 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-neo4j ---
 [INFO] Recompiling the module because of changed source code.
 [INFO] Compiling 245 source files with javac [debug parameters release 17] to target/classes
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/src/main/java/org/springframework/data/neo4j/repository/query/AbstractReactiveNeo4jQuery.java: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/src/main/java/org/springframework/data/neo4j/repository/query/AbstractReactiveNeo4jQuery.java uses unchecked or unsafe operations.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/src/main/java/org/springframework/data/neo4j/repository/query/AbstractReactiveNeo4jQuery.java: Recompile with -Xlint:unchecked for details.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/src/main/java/org/springframework/data/neo4j/repository/query/AbstractReactiveNeo4jQuery.java: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/src/main/java/org/springframework/data/neo4j/repository/query/AbstractReactiveNeo4jQuery.java uses unchecked or unsafe operations.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/src/main/java/org/springframework/data/neo4j/repository/query/AbstractReactiveNeo4jQuery.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] <<< javadoc:3.12.0:aggregate (default-cli) < compile @ spring-data-neo4j <<<
 [INFO] 
@@ -76,7 +76,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-neo4j ---
 [INFO] 
 [INFO] --- sortpom:4.0.0:verify (default) @ spring-data-neo4j ---
-[INFO] Verifying file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/pom.xml
+[INFO] Verifying file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/pom.xml
 [INFO] 
 [INFO] --- license:5.0.0:check (validate) @ spring-data-neo4j ---
 [INFO] Checking licenses...
@@ -98,7 +98,7 @@ Audit done.
 [INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-neo4j ---
 [INFO] 
 [INFO] --- sortpom:4.0.0:verify (default) @ spring-data-neo4j ---
-[INFO] Verifying file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/pom.xml
+[INFO] Verifying file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/pom.xml
 [INFO] 
 [INFO] --- license:5.0.0:check (validate) @ spring-data-neo4j ---
 [INFO] Checking licenses...
@@ -115,20 +115,20 @@ Audit done.
 [INFO] --- enforcer:3.6.3:enforce (enforce) @ spring-data-neo4j ---
 [INFO] 
 [INFO] --- jacoco:0.8.15:prepare-agent (prepare-agent) @ spring-data-neo4j ---
-[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/target/jacoco.exec,append=true
+[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/target/jacoco.exec,append=true
 [INFO] 
 [INFO] --- antrun:3.2.0:run (export-properties) @ spring-data-neo4j ---
 [INFO] Executing tasks
 [INFO] Executed tasks
-[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'flatten-maven-plugin.version=1.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'project.build.docs=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/target/docs' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.build.docs=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/target/docs' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'spring-javaformat.version=0.0.46' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'neo4j.version=5.26.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'argLine=-javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/target/jacoco.exec,append=true' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'argLine=-javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/target/jacoco.exec,append=true' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'servlet-api=6.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'checkstyle.skip=${skipTests}' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'skipIntegrationTests=${skipTests}' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -221,7 +221,7 @@ Audit done.
 [WARNING] Ant property 'archunit.version=1.4.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'validation=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'antora.playbook=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.playbook=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-neo4j/src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [INFO] 
 [INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-neo4j ---
 [INFO] Copying 1 resource from src/main/antora/resources/antora-resources to target/classes
@@ -290,7 +290,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-commons/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-commons/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'testcontainers=2.0.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'commons-io=2.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -309,7 +309,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'rxjava2=2.2.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'smallrye-mutiny=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'jacoco=0.8.15' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'spring-hateoas=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.

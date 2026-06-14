@@ -4,15 +4,15 @@
 
 - **Java 生态**
   - [Java 教程](/java/java.md)
-  - [JDK 核心文档](/local/jdk.md)
+  - [JDK 核心文档](/_local/jdk.md)
   - [Jakarta EE](/java/jakarta-ee.md)
 
 - **Spring 家族**
-  - [Spring 版本汇总](/local/spring-framework.md)
-  - [Framework 详细目录](/local/spring-framework-toc.md)
-  - [Boot 详细目录](/local/spring-boot-toc.md)
-  - [Spring Cloud & 其他](/local/spring-cloud.md)
-  - [Spring AI](/local/spring-ai.md)
+  - [Spring 版本汇总](/_local/spring-framework.md)
+  - [Framework 详细目录](/_local/spring-framework-toc.md)
+  - [Boot 详细目录](/_local/spring-boot-toc.md)
+  - [Spring Cloud & 其他](/_local/spring-cloud.md)
+  - [Spring AI](/_local/spring-ai.md)
 
 - **开发语言与后端生态**
   - [Node.js 与 JS/TS](/languages/nodejs.md)
@@ -34,8 +34,8 @@
 - **数据与中间件**
   - [数据库文档](/middleware/databases.md)
   - [中间件索引](/middleware/middleware.md)
-  - [Kafka](/local/kafka.md)
-  - [RabbitMQ](/local/rabbitmq.md)
+  - [Kafka](/_local/kafka.md)
+  - [RabbitMQ](/_local/rabbitmq.md)
 
 - **AI 与大数据工程**
   - [AI 与大模型生态](/ai-data/llm.md)
@@ -52,4 +52,4 @@
   - [Blender](/graphics/blender.md)
 
 - **文章与归档**
-  - [我的文章](/articles/README.md)
+  - [我的文章](/_articles/README.md)

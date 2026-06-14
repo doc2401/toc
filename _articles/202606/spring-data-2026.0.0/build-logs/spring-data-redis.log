@@ -27,23 +27,23 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-redis ---
 [INFO] Recompiling the module because of changed source code.
 [INFO] Compiling 598 source files with javac [debug parameters release 17] to target/classes
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/aot/RedisRuntimeHints.java:[82,22] serialization() in org.springframework.aot.hint.RuntimeHints has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/aot/RedisRuntimeHints.java:[83,33] org.springframework.aot.hint.JavaSerializationHint in org.springframework.aot.hint has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/connection/jedis/JedisConnection.java:[315,111] non-varargs call of varargs method with inexact argument type for last parameter;
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/aot/RedisRuntimeHints.java:[82,22] serialization() in org.springframework.aot.hint.RuntimeHints has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/aot/RedisRuntimeHints.java:[83,33] org.springframework.aot.hint.JavaSerializationHint in org.springframework.aot.hint has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/connection/jedis/JedisConnection.java:[315,111] non-varargs call of varargs method with inexact argument type for last parameter;
   cast to java.lang.Object for a varargs call
   cast to java.lang.Object[] for a non-varargs call and to suppress this warning
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/serializer/DefaultRedisMessageConverters.java:[147,65] org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer in org.springframework.data.redis.serializer has been deprecated and marked for removal
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/connection/RedisConnection.java: Some input files use or override a deprecated API.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/connection/RedisConnection.java: Recompile with -Xlint:deprecation for details.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/serializer/RedisSerializer.java: Some input files use unchecked or unsafe operations.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/serializer/RedisSerializer.java: Recompile with -Xlint:unchecked for details.
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/serializer/DefaultRedisMessageConverters.java:[147,65] org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer in org.springframework.data.redis.serializer has been deprecated and marked for removal
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/connection/RedisConnection.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/connection/RedisConnection.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/serializer/RedisSerializer.java: Some input files use unchecked or unsafe operations.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/serializer/RedisSerializer.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] <<< javadoc:3.12.0:aggregate (default-cli) < compile @ spring-data-redis <<<
 [INFO] 
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate (default-cli) @ spring-data-redis ---
 [WARNING] Javadoc Warnings
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/core/RedisTemplate.java:833: warning: invalid usage of tag {@value 0
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-redis/src/main/java/org/springframework/data/redis/core/RedisTemplate.java:833: warning: invalid usage of tag {@value 0
 [WARNING] * @param timeToLive expiration for the restored key, or {@value 0} for no expiration.
 [WARNING] ^
 [WARNING] 1 warning
@@ -79,7 +79,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'documentation.baseurl=https://docs.spring.io' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'hamcrest=1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'aspectj=1.9.25.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-redis/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-redis/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'cdi=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'junit5=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'webbeans=4.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -144,7 +144,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'junit=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'reactor=2025.0.6' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'micrometer-tracing=1.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-redis' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-redis' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'jackson3=3.1.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'netty=4.2.10.Final' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'antora.javadoc-artifactId=spring-data-redis' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -209,7 +209,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-commons/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-commons/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'testcontainers=2.0.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'commons-io=2.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -228,7 +228,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'rxjava2=2.2.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'smallrye-mutiny=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'jacoco=0.8.15' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'spring-hateoas=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.

@@ -29,55 +29,55 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-elasticsearch ---
 [INFO] Recompiling the module because of changed source code.
 [INFO] Compiling 409 source files with javac [debug parameters release 17] to target/classes
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/DefaultClientConfiguration.java:[99,43] getHostNameVerifier() in org.springframework.data.elasticsearch.client.ClientConfiguration has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/rest_client/RestClients.java:[68,44] getHostNameVerifier() in org.springframework.data.elasticsearch.client.ClientConfiguration has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchLegacyRestClientConfiguration.java:[72,24] org.springframework.data.elasticsearch.client.elc.rest_client.RestClients in org.springframework.data.elasticsearch.client.elc.rest_client has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchLegacyRestClientConfiguration.java:[88,44] getElasticsearchTransport(org.elasticsearch.client.RestClient,java.lang.String,@org.jspecify.annotations.Nullable co.elastic.clients.transport.TransportOptions,co.elastic.clients.json.JsonpMapper) in org.springframework.data.elasticsearch.client.elc.ElasticsearchClients has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchLegacyRestClientConfiguration.java:[70,24] org.springframework.data.elasticsearch.client.elc.rest_client.RestClients in org.springframework.data.elasticsearch.client.elc.rest_client has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchLegacyRestClientConfiguration.java:[86,44] getElasticsearchTransport(org.elasticsearch.client.RestClient,java.lang.String,@org.jspecify.annotations.Nullable co.elastic.clients.transport.TransportOptions,co.elastic.clients.json.JsonpMapper) in org.springframework.data.elasticsearch.client.elc.ElasticsearchClients has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/aot/ElasticsearchClientRuntimeHints.java:[46,30] serialization() in org.springframework.aot.hint.RuntimeHints has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/convert/MappingElasticsearchConverter.java:[106,69] org.springframework.context.expression.MapAccessor in org.springframework.context.expression has been deprecated and marked for removal
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchClients.java: Some input files use or override a deprecated API.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchClients.java: Recompile with -Xlint:deprecation for details.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/RequestConverter.java: Some input files use unchecked or unsafe operations.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/RequestConverter.java: Recompile with -Xlint:unchecked for details.
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/DefaultClientConfiguration.java:[99,43] getHostNameVerifier() in org.springframework.data.elasticsearch.client.ClientConfiguration has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/rest_client/RestClients.java:[68,44] getHostNameVerifier() in org.springframework.data.elasticsearch.client.ClientConfiguration has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchLegacyRestClientConfiguration.java:[72,24] org.springframework.data.elasticsearch.client.elc.rest_client.RestClients in org.springframework.data.elasticsearch.client.elc.rest_client has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchLegacyRestClientConfiguration.java:[88,44] getElasticsearchTransport(org.elasticsearch.client.RestClient,java.lang.String,@org.jspecify.annotations.Nullable co.elastic.clients.transport.TransportOptions,co.elastic.clients.json.JsonpMapper) in org.springframework.data.elasticsearch.client.elc.ElasticsearchClients has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchLegacyRestClientConfiguration.java:[70,24] org.springframework.data.elasticsearch.client.elc.rest_client.RestClients in org.springframework.data.elasticsearch.client.elc.rest_client has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchLegacyRestClientConfiguration.java:[86,44] getElasticsearchTransport(org.elasticsearch.client.RestClient,java.lang.String,@org.jspecify.annotations.Nullable co.elastic.clients.transport.TransportOptions,co.elastic.clients.json.JsonpMapper) in org.springframework.data.elasticsearch.client.elc.ElasticsearchClients has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/aot/ElasticsearchClientRuntimeHints.java:[46,30] serialization() in org.springframework.aot.hint.RuntimeHints has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/convert/MappingElasticsearchConverter.java:[106,69] org.springframework.context.expression.MapAccessor in org.springframework.context.expression has been deprecated and marked for removal
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchClients.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchClients.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/RequestConverter.java: Some input files use unchecked or unsafe operations.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/RequestConverter.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] <<< javadoc:3.12.0:aggregate (default-cli) < compile @ spring-data-elasticsearch <<<
 [INFO] 
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate (default-cli) @ spring-data-elasticsearch ---
 [WARNING] Javadoc Warnings
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/ReactiveDocumentOperations.java:143: warning: invalid usage of tag {@link reactor.core.publisher.Flux#bufferTimeout(int, java.time * .Duration)
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/ReactiveDocumentOperations.java:143: warning: invalid usage of tag {@link reactor.core.publisher.Flux#bufferTimeout(int, java.time * .Duration)
 [WARNING] * timeout of 200 ms, see {@link reactor.core.publisher.Flux#bufferTimeout(int, java.time * .Duration)} and then sent
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchClients.java:170: warning: invalid input: ''
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchClients.java:170: warning: invalid input: ''
 [WARNING] * @return the {@link ElasticsearchClient
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchClients.java:275: warning: invalid input: ''
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ElasticsearchClients.java:275: warning: invalid input: ''
 [WARNING] * @return the {@link ElasticsearchClient
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/query/FetchSourceFilterBuilder.java:23: warning: unknown tag. Mistyped @author or an unregistered custom tag?
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/query/FetchSourceFilterBuilder.java:23: warning: unknown tag. Mistyped @author or an unregistered custom tag?
 [WARNING] * @Author Jon Tsiros
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/ReactiveDocumentOperations.java:143: warning: invalid usage of tag {@link reactor.core.publisher.Flux#bufferTimeout(int, java.time * .Duration)
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/core/ReactiveDocumentOperations.java:143: warning: invalid usage of tag {@link reactor.core.publisher.Flux#bufferTimeout(int, java.time * .Duration)
 [WARNING] * timeout of 200 ms, see {@link reactor.core.publisher.Flux#bufferTimeout(int, java.time * .Duration)} and then sent
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchTemplate.java:767: warning: invalid usage of tag {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchTemplate.java:767: warning: invalid usage of tag {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)
 [WARNING] * Callback interface to be used with {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)} for operating
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchTemplate.java:767: warning: invalid usage of tag {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchTemplate.java:767: warning: invalid usage of tag {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)
 [WARNING] * Callback interface to be used with {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)} for operating
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchTemplate.java:767: warning: invalid usage of tag {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchTemplate.java:767: warning: invalid usage of tag {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)
 [WARNING] * Callback interface to be used with {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)} for operating
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchTemplate.java:767: warning: invalid usage of tag {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchTemplate.java:767: warning: invalid usage of tag {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)
 [WARNING] * Callback interface to be used with {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)} for operating
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchTemplate.java:767: warning: invalid usage of tag {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchTemplate.java:767: warning: invalid usage of tag {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)
 [WARNING] * Callback interface to be used with {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)} for operating
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchTemplate.java:767: warning: invalid usage of tag {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/src/main/java/org/springframework/data/elasticsearch/client/elc/ReactiveElasticsearchTemplate.java:767: warning: invalid usage of tag {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)
 [WARNING] * Callback interface to be used with {@link #execute(ReactiveElasticsearchTemplate.ClientCallback<>)} for operating
 [WARNING] ^
 [WARNING] 11 warnings
@@ -115,7 +115,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'documentation.baseurl=https://docs.spring.io' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'hamcrest=1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'aspectj=1.9.25.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'cdi=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'jsonassert=1.5.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'junit5=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -179,7 +179,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'junit=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'reactor=2025.0.6' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'micrometer-tracing=1.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-elasticsearch' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'jackson3=3.1.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'antora.javadoc-artifactId=spring-data-elasticsearch' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -246,7 +246,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-commons/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-commons/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'testcontainers=2.0.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'commons-io=2.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -265,7 +265,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'rxjava2=2.2.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'smallrye-mutiny=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'jacoco=0.8.15' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'spring-hateoas=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.

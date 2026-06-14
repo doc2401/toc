@@ -51,14 +51,14 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-relational ---
 [INFO] Recompiling the module because of changed source code.
 [INFO] Compiling 291 source files with javac [debug parameters release 17] to target/classes
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/conversion/DocumentPropertyAccessor.java:[32,40] org.springframework.context.expression.MapAccessor in org.springframework.context.expression has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/conversion/DocumentPropertyAccessor.java:[34,22] org.springframework.context.expression.MapAccessor in org.springframework.context.expression has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/mapping/BasicRelationalPersistentEntity.java:[160,30] getIdColumn() in org.springframework.data.relational.core.mapping.RelationalPersistentEntity has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/mapping/EmbeddedRelationalPersistentEntity.java:[58,30] getIdColumn() in org.springframework.data.relational.core.mapping.RelationalPersistentEntity has been deprecated and marked for removal
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/mapping/event/WithEntity.java: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/mapping/event/WithEntity.java uses or overrides a deprecated API.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/mapping/event/WithEntity.java: Recompile with -Xlint:deprecation for details.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/conversion/BatchedActions.java: Some input files use unchecked or unsafe operations.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/conversion/BatchedActions.java: Recompile with -Xlint:unchecked for details.
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/conversion/DocumentPropertyAccessor.java:[32,40] org.springframework.context.expression.MapAccessor in org.springframework.context.expression has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/conversion/DocumentPropertyAccessor.java:[34,22] org.springframework.context.expression.MapAccessor in org.springframework.context.expression has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/mapping/BasicRelationalPersistentEntity.java:[160,30] getIdColumn() in org.springframework.data.relational.core.mapping.RelationalPersistentEntity has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/mapping/EmbeddedRelationalPersistentEntity.java:[58,30] getIdColumn() in org.springframework.data.relational.core.mapping.RelationalPersistentEntity has been deprecated and marked for removal
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/mapping/event/WithEntity.java: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/mapping/event/WithEntity.java uses or overrides a deprecated API.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/mapping/event/WithEntity.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/conversion/BatchedActions.java: Some input files use unchecked or unsafe operations.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/java/org/springframework/data/relational/core/conversion/BatchedActions.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 [INFO] Forking Spring Data JDBC 4.1.0
@@ -71,24 +71,24 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] 
 [INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-jdbc ---
 [INFO] Options for KOTLIN DAEMON: CompilationOptions(compilerMode=NON_INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=null, generateCompilerRefIndex=false)
-[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/kotlin/org/springframework/data/jdbc/core/JdbcAggregateOperationsExtensions.kt:85:5 'fun <T : Any!> findAll(domainType: Class<T!>!, pageable: Pageable!): Page<T & Any>!' is deprecated. Deprecated in Java.
-[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/kotlin/org/springframework/data/jdbc/core/JdbcAggregateOperationsExtensions.kt:107:5 'fun <T : Any!> findAll(query: Query!, domainType: Class<T!>!, pageable: Pageable!): Page<T & Any>!' is deprecated. Deprecated in Java.
+[WARNING] file:///workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/kotlin/org/springframework/data/jdbc/core/JdbcAggregateOperationsExtensions.kt:85:5 'fun <T : Any!> findAll(domainType: Class<T!>!, pageable: Pageable!): Page<T & Any>!' is deprecated. Deprecated in Java.
+[WARNING] file:///workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/kotlin/org/springframework/data/jdbc/core/JdbcAggregateOperationsExtensions.kt:107:5 'fun <T : Any!> findAll(query: Query!, domainType: Class<T!>!, pageable: Pageable!): Page<T & Any>!' is deprecated. Deprecated in Java.
 [INFO] 
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-jdbc ---
 [INFO] Recompiling the module because of changed dependency.
 [INFO] Compiling 146 source files with javac [debug parameters release 17] to target/classes
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/convert/DefaultJdbcTypeFactory.java:[57,66] org.springframework.data.jdbc.core.convert.JdbcArrayColumns in org.springframework.data.jdbc.core.convert has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[69,82] org.springframework.data.jdbc.repository.config.DialectResolver in org.springframework.data.jdbc.repository.config has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[69,98] org.springframework.data.jdbc.repository.config.DialectResolver.JdbcDialectProvider in org.springframework.data.jdbc.repository.config.DialectResolver has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[70,87] org.springframework.data.jdbc.repository.config.DialectResolver in org.springframework.data.jdbc.repository.config has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[70,103] org.springframework.data.jdbc.repository.config.DialectResolver.JdbcDialectProvider in org.springframework.data.jdbc.repository.config.DialectResolver has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/JdbcPostgresDialect.java:[56,74] INSTANCE in org.springframework.data.relational.core.dialect.PostgresDialect has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/repository/support/JdbcRepositoryFactoryBean.java:[201,42] setEntityCallbacks(org.springframework.data.mapping.callback.EntityCallbacks) in org.springframework.data.jdbc.repository.support.JdbcRepositoryFactory has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/repository/support/JdbcRepositoryFactoryBean.java:[204,34] setApplicationEventPublisher(org.springframework.context.ApplicationEventPublisher) in org.springframework.data.jdbc.repository.support.JdbcRepositoryFactory has been deprecated and marked for removal
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/convert/Jsr310TimestampBasedConverters.java: Some input files use or override a deprecated API.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/convert/Jsr310TimestampBasedConverters.java: Recompile with -Xlint:deprecation for details.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/JdbcAggregateChangeExecutionContext.java: Some input files use unchecked or unsafe operations.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/JdbcAggregateChangeExecutionContext.java: Recompile with -Xlint:unchecked for details.
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/convert/DefaultJdbcTypeFactory.java:[57,66] org.springframework.data.jdbc.core.convert.JdbcArrayColumns in org.springframework.data.jdbc.core.convert has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[69,82] org.springframework.data.jdbc.repository.config.DialectResolver in org.springframework.data.jdbc.repository.config has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[69,98] org.springframework.data.jdbc.repository.config.DialectResolver.JdbcDialectProvider in org.springframework.data.jdbc.repository.config.DialectResolver has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[70,87] org.springframework.data.jdbc.repository.config.DialectResolver in org.springframework.data.jdbc.repository.config has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[70,103] org.springframework.data.jdbc.repository.config.DialectResolver.JdbcDialectProvider in org.springframework.data.jdbc.repository.config.DialectResolver has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/JdbcPostgresDialect.java:[56,74] INSTANCE in org.springframework.data.relational.core.dialect.PostgresDialect has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/repository/support/JdbcRepositoryFactoryBean.java:[201,42] setEntityCallbacks(org.springframework.data.mapping.callback.EntityCallbacks) in org.springframework.data.jdbc.repository.support.JdbcRepositoryFactory has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/repository/support/JdbcRepositoryFactoryBean.java:[204,34] setApplicationEventPublisher(org.springframework.context.ApplicationEventPublisher) in org.springframework.data.jdbc.repository.support.JdbcRepositoryFactory has been deprecated and marked for removal
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/convert/Jsr310TimestampBasedConverters.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/convert/Jsr310TimestampBasedConverters.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/JdbcAggregateChangeExecutionContext.java: Some input files use unchecked or unsafe operations.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/JdbcAggregateChangeExecutionContext.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 [INFO] Forking Spring Data R2DBC 4.1.0
@@ -97,7 +97,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-r2dbc ---
 [INFO] 
 [INFO] --- jacoco:0.8.15:prepare-agent (jacoco-initialize) @ spring-data-r2dbc ---
-[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/jacoco.exec
+[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/jacoco.exec
 [INFO] 
 [INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-r2dbc ---
 [INFO] Copying 4 resources from src/main/resources to target/classes
@@ -111,13 +111,13 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-r2dbc ---
 [INFO] Recompiling the module because of changed dependency.
 [INFO] Compiling 93 source files with javac [debug parameters release 17] to target/classes
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/aot/R2dbcRuntimeHints.java:[52,101] PUBLIC_CLASSES in org.springframework.aot.hint.MemberCategory has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/core/MapBindParameterSource.java:[36,1] deprecated item is not annotated with @Deprecated
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/dialect/PostgresDialect.java:[49,97] INSTANCE in org.springframework.data.relational.core.dialect.PostgresDialect has been deprecated and marked for removal
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Some input files use or override a deprecated API.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Recompile with -Xlint:deprecation for details.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Some input files use unchecked or unsafe operations.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Recompile with -Xlint:unchecked for details.
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/aot/R2dbcRuntimeHints.java:[52,101] PUBLIC_CLASSES in org.springframework.aot.hint.MemberCategory has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/core/MapBindParameterSource.java:[36,1] deprecated item is not annotated with @Deprecated
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/dialect/PostgresDialect.java:[49,97] INSTANCE in org.springframework.data.relational.core.dialect.PostgresDialect has been deprecated and marked for removal
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Some input files use unchecked or unsafe operations.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 [INFO] Forking Spring Data JDBC - Distribution 4.1.0
@@ -210,7 +210,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'cdi=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'kotlin.jvm.target=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'jakarta-annotation-api=2.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'project.build.sourceEncoding=UTF-8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -267,7 +267,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'archunit.version=1.4.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [INFO] 
 [INFO] -------< org.springframework.data:spring-data-jdbc-distribution >-------
 [INFO] Building Spring Data JDBC - Distribution 4.1.0                     [2/2]
@@ -315,11 +315,11 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'cdi=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'kotlin.jvm.target=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'jakarta-annotation-api=2.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'project.build.sourceEncoding=UTF-8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'antora.playbook=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/../src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.playbook=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/../src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'spring-antora=0.0.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'r2dbc-mariadb.version=1.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -372,12 +372,12 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'archunit.version=1.4.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/..' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/..' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [INFO] 
 [INFO] --- resources:3.5.0:resources (default) @ spring-data-jdbc-distribution ---
 [INFO] Copying 1 resource from ../src/main/antora/resources/antora-resources to target/classes
-[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/src/main/antora/resources
-[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/src/main/antora/resources
+[INFO] skip non existing resourceDirectory /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/src/main/antora/resources
+[INFO] skip non existing resourceDirectory /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/src/main/antora/resources
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary for Spring Data Relational Parent 4.1.0:
 [INFO] 
@@ -425,21 +425,21 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-relational-parent ---
-[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/src/jmh/java added.
+[INFO] Test Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/src/jmh/java added.
 [INFO] 
 [INFO] --- compiler:3.15.0:testCompile (java-test-compile) @ spring-data-relational-parent ---
 [INFO] Skipped
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-relational-parent ---
-[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/src/main/kotlin added.
+[INFO] Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/src/main/kotlin added.
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-relational-parent ---
 [INFO] 
 [INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-relational-parent ---
 [INFO] Executing tasks
-[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/target/generated-docs does not exist.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/target/generated-docs/index.pdf to copy.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/target/generated-docs/index.epub to copy.
+[ERROR]      [copy] Warning: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/target/generated-docs/index.epub to copy.
 [INFO] Executed tasks
 [INFO] 
 [INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-relational-parent >>>
@@ -453,7 +453,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] 
 [INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-relational-parent ---
 [INFO] Executing tasks
-[INFO]      [copy] Copying 1121 files to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/target/antora/modules/ROOT/assets/attachments/api/java
+[INFO]      [copy] Copying 1121 files to /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/target/antora/modules/ROOT/assets/attachments/api/java
 [INFO] Executed tasks
 [INFO] 
 [INFO] ----------< org.springframework.data:spring-data-relational >-----------
@@ -476,7 +476,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] Nothing to compile - all classes are up to date.
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-relational ---
-[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/jmh/java added.
+[INFO] Test Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/jmh/java added.
 [INFO] 
 [INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-data-relational ---
 [INFO] Not copying test resources
@@ -489,19 +489,19 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] Skipped
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-relational ---
-[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/kotlin added.
+[INFO] Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/src/main/kotlin added.
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-relational ---
 [INFO] 
 [INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-relational ---
 [INFO] Executing tasks
-[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/target/generated-docs does not exist.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/target/generated-docs/index.pdf to copy.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/target/generated-docs/index.epub to copy.
+[ERROR]      [copy] Warning: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/target/generated-docs/index.epub to copy.
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- jar:3.5.0:jar (default-jar) @ spring-data-relational ---
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/target/spring-data-relational-4.1.0.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/target/spring-data-relational-4.1.0.jar
 [INFO] 
 [INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-relational >>>
 [INFO] 
@@ -511,7 +511,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] 
 [INFO] 
 [INFO] --- source:3.4.0:jar (attach-sources) @ spring-data-relational ---
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/target/spring-data-relational-4.1.0-sources.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-relational/target/spring-data-relational-4.1.0-sources.jar
 [INFO] 
 [INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-relational ---
 [INFO] Executing tasks
@@ -536,21 +536,21 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-jdbc ---
 [INFO] Recompiling the module because of changed dependency.
 [INFO] Compiling 146 source files with javac [debug parameters release 17] to target/classes
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/convert/DefaultJdbcTypeFactory.java:[57,66] org.springframework.data.jdbc.core.convert.JdbcArrayColumns in org.springframework.data.jdbc.core.convert has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[69,82] org.springframework.data.jdbc.repository.config.DialectResolver in org.springframework.data.jdbc.repository.config has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[69,98] org.springframework.data.jdbc.repository.config.DialectResolver.JdbcDialectProvider in org.springframework.data.jdbc.repository.config.DialectResolver has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[70,87] org.springframework.data.jdbc.repository.config.DialectResolver in org.springframework.data.jdbc.repository.config has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[70,103] org.springframework.data.jdbc.repository.config.DialectResolver.JdbcDialectProvider in org.springframework.data.jdbc.repository.config.DialectResolver has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/JdbcPostgresDialect.java:[56,74] INSTANCE in org.springframework.data.relational.core.dialect.PostgresDialect has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/repository/support/JdbcRepositoryFactoryBean.java:[201,42] setEntityCallbacks(org.springframework.data.mapping.callback.EntityCallbacks) in org.springframework.data.jdbc.repository.support.JdbcRepositoryFactory has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/repository/support/JdbcRepositoryFactoryBean.java:[204,34] setApplicationEventPublisher(org.springframework.context.ApplicationEventPublisher) in org.springframework.data.jdbc.repository.support.JdbcRepositoryFactory has been deprecated and marked for removal
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/convert/Jsr310TimestampBasedConverters.java: Some input files use or override a deprecated API.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/convert/Jsr310TimestampBasedConverters.java: Recompile with -Xlint:deprecation for details.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/JdbcAggregateChangeExecutionContext.java: Some input files use unchecked or unsafe operations.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/JdbcAggregateChangeExecutionContext.java: Recompile with -Xlint:unchecked for details.
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/convert/DefaultJdbcTypeFactory.java:[57,66] org.springframework.data.jdbc.core.convert.JdbcArrayColumns in org.springframework.data.jdbc.core.convert has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[69,82] org.springframework.data.jdbc.repository.config.DialectResolver in org.springframework.data.jdbc.repository.config has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[69,98] org.springframework.data.jdbc.repository.config.DialectResolver.JdbcDialectProvider in org.springframework.data.jdbc.repository.config.DialectResolver has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[70,87] org.springframework.data.jdbc.repository.config.DialectResolver in org.springframework.data.jdbc.repository.config has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/DialectResolver.java:[70,103] org.springframework.data.jdbc.repository.config.DialectResolver.JdbcDialectProvider in org.springframework.data.jdbc.repository.config.DialectResolver has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/dialect/JdbcPostgresDialect.java:[56,74] INSTANCE in org.springframework.data.relational.core.dialect.PostgresDialect has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/repository/support/JdbcRepositoryFactoryBean.java:[201,42] setEntityCallbacks(org.springframework.data.mapping.callback.EntityCallbacks) in org.springframework.data.jdbc.repository.support.JdbcRepositoryFactory has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/repository/support/JdbcRepositoryFactoryBean.java:[204,34] setApplicationEventPublisher(org.springframework.context.ApplicationEventPublisher) in org.springframework.data.jdbc.repository.support.JdbcRepositoryFactory has been deprecated and marked for removal
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/convert/Jsr310TimestampBasedConverters.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/convert/Jsr310TimestampBasedConverters.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/JdbcAggregateChangeExecutionContext.java: Some input files use unchecked or unsafe operations.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/java/org/springframework/data/jdbc/core/JdbcAggregateChangeExecutionContext.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-jdbc ---
-[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/jmh/java added.
+[INFO] Test Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/jmh/java added.
 [INFO] 
 [INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-data-jdbc ---
 [INFO] Not copying test resources
@@ -563,19 +563,19 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] Skipped
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-jdbc ---
-[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/kotlin added.
+[INFO] Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/src/main/kotlin added.
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-jdbc ---
 [INFO] 
 [INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-jdbc ---
 [INFO] Executing tasks
-[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/target/generated-docs does not exist.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/target/generated-docs/index.pdf to copy.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/target/generated-docs/index.epub to copy.
+[ERROR]      [copy] Warning: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/target/generated-docs/index.epub to copy.
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- jar:3.5.0:jar (default-jar) @ spring-data-jdbc ---
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/target/spring-data-jdbc-4.1.0.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/target/spring-data-jdbc-4.1.0.jar
 [INFO] 
 [INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-jdbc >>>
 [INFO] 
@@ -585,7 +585,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] 
 [INFO] 
 [INFO] --- source:3.4.0:jar (attach-sources) @ spring-data-jdbc ---
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/target/spring-data-jdbc-4.1.0-sources.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc/target/spring-data-jdbc-4.1.0-sources.jar
 [INFO] 
 [INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-jdbc ---
 [INFO] Executing tasks
@@ -599,7 +599,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-r2dbc ---
 [INFO] 
 [INFO] --- jacoco:0.8.15:prepare-agent (jacoco-initialize) @ spring-data-r2dbc ---
-[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/jacoco.exec
+[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/jacoco.exec
 [INFO] 
 [INFO] --- dependency:3.10.0:unpack-dependencies (unpack-shared-resources) @ spring-data-r2dbc ---
 [INFO] 
@@ -616,16 +616,16 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-r2dbc ---
 [INFO] Recompiling the module because of changed dependency.
 [INFO] Compiling 93 source files with javac [debug parameters release 17] to target/classes
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/aot/R2dbcRuntimeHints.java:[52,101] PUBLIC_CLASSES in org.springframework.aot.hint.MemberCategory has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/core/MapBindParameterSource.java:[36,1] deprecated item is not annotated with @Deprecated
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/dialect/PostgresDialect.java:[49,97] INSTANCE in org.springframework.data.relational.core.dialect.PostgresDialect has been deprecated and marked for removal
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Some input files use or override a deprecated API.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Recompile with -Xlint:deprecation for details.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Some input files use unchecked or unsafe operations.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Recompile with -Xlint:unchecked for details.
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/aot/R2dbcRuntimeHints.java:[52,101] PUBLIC_CLASSES in org.springframework.aot.hint.MemberCategory has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/core/MapBindParameterSource.java:[36,1] deprecated item is not annotated with @Deprecated
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/dialect/PostgresDialect.java:[49,97] INSTANCE in org.springframework.data.relational.core.dialect.PostgresDialect has been deprecated and marked for removal
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Some input files use unchecked or unsafe operations.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/java/org/springframework/data/r2dbc/config/AbstractR2dbcConfiguration.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-r2dbc ---
-[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/jmh/java added.
+[INFO] Test Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/jmh/java added.
 [INFO] 
 [INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-data-r2dbc ---
 [INFO] Not copying test resources
@@ -638,44 +638,44 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] Skipped
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-r2dbc ---
-[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/kotlin added.
+[INFO] Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/src/main/kotlin added.
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-r2dbc ---
 [INFO] 
 [INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-r2dbc ---
 [INFO] Executing tasks
-[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/generated-docs does not exist.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/generated-docs/index.pdf to copy.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/generated-docs/index.epub to copy.
+[ERROR]      [copy] Warning: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/generated-docs/index.epub to copy.
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- jar:3.5.0:jar (default-jar) @ spring-data-r2dbc ---
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/spring-data-r2dbc-4.1.0.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/spring-data-r2dbc-4.1.0.jar
 [INFO] 
 [INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-r2dbc >>>
 [INFO] 
 [INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-r2dbc ---
 [INFO] 
 [INFO] --- jacoco:0.8.15:prepare-agent (jacoco-initialize) @ spring-data-r2dbc ---
-[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/jacoco.exec
+[INFO] argLine set to -javaagent:/home/codespace/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/jacoco.exec
 [INFO] 
 [INFO] <<< source:3.4.0:jar (attach-sources) < generate-sources @ spring-data-r2dbc <<<
 [INFO] 
 [INFO] 
 [INFO] --- source:3.4.0:jar (attach-sources) @ spring-data-r2dbc ---
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/spring-data-r2dbc-4.1.0-sources.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/spring-data-r2dbc-4.1.0-sources.jar
 [INFO] 
 [INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-r2dbc ---
 [INFO] Executing tasks
-[INFO]      [copy] Copying 249 files to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/antora/modules/ROOT/assets/attachments/api/java
+[INFO]      [copy] Copying 249 files to /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/antora/modules/ROOT/assets/attachments/api/java
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- assembly:3.8.0:single (docs) @ spring-data-r2dbc ---
-[INFO] Reading assembly descriptor: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/shared-resources/assemblies/docs.xml
-[INFO] Copying files to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/spring-data-r2dbc-4.1.0-docs
-[INFO] 249 files copied to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/spring-data-r2dbc-4.1.0-docs
-[WARNING] Assembly file: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/spring-data-r2dbc-4.1.0-docs is not a regular file (it may be a directory). It cannot be attached to the project build for installation or deployment.
-[INFO] Building zip: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/spring-data-r2dbc-4.1.0-docs.zip
+[INFO] Reading assembly descriptor: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/shared-resources/assemblies/docs.xml
+[INFO] Copying files to /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/spring-data-r2dbc-4.1.0-docs
+[INFO] 249 files copied to /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/spring-data-r2dbc-4.1.0-docs
+[WARNING] Assembly file: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/spring-data-r2dbc-4.1.0-docs is not a regular file (it may be a directory). It cannot be attached to the project build for installation or deployment.
+[INFO] Building zip: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-r2dbc/target/spring-data-r2dbc-4.1.0-docs.zip
 [INFO] 
 [INFO] -------< org.springframework.data:spring-data-jdbc-distribution >-------
 [INFO] Building Spring Data JDBC - Distribution 4.1.0                     [5/5]
@@ -697,22 +697,22 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-jdbc-distribution ---
-[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/src/jmh/java added.
+[INFO] Test Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/src/jmh/java added.
 [INFO] 
 [INFO] --- compiler:3.15.0:testCompile (java-test-compile) @ spring-data-jdbc-distribution ---
 [INFO] Skipped
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-jdbc-distribution ---
-[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/src/main/kotlin added.
+[INFO] Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/src/main/kotlin added.
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-jdbc-distribution ---
 [INFO] Skipping org.apache.maven.plugins:maven-javadoc-plugin:3.12.0:aggregate-no-fork report goal
 [INFO] 
 [INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-jdbc-distribution ---
 [INFO] Executing tasks
-[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/generated-docs does not exist.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/generated-docs/index.pdf to copy.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/generated-docs/index.epub to copy.
+[ERROR]      [copy] Warning: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/generated-docs/index.epub to copy.
 [INFO] Executed tasks
 [INFO] 
 [INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-jdbc-distribution >>>
@@ -729,11 +729,11 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- assembly:3.8.0:single (docs) @ spring-data-jdbc-distribution ---
-[INFO] Reading assembly descriptor: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/shared-resources/assemblies/docs.xml
-[INFO] Copying files to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/spring-data-jdbc-distribution-4.1.0-docs
-[INFO] 1121 files copied to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/spring-data-jdbc-distribution-4.1.0-docs
-[WARNING] Assembly file: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/spring-data-jdbc-distribution-4.1.0-docs is not a regular file (it may be a directory). It cannot be attached to the project build for installation or deployment.
-[INFO] Building zip: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/spring-data-jdbc-distribution-4.1.0-docs.zip
+[INFO] Reading assembly descriptor: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/shared-resources/assemblies/docs.xml
+[INFO] Copying files to /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/spring-data-jdbc-distribution-4.1.0-docs
+[INFO] 1121 files copied to /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/spring-data-jdbc-distribution-4.1.0-docs
+[WARNING] Assembly file: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/spring-data-jdbc-distribution-4.1.0-docs is not a regular file (it may be a directory). It cannot be attached to the project build for installation or deployment.
+[INFO] Building zip: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-relational/spring-data-jdbc-distribution/target/spring-data-jdbc-distribution-4.1.0-docs.zip
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary for Spring Data Relational Parent 4.1.0:
 [INFO] 
@@ -790,7 +790,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-commons/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-commons/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'testcontainers=2.0.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'commons-io=2.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -809,7 +809,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'rxjava2=2.2.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'smallrye-mutiny=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'jacoco=0.8.15' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'spring-hateoas=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.

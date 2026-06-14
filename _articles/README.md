@@ -4,4 +4,4 @@
 
 ### 📝 最新随笔
 
-- [关于本地镜像站的搭建](/articles/how-to-mirror.md) `本地镜像`
+- [关于本地镜像站的搭建](/_articles/how-to-mirror.md) `本地镜像`

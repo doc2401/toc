@@ -5,16 +5,16 @@
 ## ☕ Java 生态
 
 - [Java 教程](/java/java.md) `本地 & 在线`
-- [JDK 核心文档](/local/jdk.md) `本地 & 在线`
+- [JDK 核心文档](/_local/jdk.md) `本地 & 在线`
 - [Jakarta EE / Java EE](/java/jakarta-ee.md) `本地 & 在线`
 
 ## 🍃 Spring 家族
 
-- [Spring 版本汇总](/local/spring-framework.md) `本地镜像`
-- [Framework 详细目录](/local/spring-framework-toc.md) `本地 & 在线`
-- [Boot 详细目录](/local/spring-boot-toc.md) `本地 & 在线`
-- [Spring Cloud & 其他](/local/spring-cloud.md) `官方在线`
-- [Spring AI 1.1.7](/local/spring-ai.md) `本地 & 在线`
+- [Spring 版本汇总](/_local/spring-framework.md) `本地镜像`
+- [Framework 详细目录](/_local/spring-framework-toc.md) `本地 & 在线`
+- [Boot 详细目录](/_local/spring-boot-toc.md) `本地 & 在线`
+- [Spring Cloud & 其他](/_local/spring-cloud.md) `官方在线`
+- [Spring AI 1.1.7](/_local/spring-ai.md) `本地 & 在线`
 
 ## 💻 主流开发语言
 
@@ -59,8 +59,8 @@
 ## 📨 消息与分布式系统
 
 - [中间件完整索引](/middleware/middleware.md) `参考分类`
-- [Apache Kafka](/local/kafka.md) `本地 & 在线`
-- [RabbitMQ 消息队列](/local/rabbitmq.md) `本地 & 在线`
+- [Apache Kafka](/_local/kafka.md) `本地 & 在线`
+- [RabbitMQ 消息队列](/_local/rabbitmq.md) `本地 & 在线`
 - [Apache Pulsar 🌐](https://pulsar.apache.org/docs/) `官方在线`
 - [NATS 🌐](https://docs.nats.io/) `官方在线`
 
@@ -82,7 +82,7 @@
 ## 🤖 AI 与数据工程
 
 - [AI 与数据技术索引](/ai-data/ai-data.md) `参考分类`
-- [Spring AI 1.1.7](/local/spring-ai.md) `本地 & 在线`
+- [Spring AI 1.1.7](/_local/spring-ai.md) `本地 & 在线`
 - [PyTorch / TensorFlow / Hugging Face](/ai-data/ai-data.md) `官方在线`
 - [LangChain / LlamaIndex / 向量数据库](/ai-data/ai-data.md) `官方在线`
 - [Spark / Flink / dbt](/ai-data/ai-data.md) `官方在线`
@@ -108,8 +108,8 @@
 
 ## 📝 我的文章
 
-- [文章归档列表](/articles/README.md) `本地镜像`
-- [本地镜像站搭建](/articles/how-to-mirror.md) `本地镜像`
+- [文章归档列表](/_articles/README.md) `本地镜像`
+- [本地镜像站搭建](/_articles/how-to-mirror.md) `本地镜像`
 
 ---
 

@@ -43,7 +43,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-core ---
 [INFO] 
 [INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-rest-core ---
-[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/resources
+[INFO] skip non existing resourceDirectory /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/resources
 [INFO] 
 [INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-rest-core ---
 [INFO] No sources to compile
@@ -51,10 +51,10 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-core ---
 [INFO] Recompiling the module because of changed source code.
 [INFO] Compiling 99 source files with javac [debug parameters release 17] to target/classes
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/config/ResourceMapping.java: Some input files use or override a deprecated API.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/config/ResourceMapping.java: Recompile with -Xlint:deprecation for details.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/support/DefaultSelfLinkProvider.java: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/support/DefaultSelfLinkProvider.java uses unchecked or unsafe operations.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/support/DefaultSelfLinkProvider.java: Recompile with -Xlint:unchecked for details.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/config/ResourceMapping.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/config/ResourceMapping.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/support/DefaultSelfLinkProvider.java: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/support/DefaultSelfLinkProvider.java uses unchecked or unsafe operations.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/support/DefaultSelfLinkProvider.java: Recompile with -Xlint:unchecked for details.
 [INFO] 
 [INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 [INFO] Forking Spring Data REST - WebMVC 5.1.0
@@ -71,21 +71,21 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-webmvc ---
 [INFO] Recompiling the module because of changed dependency.
 [INFO] Compiling 140 source files with javac [debug parameters release 17] to target/classes
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java:[207,37] getUrlPathHelper() in org.springframework.web.servlet.handler.AbstractHandlerMapping has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java:[270,28] getPatternsCondition() in org.springframework.web.servlet.mvc.method.RequestMappingInfo has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/alps/AlpsJsonHttpMessageConverter.java:[49,51] org.springframework.http.converter.json.MappingJackson2HttpMessageConverter in org.springframework.http.converter.json has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[45,43] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[95,45] match(jakarta.servlet.http.HttpServletRequest,java.lang.String) in org.springframework.web.servlet.handler.MatchableHandlerMapping has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[95,26] org.springframework.web.servlet.handler.RequestMatchResult in org.springframework.web.servlet.handler has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[158,34] org.springframework.web.servlet.handler.RequestMatchResult in org.springframework.web.servlet.handler has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[160,32] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[161,45] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[161,78] match(jakarta.servlet.http.HttpServletRequest,java.lang.String) in org.springframework.web.servlet.handler.MatchableHandlerMapping has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[227,31] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[244,52] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[245,58] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJacksonModule.java: Some input files use or override a deprecated API.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJacksonModule.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java:[207,37] getUrlPathHelper() in org.springframework.web.servlet.handler.AbstractHandlerMapping has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java:[270,28] getPatternsCondition() in org.springframework.web.servlet.mvc.method.RequestMappingInfo has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/alps/AlpsJsonHttpMessageConverter.java:[49,51] org.springframework.http.converter.json.MappingJackson2HttpMessageConverter in org.springframework.http.converter.json has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[45,43] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[95,45] match(jakarta.servlet.http.HttpServletRequest,java.lang.String) in org.springframework.web.servlet.handler.MatchableHandlerMapping has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[95,26] org.springframework.web.servlet.handler.RequestMatchResult in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[158,34] org.springframework.web.servlet.handler.RequestMatchResult in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[160,32] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[161,45] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[161,78] match(jakarta.servlet.http.HttpServletRequest,java.lang.String) in org.springframework.web.servlet.handler.MatchableHandlerMapping has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[227,31] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[244,52] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[245,58] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJacksonModule.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJacksonModule.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
 [INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 [INFO] Forking Spring Data REST - Distribution 5.1.0
@@ -115,7 +115,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] 
 [INFO] --- antrun:3.2.0:run (default) @ spring-data-rest-hal-explorer ---
 [INFO] Executing tasks
-[INFO]      [copy] Copying 11 files to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/classes/META-INF/spring-data-rest/hal-explorer
+[INFO]      [copy] Copying 11 files to /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/classes/META-INF/spring-data-rest/hal-explorer
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-rest-hal-explorer ---
@@ -130,10 +130,10 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate (default-cli) @ spring-data-rest-parent ---
 [WARNING] Javadoc Warnings
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeDeleteEvent.java:8: warning: invalid input: '<'
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeDeleteEvent.java:8: warning: invalid input: '<'
 [WARNING] * @author Jon Brisbin <jbrisbin@vmware.com>
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeLinkSaveEvent.java:8: warning: invalid input: '<'
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeLinkSaveEvent.java:8: warning: invalid input: '<'
 [WARNING] * @author Jon Brisbin <jbrisbin@vmware.com>
 [WARNING] ^
 [WARNING] 2 warnings
@@ -195,10 +195,10 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'reactor=2025.0.6' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'java-module-name=' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'antora.javadoc-artifactId=spring-data-rest-parent' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'antora.playbook=src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'aspectj=1.9.25.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'kotlin.jvm.target=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -282,11 +282,11 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [WARNING] Ant property 'reactor=2025.0.6' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'java-module-name=' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'antora.javadoc-artifactId=spring-data-rest-distribution' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/..' clashes with an existing Maven property, SKIPPING this Ant property propagation.
-[WARNING] Ant property 'antora.playbook=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/../src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/..' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.playbook=/workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/../src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'aspectj=1.9.25.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'kotlin.jvm.target=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
 [WARNING] Ant property 'junit5=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
@@ -339,8 +339,8 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] 
 [INFO] --- resources:3.5.0:resources (default) @ spring-data-rest-distribution ---
 [INFO] Copying 1 resource from ../src/main/antora/resources/antora-resources to target/classes
-[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/src/main/antora/resources
-[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/src/main/antora/resources
+[INFO] skip non existing resourceDirectory /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/src/main/antora/resources
+[INFO] skip non existing resourceDirectory /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/src/main/antora/resources
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary for Spring Data REST 5.1.0:
 [INFO] 
@@ -382,36 +382,36 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] 
 [INFO] --- antrun:3.2.0:run (copy-documentation-resources) @ spring-data-rest-parent ---
 [INFO] Executing tasks
-[INFO]      [copy] Copying 4 files to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/site/reference/html/images
+[INFO]      [copy] Copying 4 files to /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/site/reference/html/images
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-parent ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-rest-parent ---
-[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/src/jmh/java added.
+[INFO] Test Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/src/jmh/java added.
 [INFO] 
 [INFO] --- compiler:3.15.0:testCompile (java-test-compile) @ spring-data-rest-parent ---
 [INFO] Skipped
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-rest-parent ---
-[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/src/main/kotlin added.
+[INFO] Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/src/main/kotlin added.
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-rest-parent ---
 [WARNING] Javadoc Warnings
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeDeleteEvent.java:8: warning: invalid input: '<'
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeDeleteEvent.java:8: warning: invalid input: '<'
 [WARNING] * @author Jon Brisbin <jbrisbin@vmware.com>
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeLinkSaveEvent.java:8: warning: invalid input: '<'
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeLinkSaveEvent.java:8: warning: invalid input: '<'
 [WARNING] * @author Jon Brisbin <jbrisbin@vmware.com>
 [WARNING] ^
 [WARNING] 2 warnings
 [INFO] 
 [INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-rest-parent ---
 [INFO] Executing tasks
-[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/generated-docs does not exist.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/generated-docs/index.pdf to copy.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/generated-docs/index.epub to copy.
+[ERROR]      [copy] Warning: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/generated-docs/index.epub to copy.
 [INFO] Executed tasks
 [INFO] 
 [INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-rest-parent >>>
@@ -425,7 +425,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] 
 [INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-rest-parent ---
 [INFO] Executing tasks
-[INFO]      [copy] Copying 502 files to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/antora/modules/ROOT/assets/attachments/api/java
+[INFO]      [copy] Copying 502 files to /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/antora/modules/ROOT/assets/attachments/api/java
 [INFO] Executed tasks
 [INFO] 
 [INFO] -----------< org.springframework.data:spring-data-rest-core >-----------
@@ -442,13 +442,13 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-rest-core ---
-[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/resources
+[INFO] skip non existing resourceDirectory /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/resources
 [INFO] 
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-core ---
 [INFO] Nothing to compile - all classes are up to date.
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-rest-core ---
-[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/jmh/java added.
+[INFO] Test Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/jmh/java added.
 [INFO] 
 [INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-data-rest-core ---
 [INFO] Not copying test resources
@@ -460,27 +460,27 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] Skipped
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-rest-core ---
-[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/kotlin added.
+[INFO] Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/kotlin added.
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-rest-core ---
 [WARNING] Javadoc Warnings
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeDeleteEvent.java:8: warning: invalid input: '<'
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeDeleteEvent.java:8: warning: invalid input: '<'
 [WARNING] * @author Jon Brisbin <jbrisbin@vmware.com>
 [WARNING] ^
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeLinkSaveEvent.java:8: warning: invalid input: '<'
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeLinkSaveEvent.java:8: warning: invalid input: '<'
 [WARNING] * @author Jon Brisbin <jbrisbin@vmware.com>
 [WARNING] ^
 [WARNING] 2 warnings
 [INFO] 
 [INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-rest-core ---
 [INFO] Executing tasks
-[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/generated-docs does not exist.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/generated-docs/index.pdf to copy.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/generated-docs/index.epub to copy.
+[ERROR]      [copy] Warning: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/generated-docs/index.epub to copy.
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- jar:3.5.0:jar (default-jar) @ spring-data-rest-core ---
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/spring-data-rest-core-5.1.0.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/spring-data-rest-core-5.1.0.jar
 [INFO] 
 [INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-rest-core >>>
 [INFO] 
@@ -490,7 +490,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] 
 [INFO] 
 [INFO] --- source:3.4.0:jar (attach-sources) @ spring-data-rest-core ---
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/spring-data-rest-core-5.1.0-sources.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/spring-data-rest-core-5.1.0-sources.jar
 [INFO] 
 [INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-rest-core ---
 [INFO] Executing tasks
@@ -515,24 +515,24 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-webmvc ---
 [INFO] Recompiling the module because of changed dependency.
 [INFO] Compiling 140 source files with javac [debug parameters release 17] to target/classes
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java:[207,37] getUrlPathHelper() in org.springframework.web.servlet.handler.AbstractHandlerMapping has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java:[270,28] getPatternsCondition() in org.springframework.web.servlet.mvc.method.RequestMappingInfo has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/alps/AlpsJsonHttpMessageConverter.java:[49,51] org.springframework.http.converter.json.MappingJackson2HttpMessageConverter in org.springframework.http.converter.json has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[45,43] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[95,45] match(jakarta.servlet.http.HttpServletRequest,java.lang.String) in org.springframework.web.servlet.handler.MatchableHandlerMapping has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[95,26] org.springframework.web.servlet.handler.RequestMatchResult in org.springframework.web.servlet.handler has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[158,34] org.springframework.web.servlet.handler.RequestMatchResult in org.springframework.web.servlet.handler has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[160,32] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[161,45] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[161,78] match(jakarta.servlet.http.HttpServletRequest,java.lang.String) in org.springframework.web.servlet.handler.MatchableHandlerMapping has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[227,31] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[244,52] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
-[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[245,58] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJacksonModule.java: Some input files use or override a deprecated API.
-[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJacksonModule.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java:[207,37] getUrlPathHelper() in org.springframework.web.servlet.handler.AbstractHandlerMapping has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java:[270,28] getPatternsCondition() in org.springframework.web.servlet.mvc.method.RequestMappingInfo has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/alps/AlpsJsonHttpMessageConverter.java:[49,51] org.springframework.http.converter.json.MappingJackson2HttpMessageConverter in org.springframework.http.converter.json has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[45,43] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[95,45] match(jakarta.servlet.http.HttpServletRequest,java.lang.String) in org.springframework.web.servlet.handler.MatchableHandlerMapping has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[95,26] org.springframework.web.servlet.handler.RequestMatchResult in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[158,34] org.springframework.web.servlet.handler.RequestMatchResult in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[160,32] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[161,45] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[161,78] match(jakarta.servlet.http.HttpServletRequest,java.lang.String) in org.springframework.web.servlet.handler.MatchableHandlerMapping has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[227,31] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[244,52] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
+[WARNING] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[245,58] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJacksonModule.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJacksonModule.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-rest-webmvc ---
-[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/jmh/java added.
+[INFO] Test Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/jmh/java added.
 [INFO] 
 [INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-data-rest-webmvc ---
 [INFO] Not copying test resources
@@ -544,19 +544,19 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] Skipped
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-rest-webmvc ---
-[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/kotlin added.
+[INFO] Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/kotlin added.
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-rest-webmvc ---
 [INFO] 
 [INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-rest-webmvc ---
 [INFO] Executing tasks
-[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/generated-docs does not exist.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/generated-docs/index.pdf to copy.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/generated-docs/index.epub to copy.
+[ERROR]      [copy] Warning: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/generated-docs/index.epub to copy.
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- jar:3.5.0:jar (default-jar) @ spring-data-rest-webmvc ---
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/spring-data-rest-webmvc-5.1.0.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/spring-data-rest-webmvc-5.1.0.jar
 [INFO] 
 [INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-rest-webmvc >>>
 [INFO] 
@@ -566,7 +566,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] 
 [INFO] 
 [INFO] --- source:3.4.0:jar (attach-sources) @ spring-data-rest-webmvc ---
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/spring-data-rest-webmvc-5.1.0-sources.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/spring-data-rest-webmvc-5.1.0-sources.jar
 [INFO] 
 [INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-rest-webmvc ---
 [INFO] Executing tasks
@@ -592,22 +592,22 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-rest-distribution ---
-[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/src/jmh/java added.
+[INFO] Test Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/src/jmh/java added.
 [INFO] 
 [INFO] --- compiler:3.15.0:testCompile (java-test-compile) @ spring-data-rest-distribution ---
 [INFO] Skipped
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-rest-distribution ---
-[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/src/main/kotlin added.
+[INFO] Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/src/main/kotlin added.
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-rest-distribution ---
 [INFO] Skipping org.apache.maven.plugins:maven-javadoc-plugin:3.12.0:aggregate-no-fork report goal
 [INFO] 
 [INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-rest-distribution ---
 [INFO] Executing tasks
-[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/generated-docs does not exist.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/generated-docs/index.pdf to copy.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/generated-docs/index.epub to copy.
+[ERROR]      [copy] Warning: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/generated-docs/index.epub to copy.
 [INFO] Executed tasks
 [INFO] 
 [INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-rest-distribution >>>
@@ -624,11 +624,11 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- assembly:3.8.0:single (docs) @ spring-data-rest-distribution ---
-[INFO] Reading assembly descriptor: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/shared-resources/assemblies/docs.xml
-[INFO] Copying files to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/spring-data-rest-distribution-5.1.0-docs
-[INFO] 506 files copied to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/spring-data-rest-distribution-5.1.0-docs
-[WARNING] Assembly file: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/spring-data-rest-distribution-5.1.0-docs is not a regular file (it may be a directory). It cannot be attached to the project build for installation or deployment.
-[INFO] Building zip: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/spring-data-rest-distribution-5.1.0-docs.zip
+[INFO] Reading assembly descriptor: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/shared-resources/assemblies/docs.xml
+[INFO] Copying files to /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/spring-data-rest-distribution-5.1.0-docs
+[INFO] 506 files copied to /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/spring-data-rest-distribution-5.1.0-docs
+[WARNING] Assembly file: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/spring-data-rest-distribution-5.1.0-docs is not a regular file (it may be a directory). It cannot be attached to the project build for installation or deployment.
+[INFO] Building zip: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/spring-data-rest-distribution-5.1.0-docs.zip
 [INFO] 
 [INFO] -------< org.springframework.data:spring-data-rest-hal-explorer >-------
 [INFO] Building Spring Data REST - HAL Explorer 5.1.0                     [5/5]
@@ -658,7 +658,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] Compiling 2 source files with javac [debug parameters release 17] to target/classes
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-rest-hal-explorer ---
-[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/src/jmh/java added.
+[INFO] Test Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/src/jmh/java added.
 [INFO] 
 [INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-data-rest-hal-explorer ---
 [INFO] Not copying test resources
@@ -670,24 +670,24 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] Skipped
 [INFO] 
 [INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-rest-hal-explorer ---
-[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/src/main/kotlin added.
+[INFO] Source directory: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/src/main/kotlin added.
 [INFO] 
 [INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-rest-hal-explorer ---
 [INFO] Skipped
 [INFO] 
 [INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-rest-hal-explorer ---
 [INFO] Executing tasks
-[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/generated-docs does not exist.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/generated-docs/index.pdf to copy.
-[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/generated-docs/index.epub to copy.
+[ERROR]      [copy] Warning: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/generated-docs/index.epub to copy.
 [INFO] Executed tasks
 [INFO] 
 [INFO] --- jar:3.5.0:jar (default-jar) @ spring-data-rest-hal-explorer ---
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/spring-data-rest-hal-explorer-5.1.0.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/spring-data-rest-hal-explorer-5.1.0.jar
 [INFO] 
 [INFO] --- jar:3.5.0:jar (empty-javadoc-jar) @ spring-data-rest-hal-explorer ---
 [WARNING] JAR will be empty - no content was marked for inclusion!
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/spring-data-rest-hal-explorer-5.1.0-javadoc.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/spring-data-rest-hal-explorer-5.1.0-javadoc.jar
 [INFO] 
 [INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-rest-hal-explorer >>>
 [INFO] 
@@ -697,7 +697,7 @@ WARNING: Restricted methods will be blocked in a future release unless native ac
 [INFO] 
 [INFO] 
 [INFO] --- source:3.4.0:jar (attach-sources) @ spring-data-rest-hal-explorer ---
-[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/spring-data-rest-hal-explorer-5.1.0-sources.jar
+[INFO] Building jar: /workspaces/toc/_articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/spring-data-rest-hal-explorer-5.1.0-sources.jar
 [INFO] 
 [INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-rest-hal-explorer ---
 [INFO] Executing tasks
