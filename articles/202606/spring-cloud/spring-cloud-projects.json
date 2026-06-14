@@ -1,0 +1,90 @@
+{
+  "releaseTrain": "2025.1.2",
+  "projects": [
+    {
+      "name": "spring-cloud-netflix",
+      "repository": "https://github.com/spring-cloud/spring-cloud-netflix.git",
+      "tag": "v5.0.2"
+    },
+    {
+      "name": "spring-cloud-stream",
+      "repository": "https://github.com/spring-cloud/spring-cloud-stream.git",
+      "tag": "v5.0.2"
+    },
+    {
+      "name": "spring-cloud-config",
+      "repository": "https://github.com/spring-cloud/spring-cloud-config.git",
+      "tag": "v5.0.4"
+    },
+    {
+      "name": "spring-cloud-consul",
+      "repository": "https://github.com/spring-cloud/spring-cloud-consul.git",
+      "tag": "v5.0.2"
+    },
+    {
+      "name": "spring-cloud-circuitbreaker",
+      "repository": "https://github.com/spring-cloud/spring-cloud-circuitbreaker.git",
+      "tag": "v5.0.2"
+    },
+    {
+      "name": "spring-cloud-starter-build",
+      "repository": "https://github.com/spring-cloud/spring-cloud-starter-build.git",
+      "tag": "v2025.1.2"
+    },
+    {
+      "name": "spring-cloud-build",
+      "repository": "https://github.com/spring-cloud/spring-cloud-build.git",
+      "tag": "v5.0.2"
+    },
+    {
+      "name": "spring-cloud-gateway",
+      "repository": "https://github.com/spring-cloud/spring-cloud-gateway.git",
+      "tag": "v5.0.2"
+    },
+    {
+      "name": "spring-cloud-bus",
+      "repository": "https://github.com/spring-cloud/spring-cloud-bus.git",
+      "tag": "v5.0.2"
+    },
+    {
+      "name": "spring-cloud-contract",
+      "repository": "https://github.com/spring-cloud/spring-cloud-contract.git",
+      "tag": "v5.0.3"
+    },
+    {
+      "name": "spring-cloud-vault",
+      "repository": "https://github.com/spring-cloud/spring-cloud-vault.git",
+      "tag": "v5.0.2"
+    },
+    {
+      "name": "spring-cloud-task",
+      "repository": "https://github.com/spring-cloud/spring-cloud-task.git",
+      "tag": "v5.0.2"
+    },
+    {
+      "name": "spring-cloud-function",
+      "repository": "https://github.com/spring-cloud/spring-cloud-function.git",
+      "tag": "v5.0.3"
+    },
+    {
+      "name": "spring-cloud-kubernetes",
+      "repository": "https://github.com/spring-cloud/spring-cloud-kubernetes.git",
+      "tag": "v5.0.2"
+    },
+    {
+      "name": "spring-cloud-commons",
+      "repository": "https://github.com/spring-cloud/spring-cloud-commons.git",
+      "tag": "v5.0.2"
+    },
+    {
+      "name": "spring-cloud-openfeign",
+      "repository": "https://github.com/spring-cloud/spring-cloud-openfeign.git",
+      "tag": "v5.0.2"
+    },
+    {
+      "name": "spring-cloud-zookeeper",
+      "repository": "https://github.com/spring-cloud/spring-cloud-zookeeper.git",
+      "tag": "v5.0.2"
+    }
+  ]
+}
