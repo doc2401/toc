@@ -24,20 +24,20 @@
     Spring Data repository support for JDBC.    
     对 JDBC 的 Spring Data 存储库支持。    
     原版: 
-      [reference](../../spring-data.2026.0.0/spring-data-relational/reference/) ，
+      [reference](../../spring-data.2026.0.0/spring-data-relational/reference/jdbc.html) ，
       [javadoc api](../../spring-data.2026.0.0/spring-data-relational/api/) ，   
     中文:
-      [reference](../../spring-data.2026.0.0.lang/zh/spring-data-relational/reference/) ，
+      [reference](../../spring-data.2026.0.0.lang/zh/spring-data-relational/reference/jdbc.html) ，
       [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-relational/api/) ，
 
 +   [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc)   
     Spring Data repository support for R2DBC.    
     对 R2DBC 的 Spring Data 存储库支持。    
     原版: 
-      [reference](../../spring-data.2026.0.0/spring-data-relational/reference/) ，
+      [reference](../../spring-data.2026.0.0/spring-data-relational/reference/r2dbc.html) ，
       [javadoc api](../../spring-data.2026.0.0/spring-data-relational/api/) ，   
     中文:
-      [reference](../../spring-data.2026.0.0.lang/zh/spring-data-relational/reference/) ，
+      [reference](../../spring-data.2026.0.0.lang/zh/spring-data-relational/reference/r2dbc.html) ，
       [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-relational/api/) ，
 
 +   [Spring Data JPA](https://spring.io/projects/spring-data-jpa)  
@@ -49,6 +49,18 @@
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-jpa/reference/) ，
       [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-jpa/api/) ，
+
++   [Spring Data Envers](https://spring.io/projects/spring-data-jpa)  
+     This project is an extension of the Spring Data JPA project to allow access to entity revisions managed by Hibernate Envers. The sources mostly originate from a contribution of Philipp Hügelmeyer @hygl.   
+     As of version 3.0, this project has been merged into Spring Data JPA. Please see Spring Data JPA for latest project information.     
+     本项目是 Spring Data JPA 的扩展，用于访问由 Hibernate Envers 管理的实体修订版本。项目源码主要源自 Philipp Hügelmeyer（@hygl）的贡献。    
+     从 3.0 版本开始，本项目已合并到 Spring Data JPA。有关最新项目信息，请参阅 Spring Data JPA。    
+    原版: 
+      [reference](../../spring-data.2026.0.0/spring-data-jpa/reference/envers.html) ，
+      [javadoc api](../../spring-data.2026.0.0/spring-data-jpa/api/) ，   
+    中文:
+      [reference](../../spring-data.2026.0.0.lang/zh/spring-data-jpa/reference/envers.html) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-jpa/api/) ，      
 
 +   [Spring Data KeyValue](https://github.com/spring-projects/spring-data-keyvalue)   
     `Map` based repositories and SPIs to easily build a Spring Data module for key-value stores.    
