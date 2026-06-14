@@ -51,7 +51,6 @@ bash build-spring-cloud-docs.sh \
  - Spring Cloud Config `5.0.4` ([issues](https://github.com/spring-cloud/spring-cloud-config/releases/tag/v5.0.4))
  - Spring Cloud Consul `5.0.2` ([issues](https://github.com/spring-cloud/spring-cloud-consul/releases/tag/v5.0.2))
  - Spring Cloud Circuitbreaker `5.0.2` ([issues](https://github.com/spring-cloud/spring-cloud-circuitbreaker/releases/tag/v5.0.2))
- - Spring Cloud Starter Build `2025.1.2` ([issues](https://github.com/spring-cloud/spring-cloud-starter-build/releases/tag/v2025.1.2))
  - Spring Cloud Build `5.0.2` ([issues](https://github.com/spring-cloud/spring-cloud-build/releases/tag/v5.0.2))
  - Spring Cloud Gateway `5.0.2` ([issues](https://github.com/spring-cloud/spring-cloud-gateway/releases/tag/v5.0.2))
  - Spring Cloud Bus `5.0.2` ([issues](https://github.com/spring-cloud/spring-cloud-bus/releases/tag/v5.0.2))
@@ -64,6 +63,8 @@ bash build-spring-cloud-docs.sh \
  - Spring Cloud Openfeign `5.0.2` ([issues](https://github.com/spring-cloud/spring-cloud-openfeign/releases/tag/v5.0.2))
  - Spring Cloud Zookeeper `5.0.2` ([issues](https://github.com/spring-cloud/spring-cloud-zookeeper/releases/tag/v5.0.2))
 
+ *404*
+ - Spring Cloud Starter Build `2025.1.2` ([issues](https://github.com/spring-cloud/spring-cloud-starter-build/releases/tag/v2025.1.2))
 
 
 

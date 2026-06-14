@@ -2,6 +2,11 @@
   "releaseTrain": "2025.1.2",
   "projects": [
     {
+      "name": "spring-cloud-release",
+      "repository": "https://github.com/spring-cloud/spring-cloud-release.git",
+      "tag": "v2025.1.2"
+    },
+    {
       "name": "spring-cloud-netflix",
       "repository": "https://github.com/spring-cloud/spring-cloud-netflix.git",
       "tag": "v5.0.2"
@@ -25,11 +30,6 @@
       "name": "spring-cloud-circuitbreaker",
       "repository": "https://github.com/spring-cloud/spring-cloud-circuitbreaker.git",
       "tag": "v5.0.2"
-    },
-    {
-      "name": "spring-cloud-starter-build",
-      "repository": "https://github.com/spring-cloud/spring-cloud-starter-build.git",
-      "tag": "v2025.1.2"
     },
     {
       "name": "spring-cloud-build",

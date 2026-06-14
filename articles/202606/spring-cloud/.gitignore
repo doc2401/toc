@@ -1,7 +1,25 @@
+# Repositories downloaded by checkout-spring-data-projects.sh
 /sources/
-/spring-cloud-*/
-/build-logs/
+/spring-data-*/
+
+# Generated artifact directories
+/artifact-directories/
+
+# Build logs
+#/build-logs/
+
+# Collected documentation site
+/site/
+
+# Shared Antora toolchain dependencies
+/antora-tooling/node_modules/
+#/antora-tooling/playbooks-before/
+#/antora-tooling/playbooks-after/
+
+# Maven, Antora, and Javadoc build output
 **/target/
+
+# Local IDE and operating-system files
 .idea/
 .vscode/
 .DS_Store
