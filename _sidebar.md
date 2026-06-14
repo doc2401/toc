@@ -39,9 +39,6 @@
   - [Kafka](/middleware/kafka.md)
   - [RabbitMQ](/middleware/rabbitmq.md)
 
-- **云原生与平台工程**
-  - [云原生技术索引](/cloud-native/cloud-native.md)
-
 - **AI 与大数据工程**
   - [AI 与大模型生态](/ai-data/llm.md)
   - [传统机器学习](/ai-data/machine-learning.md)
@@ -52,6 +49,7 @@
 
 - **开发工具与运维**
   - [运维与构建工具](/devops/devops.md)
+  - [云原生技术索引](/devops/cloud-native.md)
 
 - **图形与创意设计**
   - [图形与游戏索引](/graphics/graphics.md)

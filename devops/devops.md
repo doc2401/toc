@@ -47,4 +47,4 @@
 - **[cert-manager](https://cert-manager.io/docs/)** — Kubernetes TLS 证书自动管理 `官方在线`
 - **[OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)** — Web 安全测试指南 `官方在线`
 
-> 有关 Docker、Kubernetes、IaC (Terraform) 与可观测性，请参阅 [云原生与平台工程](/cloud-native/cloud-native.md)。
+> 有关 Docker、Kubernetes、IaC (Terraform) 与可观测性，请参阅 [云原生与平台工程](/devops/cloud-native.md)。

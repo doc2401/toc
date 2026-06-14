@@ -66,11 +66,11 @@
 
 ## ☁️ 云原生与平台工程
 
-- [云原生技术索引](/cloud-native/cloud-native.md) `参考分类`
-- [Docker / Kubernetes / Helm](/cloud-native/cloud-native.md) `官方在线`
-- [Argo CD / GitHub Actions](/cloud-native/cloud-native.md) `官方在线`
-- [OpenTelemetry / Prometheus / Grafana](/cloud-native/cloud-native.md) `官方在线`
-- [Istio / Envoy / Cilium](/cloud-native/cloud-native.md) `官方在线`
+- [云原生技术索引](/devops/cloud-native.md) `参考分类`
+- [Docker / Kubernetes / Helm](/devops/cloud-native.md) `官方在线`
+- [Argo CD / GitHub Actions](/devops/cloud-native.md) `官方在线`
+- [OpenTelemetry / Prometheus / Grafana](/devops/cloud-native.md) `官方在线`
+- [Istio / Envoy / Cilium](/devops/cloud-native.md) `官方在线`
 
 ## 🔐 API、身份与安全
 

@@ -35,14 +35,13 @@
   - [中间件索引](/middleware/middleware.md)
   - [Kafka](/middleware/kafka.md)
   - [RabbitMQ](/middleware/rabbitmq.md)
-- 云原生
-  - [云原生技术索引](/cloud-native/cloud-native.md)
 - AI 与大数据
   - [传统机器学习](/ai-data/machine-learning.md)
   - [AI 与大模型生态](/ai-data/llm.md)
   - [大数据与处理](/ai-data/big-data.md)
 - 研发与质量管理
   - [运维与研发工具](/devops/devops.md)
+  - [云原生技术索引](/devops/cloud-native.md)
   - [测试与代码质量](/testing/testing.md)
 - 图形与创意设计
   - [图形与游戏索引](/graphics/graphics.md)

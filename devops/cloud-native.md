@@ -39,7 +39,7 @@
 - **[Envoy](https://www.envoyproxy.io/docs/envoy/latest/)** — 云原生高性能代理 `官方在线`
 - **[Istio](https://istio.io/latest/zh/docs/)** — Kubernetes 服务网格 `官方在线`
 - **[Linkerd](https://linkerd.io/2/overview/)** — 轻量级 Kubernetes 服务网格 `官方在线`
-- **[Cilium](https://docs.cilium.io/)** — 基于 eBPF 的网络、安全与可观测性 `官方在线`
+- **[Cilium](https://docs.cilium.io/)** — 基于 eBPF 的 network、安全与可观测性 `官方在线`
 - **[Traefik Proxy](https://doc.traefik.io/traefik/)** — 云原生反向代理与入口网关 `官方在线`
 
 ### IaC、配置与密钥
@@ -59,5 +59,3 @@
 - **[Cloudflare 文档](https://developers.cloudflare.com/)** — CDN、边缘计算与安全平台 `官方在线`
 - **[阿里云文档](https://help.aliyun.com/)** — 阿里云产品文档 `官方在线`
 - **[腾讯云文档](https://cloud.tencent.com/document/product)** — 腾讯云产品文档 `官方在线`
-
-
