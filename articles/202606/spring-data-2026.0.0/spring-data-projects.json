@@ -1,0 +1,127 @@
+{
+  "releaseTrain": "2026.0.0",
+  "projects": [
+    {
+      "name": "spring-data-cassandra",
+      "repository": "https://github.com/spring-projects/spring-data-cassandra.git",
+      "tag": "5.1.0",
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    },
+    {
+      "name": "spring-data-commons",
+      "repository": "https://github.com/spring-projects/spring-data-commons.git",
+      "tag": "4.1.0",
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    },
+    {
+      "name": "spring-data-couchbase",
+      "repository": "https://github.com/spring-projects/spring-data-couchbase.git",
+      "tag": "6.1.0",
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    },
+    {
+      "name": "spring-data-elasticsearch",
+      "repository": "https://github.com/spring-projects/spring-data-elasticsearch.git",
+      "tag": "6.1.0",
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    },
+    {
+      "name": "spring-data-relational",
+      "repository": "https://github.com/spring-projects/spring-data-relational.git",
+      "tag": "4.1.0",
+      "artifacts": [
+        "spring-data-jdbc",
+        "spring-data-r2dbc",
+        "spring-data-relational"
+      ],
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    },
+    {
+      "name": "spring-data-jpa",
+      "repository": "https://github.com/spring-projects/spring-data-jpa.git",
+      "tag": "4.1.0",
+      "artifacts": [
+        "spring-data-jpa",
+        "spring-data-envers"
+      ],
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    },
+    {
+      "name": "spring-data-mongodb",
+      "repository": "https://github.com/spring-projects/spring-data-mongodb.git",
+      "tag": "5.1.0",
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    },
+    {
+      "name": "spring-data-neo4j",
+      "repository": "https://github.com/spring-projects/spring-data-neo4j.git",
+      "tag": "8.1.0",
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    },
+    {
+      "name": "spring-data-redis",
+      "repository": "https://github.com/spring-projects/spring-data-redis.git",
+      "tag": "4.1.0",
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    },
+    {
+      "name": "spring-data-rest",
+      "repository": "https://github.com/spring-projects/spring-data-rest.git",
+      "tag": "5.1.0",
+      "artifacts": [
+        "spring-data-rest-webmvc",
+        "spring-data-rest-core",
+        "spring-data-rest-hal-explorer"
+      ],
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    },
+    {
+      "name": "spring-data-keyvalue",
+      "repository": "https://github.com/spring-projects/spring-data-keyvalue.git",
+      "tag": "4.1.0",
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    },
+    {
+      "name": "spring-data-ldap",
+      "repository": "https://github.com/spring-projects/spring-data-ldap.git",
+      "tag": "4.1.0",
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    }
+  ]
+}

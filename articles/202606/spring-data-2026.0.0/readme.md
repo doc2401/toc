@@ -12,26 +12,36 @@ https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-bom/20
 脚本需要在 Bash 环境中运行。开始前可以添加执行权限：
 
 ```bash
-chmod +x create-directories.sh \
+chmod +x collect-spring-data-docs.sh \
   checkout-spring-data-projects.sh \
   build-spring-data-docs.sh
 ```
 
-### 1. 根据 BOM 创建目录
+### 1. 收集构建产物
 
-`create-directories.sh` 读取 Maven BOM 中
-`dependencyManagement/dependencies/dependency/artifactId` 的值，并为每个
-`artifactId` 创建一个空目录。
+`collect-spring-data-docs.sh` 读取 `spring-data-projects.json` 中每个项目的
+Reference/API 源路径和目标路径，创建目标目录并复制已经生成的构建产物。
 
  
  
 ```bash
-# ./create-directories.sh [POM 文件] [输出目录]
-bash ./create-directories.sh spring-data-bom-2026.0.0.pom .
+# ./collect-spring-data-docs.sh [JSON 配置] [源码/构建目录] [文档输出目录]
+bash ./collect-spring-data-docs.sh spring-data-projects.json ./sources .
 ```
 
-上面的 `.` 表示直接在当前仓库目录中创建各个 `spring-data-*` 文件夹。
-这些目录已由 `.gitignore` 忽略，不会被 Git 跟踪。
+生成结构示例：
+
+```text
+spring-data-commons/
+├── reference/
+└── api/
+```
+
+例如，JSON 中的 `target/site` 会复制到 `reference`，而
+`target/reports/apidocs` 会复制到 `api`。缺少任何一个 `index.html`
+时，脚本会汇总缺失项目并返回非零退出码。
+
+这些 `spring-data-*` 文档目录已由 `.gitignore` 忽略，不会被 Git 跟踪。
 
 ### 2. Checkout 子项目并切换 tag
 
@@ -55,45 +65,50 @@ Cassandra 使用 `5.1.0`，Neo4j 使用 `8.1.0`。
 每个仓库都必须存在 BOM 指定的版本 tag；缺少 tag 时脚本会报错并停止。
 输出目录中如果存在同名但不是 Git 仓库的目录，脚本也会停止。
 
-> 不要让 `create-directories.sh` 和 `checkout-spring-data-projects.sh`
+> 不要让 `collect-spring-data-docs.sh` 和 `checkout-spring-data-projects.sh`
 > 使用同一个输出目录。前者创建的空目录会与后者需要克隆的 Git 仓库目录
 > 冲突。
 
 ### 3. 构建 Javadoc 和 Reference
 
-`build-spring-data-docs.sh` 会依次进入各个源码仓库，通过 Maven 的
-`Antora` profile 构建 reference 文档，并执行聚合 Javadoc 构建。
+`build-spring-data-docs.sh` 会依次进入各个源码仓库，通过 Maven 构建
+聚合 Javadoc，再使用仓库外的统一 Antora 工具链构建 reference 文档。
+
+Antora 与扩展版本固定在 `antora-tooling/package.json` 中，不依赖 `npx`
+临时解析最新版，也不会修改 `sources` 中检出的官方源码。首次运行会在
+`antora-tooling/node_modules` 安装依赖，该目录已被 `.gitignore` 忽略。
 
 脚本优先使用项目中的 `mvnw`；项目没有 Maven Wrapper 时，使用系统中的
 `mvn`。每个项目的构建日志会单独保存，一个项目失败后仍会继续构建其他
 项目，最后统一列出失败项目。
 
-构建 `./sources` 中的项目，并将日志写入 `./build-logs`：
+构建 `./sources` 中的项目，并将日志写入 `./build-logs`。该脚本只负责
+构建，不复制文档产物：
 
 ```bash
-# ./build-spring-data-docs.sh [源码目录] [日志目录]
-bash build-spring-data-docs.sh ./sources ./build-logs
+# ./build-spring-data-docs.sh [JSON 配置] [源码目录] [日志目录]
+bash build-spring-data-docs.sh \
+  spring-data-projects.json \
+  ./sources \
+  ./build-logs
 ```
 
-实际执行的主要 Maven 命令为：
+实际执行的主要命令为：
 
 ```bash
-# 构建 reference 文档
-./mvnw -DskipTests clean install -Pantora
-
 # 构建聚合 Javadoc
 ./mvnw -DskipTests -Dmaven.javadoc.failOnError=false javadoc:aggregate
+
+# 使用固定版本工具链构建 reference
+NODE_PATH=/path/to/antora-tooling/node_modules \
+  /path/to/antora-tooling/node_modules/.bin/antora \
+  --to-dir <JSON 中的 documentation.reference.source> \
+  src/main/antora/antora-playbook.yml
 ```
 
-Reference 文档通常生成在项目的 `target/antora` 目录中。不同仓库的具体
-目录可能不同，例如：
-
-- Spring Data JPA：`sources/spring-data-jpa/target/antora/index.html`
-- Spring Data Relational：
-  `sources/spring-data-relational/spring-data-jdbc-distribution/target/antora/site/index.html`
-
-每个项目构建完成后，脚本会搜索并打印实际生成的 reference
-`index.html` 路径。
+Reference 和 API 的构建产物位置由 `spring-data-projects.json` 中各项目
+的 `documentation.*.source` 字段控制。构建完成后，再由
+`collect-spring-data-docs.sh` 根据 `destination` 字段复制产物。
 
 ### 完整流程示例
 
@@ -101,8 +116,14 @@ Reference 文档通常生成在项目的 `target/antora` 目录中。不同仓�
 # 1. 根据 BOM 克隆项目并分别切换到各模块对应的版本
 ./checkout-spring-data-projects.sh spring-data-bom-2026.0.0.pom ./sources
 
-# 2. 构建各项目的 Javadoc 和 reference 文档
-./build-spring-data-docs.sh ./sources ./build-logs
+# 2. 构建各项目的 Javadoc 和 Reference
+./build-spring-data-docs.sh \
+  spring-data-projects.json \
+  ./sources \
+  ./build-logs
+
+# 3. 创建目标目录并复制构建产物
+./collect-spring-data-docs.sh spring-data-projects.json ./sources .
 ```
 
  

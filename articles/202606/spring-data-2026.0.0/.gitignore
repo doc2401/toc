@@ -8,6 +8,9 @@
 # Build logs
 /build-logs/
 
+# Shared Antora toolchain dependencies
+/antora-tooling/node_modules/
+
 # Maven, Antora, and Javadoc build output
 **/target/
 
