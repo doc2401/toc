@@ -8,6 +8,9 @@
 # Build logs
 /build-logs/
 
+# Collected documentation site
+/site/
+
 # Shared Antora toolchain dependencies
 /antora-tooling/node_modules/
 /antora-tooling/playbooks-before/

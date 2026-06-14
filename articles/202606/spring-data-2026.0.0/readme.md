@@ -20,7 +20,17 @@ Reference/API 源路径和目标路径，创建目标目录并复制已经生成
  
 ```bash
 # bash collect-spring-data-docs.sh [JSON 配置] [源码/构建目录] [文档输出目录]
-bash ./collect-spring-data-docs.sh spring-data-projects.json ./sources .
+bash collect-spring-data-docs.sh
+```
+
+默认读取 `spring-data-projects.json`，从 `./sources` 收集构建产物，并复制
+到 `./site`。也可以明确指定：
+
+```bash
+bash collect-spring-data-docs.sh \
+  spring-data-projects.json \
+  ./sources \
+  ./site
 ```
 
 生成结构示例：
@@ -35,7 +45,7 @@ spring-data-commons/
 `target/reports/apidocs` 会复制到 `api`。缺少任何一个 `index.html`
 时，脚本会汇总缺失项目并返回非零退出码。
 
-这些 `spring-data-*` 文档目录已由 `.gitignore` 忽略，不会被 Git 跟踪。
+`site` 目录已由 `.gitignore` 忽略，不会被 Git 跟踪。
 
 ### 2. Checkout 子项目并切换 tag
 
@@ -126,7 +136,10 @@ bash build-spring-data-docs.sh \
   ./build-logs
 
 # 3. 创建目标目录并复制构建产物
-bash collect-spring-data-docs.sh spring-data-projects.json ./sources .
+bash collect-spring-data-docs.sh \
+  spring-data-projects.json \
+  ./sources \
+  ./site
 ```
 
 ### 按项目构建

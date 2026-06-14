@@ -49,7 +49,7 @@
 ### 1. 新增的脚本与配置文件结构
 
 *   **`build-all-spring-data-docs.sh` (编译总入口脚本)**：
-    *   **职责**：主控脚本，负责环境检查、调用工具链修补、拉取标签、安装本地依赖、运行编译并收集文档。
+    *   **职责**：主控脚本，负责环境检查、调用工具链修补、拉取标签、安装本地依赖并运行编译。该脚本不收集文档。
     *   **特点**：自动处理了 Maven Wrapper (`mvnw`) 所需的工作目录依赖，即便在外层目录运行也不会报错。
 *   **`patch-toolchain.js` (工具链补丁脚本)**：
     *   **职责**：自动修补 `antora-tooling/node_modules/` 下的第三方库。
@@ -89,4 +89,4 @@ ANTORA_CACHE_DIR=/path/to/antora/content bash build-all-spring-data-docs.sh
 本方案在设计上确保了**完全的可复用性**与**幂等性**，不需要人工介入官方代码的版本控制：
 *   **如果您重新 `checkout` 了干净的官方分支**，本地的 `antora-playbook.yml` 会恢复为远程 Commons 内容源。再次运行 `bash build-all-spring-data-docs.sh` 时，`patch-playbooks.js` 会重新指向本地 Commons checkout。
 *   **如果您清理了 `node_modules` 缓存**，脚本在编译前会通过 `npm install` 自动下回官方干净的包，并立即用 `patch-toolchain.js` 重新实施 Node 24 兼容性修补。
-*   **如果您在任何外部目录运行**，脚本均能正确识别路径并把编译产物完美复制到统一的目录 `target/antora/site/` 下。
+*   构建完成后，单独运行 `bash collect-spring-data-docs.sh`，将文档产物复制到统一的 `site/` 目录。

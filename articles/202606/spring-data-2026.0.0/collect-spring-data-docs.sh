@@ -4,7 +4,7 @@ set -euo pipefail
 
 config_file="${1:-spring-data-projects.json}"
 source_dir="${2:-./sources}"
-output_dir="${3:-.}"
+output_dir="${3:-./site}"
 
 if [[ ! -f "$config_file" ]]; then
   echo "错误：JSON 配置不存在：$config_file" >&2
