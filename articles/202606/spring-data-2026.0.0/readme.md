@@ -23,29 +23,15 @@ chmod +x create-directories.sh \
 `dependencyManagement/dependencies/dependency/artifactId` 的值，并为每个
 `artifactId` 创建一个空目录。
 
-依赖：
-
-- Bash
-- `xmllint`（通常由 `libxml2` 软件包提供）
-
-用法：
-
+ 
+ 
 ```bash
-./create-directories.sh [POM 文件] [输出目录]
+# ./create-directories.sh [POM 文件] [输出目录]
+bash ./create-directories.sh spring-data-bom-2026.0.0.pom .
 ```
 
-不传参数时，默认读取当前目录下的
-`spring-data-bom-2026.0.0.pom`，并在当前目录创建文件夹：
-
-```bash
-./create-directories.sh
-```
-
-指定 POM 和输出目录：
-
-```bash
-./create-directories.sh spring-data-bom-2026.0.0.pom ./artifact-directories
-```
+上面的 `.` 表示直接在当前仓库目录中创建各个 `spring-data-*` 文件夹。
+这些目录已由 `.gitignore` 忽略，不会被 Git 跟踪。
 
 ### 2. Checkout 子项目并切换 tag
 
@@ -76,7 +62,7 @@ Cassandra 使用 `5.1.0`，Neo4j 使用 `8.1.0`。
 ### 3. 构建 Javadoc 和 Reference
 
 `build-spring-data-docs.sh` 会依次进入各个源码仓库，通过 Maven 的
-`distribute` profile 构建 reference 文档，并执行聚合 Javadoc 构建。
+`Antora` profile 构建 reference 文档，并执行聚合 Javadoc 构建。
 
 脚本优先使用项目中的 `mvnw`；项目没有 Maven Wrapper 时，使用系统中的
 `mvn`。每个项目的构建日志会单独保存，一个项目失败后仍会继续构建其他
@@ -92,9 +78,22 @@ bash build-spring-data-docs.sh ./sources ./build-logs
 实际执行的主要 Maven 命令为：
 
 ```bash
-./mvnw -DskipTests -Dmaven.javadoc.failOnError=false \
-  -Pdistribute clean package javadoc:aggregate
+# 构建 reference 文档
+./mvnw -DskipTests clean install -Pantora
+
+# 构建聚合 Javadoc
+./mvnw -DskipTests -Dmaven.javadoc.failOnError=false javadoc:aggregate
 ```
+
+Reference 文档通常生成在项目的 `target/antora` 目录中。不同仓库的具体
+目录可能不同，例如：
+
+- Spring Data JPA：`sources/spring-data-jpa/target/antora/index.html`
+- Spring Data Relational：
+  `sources/spring-data-relational/spring-data-jdbc-distribution/target/antora/site/index.html`
+
+每个项目构建完成后，脚本会搜索并打印实际生成的 reference
+`index.html` 路径。
 
 ### 完整流程示例
 

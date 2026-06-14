@@ -1,0 +1,18 @@
+# Repositories downloaded by checkout-spring-data-projects.sh
+/sources/
+/spring-data-*/
+
+# Generated artifact directories
+/artifact-directories/
+
+# Build logs
+/build-logs/
+
+# Maven, Antora, and Javadoc build output
+**/target/
+
+# Local IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

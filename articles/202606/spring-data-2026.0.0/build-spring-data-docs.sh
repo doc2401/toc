@@ -47,20 +47,48 @@ for project_name in "${repositories[@]}"; do
   echo "日志文件：$log_file"
 
   (
+    set -e
     cd "$project_dir" || exit 1
+
+    echo "构建 reference 文档：$project_name"
+    "${maven_command[@]}" \
+      --batch-mode \
+      --no-transfer-progress \
+      -DskipTests \
+      clean install \
+      -Pantora
+
+    echo "构建聚合 Javadoc：$project_name"
     "${maven_command[@]}" \
       --batch-mode \
       --no-transfer-progress \
       -DskipTests \
       -Dmaven.javadoc.failOnError=false \
-      -Pdistribute \
-      clean package javadoc:aggregate
+      javadoc:aggregate
   ) 2>&1 | tee "$log_file"
 
   build_status=${PIPESTATUS[0]}
 
   if [[ $build_status -eq 0 ]]; then
     echo "构建成功：$project_name"
+
+    reference_files=()
+    while IFS= read -r reference_file; do
+      reference_files+=("$reference_file")
+    done < <(
+      find "$project_dir" \
+        -type f \
+        -path "*/target/antora/*" \
+        -name "index.html" \
+        -print
+    )
+
+    if [[ ${#reference_files[@]} -gt 0 ]]; then
+      echo "Reference 文档入口："
+      printf '  - %s\n' "${reference_files[@]}"
+    else
+      echo "警告：构建成功，但未在 target/antora 下找到 reference index.html"
+    fi
   else
     echo "构建失败：$project_name，详情见 $log_file"
     failed_projects+=("$project_name")
