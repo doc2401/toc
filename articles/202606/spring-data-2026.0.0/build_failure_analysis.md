@@ -59,8 +59,8 @@
         3. 修复了 `@springio/antora-extensions` 中对 `scan` 数组配置的解析并防范 `EEXIST` 创建目录冲突。
 *   **`patch-playbooks.js` (Playbook 补丁脚本)**：
     *   **职责**：动态扫描所有子项目的 `antora-playbook.yml` 文件。如果包含 `spring-data-commons` 依赖但未配置标签，自动注入 `tags: [ 4.1.0 ]`。
-*   **`spring-data-projects-ordered.json` (拓扑排序配置文件)**：
-    *   **职责**：将 12 个子项目按照**拓扑依赖关系**重新排序（优先编译基础包如 `spring-data-commons`、`spring-data-keyvalue`、`spring-data-relational`），确保在全新环境下也能 100% 成功解析本地依赖。
+*   **`spring-data-projects.json` (项目配置文件)**：
+    *   **职责**：统一维护 12 个子项目的仓库、版本、文档路径和构建顺序，优先编译 `spring-data-commons`、`spring-data-keyvalue`、`spring-data-relational` 等基础项目。
 
 ### 2. 使用方法
 
@@ -70,10 +70,17 @@
 ./build-all-spring-data-docs.sh
 ```
 
+Antora Git 缓存目录默认使用
+`${XDG_CACHE_HOME:-$HOME/.cache}/antora/content`。如需指定其他位置，可以
+设置环境变量：
+
+```bash
+ANTORA_CACHE_DIR=/path/to/antora/content ./build-all-spring-data-docs.sh
+```
+
 ### 3. 可复用性设计 (如何应对重新 checkout)
 
 本方案在设计上确保了**完全的可复用性**与**幂等性**，不需要人工介入官方代码的版本控制：
 *   **如果您重新 `checkout` 了干净的官方分支**，本地的 `antora-playbook.yml` 会被还原为未加标签的状态。再次运行 `./build-all-spring-data-docs.sh` 时，`patch-playbooks.js` 会自动检测并重新打上标签补丁。
 *   **如果您清理了 `node_modules` 缓存**，脚本在编译前会通过 `npm install` 自动下回官方干净的包，并立即用 `patch-toolchain.js` 重新实施 Node 24 兼容性修补。
 *   **如果您在任何外部目录运行**，脚本均能正确识别路径并把编译产物完美复制到统一的目录 `target/antora/site/` 下。
-

@@ -4,7 +4,7 @@
 set -euo pipefail
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-config_file="$script_dir/spring-data-projects-ordered.json"
+config_file="$script_dir/spring-data-projects.json"
 source_dir="$script_dir/sources"
 log_dir="$script_dir/build-logs"
 tool_dir="$script_dir/antora-tooling"
@@ -32,7 +32,8 @@ node "$script_dir/patch-playbooks.js"
 
 # 4. 在本地的 Antora git 缓存目录中拉取 tags
 echo "4. 拉取缓存 Git 仓库中的 Tags..."
-cache_dir="/mnt/data/fedora/.cache/antora/content"
+cache_dir="${ANTORA_CACHE_DIR:-${XDG_CACHE_HOME:-$HOME/.cache}/antora/content}"
+echo "  Antora 缓存目录: $cache_dir"
 if [[ -d "$cache_dir" ]]; then
   for git_repo in "$cache_dir"/*.git; do
     if [[ -d "$git_repo" ]]; then
@@ -46,23 +47,28 @@ fi
 
 # 5. 安装本地 BOM (spring-data-bom-2026.0.0.pom) 以确保 Maven 编译的版本依赖解析正常
 echo "5. 安装本地 BOM pom 文件..."
-if command -v mvn >/dev/null 2>&1; then
-  maven_cmd="mvn"
+commons_mvnw="$source_dir/spring-data-commons/mvnw"
+
+if [[ -x "$commons_mvnw" ]]; then
+  maven_cmd=("$commons_mvnw")
 else
-  # 寻找源码目录中的 mvnw
-  mvnw_path=$(find "$source_dir" -maxdepth 2 -name "mvnw" | head -n 1)
+  # 优先使用任意已检出子项目自带的 Maven Wrapper。
+  mvnw_path="$(find "$source_dir" -mindepth 2 -maxdepth 2 -type f -name "mvnw" -perm -u+x -print -quit)"
+
   if [[ -n "$mvnw_path" ]]; then
-    maven_cmd="$mvnw_path"
+    maven_cmd=("$mvnw_path")
+  elif command -v mvn >/dev/null 2>&1; then
+    maven_cmd=("mvn")
   else
-    echo "错误：未在系统路径或项目中找到 maven 或 mvnw 包装器。" >&2
+    echo "错误：未在子项目或系统 PATH 中找到 Maven。" >&2
     exit 1
   fi
 fi
 
-echo "  使用 Maven 命令: $maven_cmd"
+echo "  使用 Maven 命令: ${maven_cmd[*]}"
 (
-  cd "$(dirname "$maven_cmd")"
-  "./$(basename "$maven_cmd")" install:install-file \
+  cd "$script_dir"
+  "${maven_cmd[@]}" install:install-file \
     -Dfile="$script_dir/spring-data-bom-2026.0.0.pom" \
     -DgroupId="org.springframework.data" \
     -DartifactId="spring-data-bom" \
@@ -74,8 +80,7 @@ echo "  使用 Maven 命令: $maven_cmd"
 
 # 6. 运行 build-spring-data-docs.sh 构建各个项目的 Javadoc 和 Antora 文档
 echo "6. 开始编译各个项目文档..."
-# 我们使用有序的 spring-data-projects-ordered.json
-# 来保证 commons 和 keyvalue / relational 优先构建
+# spring-data-projects.json 已按依赖顺序排列。
 "$script_dir/build-spring-data-docs.sh" "$config_file" "$source_dir" "$log_dir"
 
 # 7. 收集构建好的文档产物
