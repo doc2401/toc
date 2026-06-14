@@ -69,8 +69,17 @@ Cassandra 使用 `5.1.0`，Neo4j 使用 `8.1.0`。
 聚合 Javadoc，再使用仓库外的统一 Antora 工具链构建 reference 文档。
 
 Antora 与扩展版本固定在 `antora-tooling/package.json` 中，不依赖 `npx`
-临时解析最新版，也不会修改 `sources` 中检出的官方源码。首次运行会在
-`antora-tooling/node_modules` 安装依赖，该目录已被 `.gitignore` 忽略。
+临时解析最新版。首次运行会在 `antora-tooling/node_modules` 安装依赖，
+该目录已被 `.gitignore` 忽略。
+
+构建流程会临时修改 `sources` 中的 playbook。修改前后的快照分别保存在：
+
+```text
+antora-tooling/playbooks-before/<项目名>/antora-playbook.yml
+antora-tooling/playbooks-after/<项目名>/antora-playbook.yml
+```
+
+可以使用 `diff -u` 查看具体变化。
 
 脚本优先使用项目中的 `mvnw`；项目没有 Maven Wrapper 时，使用系统中的
 `mvn`。每个项目的构建日志会单独保存，一个项目失败后仍会继续构建其他

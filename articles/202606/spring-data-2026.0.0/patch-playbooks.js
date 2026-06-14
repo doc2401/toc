@@ -3,6 +3,9 @@ const path = require('path')
 
 const sourcesDir = path.join(__dirname, 'sources')
 const commonsDir = path.join(sourcesDir, 'spring-data-commons')
+const toolingDir = path.join(__dirname, 'antora-tooling')
+const beforeDir = path.join(toolingDir, 'playbooks-before')
+const afterDir = path.join(toolingDir, 'playbooks-after')
 const selectedProjects = new Set(process.argv.slice(2))
 
 console.log('--- Pointing Antora playbooks at the local Spring Data Commons checkout ---')
@@ -43,18 +46,27 @@ for (const projectDir of projectDirs) {
   for (const playbookPath of findPlaybooks(projectDir)) {
   const original = fs.readFileSync(playbookPath, 'utf8')
   const lineBreak = original.includes('\r\n') ? '\r\n' : '\n'
-  const playbookDir = path.dirname(playbookPath)
-  let relativeCommonsPath = path.relative(playbookDir, commonsDir).replaceAll('\\', '/')
+  const projectName = path.relative(sourcesDir, playbookPath).split(path.sep)[0]
+  const actualProjectDir = path.join(sourcesDir, projectName)
+  const beforeSnapshot = path.join(beforeDir, projectName, 'antora-playbook.yml')
+  const afterSnapshot = path.join(afterDir, projectName, 'antora-playbook.yml')
+
+  fs.mkdirSync(path.dirname(beforeSnapshot), { recursive: true })
+  fs.mkdirSync(path.dirname(afterSnapshot), { recursive: true })
+  fs.writeFileSync(beforeSnapshot, original, 'utf8')
+
+  let relativeCommonsPath = path.relative(actualProjectDir, commonsDir).replaceAll('\\', '/')
 
   if (!relativeCommonsPath.startsWith('.')) {
     relativeCommonsPath = `./${relativeCommonsPath}`
   }
 
   const commonsSourcePattern =
-    /    - url: https:\/\/github\.com\/spring-projects\/spring-data-commons\r?\n[\s\S]*?(?=\r?\n(?:    - url:|asciidoc:))/
+    /    - url: (?:https:\/\/github\.com\/spring-projects\/spring-data-commons|[^\r\n]*spring-data-commons)\r?\n[\s\S]*?(?=\r?\n(?:    - url:|asciidoc:))/
 
   if (!commonsSourcePattern.test(original)) {
-    console.log(`No remote Spring Data Commons source found: ${playbookPath}`)
+    fs.writeFileSync(afterSnapshot, original, 'utf8')
+    console.log(`No Spring Data Commons content source found: ${playbookPath}`)
     continue
   }
 
@@ -67,6 +79,9 @@ for (const projectDir of projectDirs) {
 
   const patched = original.replace(commonsSourcePattern, localCommonsSource)
   fs.writeFileSync(playbookPath, patched, 'utf8')
+  fs.writeFileSync(afterSnapshot, patched, 'utf8')
   console.log(`Patched playbook: ${playbookPath}`)
+  console.log(`  Before: ${beforeSnapshot}`)
+  console.log(`  After:  ${afterSnapshot}`)
   }
 }
