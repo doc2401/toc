@@ -1,7 +1,7 @@
 
 [Spring Data](https://spring.io/projects/spring-data)
 
-> Spring Data’s mission is to provide a familiar and consistent, Spring-based programming model for data access while still retaining the special traits of the underlying data store.
+> Spring Data’s mission is to provide a familiar and consistent, Spring-based programming model for data access while still retaining the special traits of the underlying data store.     
 > Spring Data 的使命是提供一种熟悉、一致且基于 Spring 的数据访问编程模型，同时保留底层数据存储各自的特性。
 
 
