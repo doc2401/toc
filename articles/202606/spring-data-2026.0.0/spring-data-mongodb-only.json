@@ -1,0 +1,14 @@
+{
+  "releaseTrain": "2026.0.0",
+  "projects": [
+    {
+      "name": "spring-data-mongodb",
+      "repository": "https://github.com/spring-projects/spring-data-mongodb.git",
+      "tag": "5.1.0",
+      "documentation": {
+        "reference": { "source": "target/site", "destination": "reference" },
+        "api": { "source": "target/reports/apidocs", "destination": "api" }
+      }
+    }
+  ]
+}
