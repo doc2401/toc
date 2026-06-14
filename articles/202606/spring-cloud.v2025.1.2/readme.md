@@ -69,3 +69,38 @@ bash build-spring-cloud-docs.sh \
 
 
 
+## 检出代码
+
+## 创建分支
+
+
+```bash
+
+## git-bash 执行
+# 获取文件夹名
+d=$(basename "$PWD")
+
+## 创建新分支
+git worktree add -b lang "../$d.lang" HEAD
+cd "../$d.lang"
+
+
+# 添加名为 `lang` 的**远端仓库地址**
+d=$(basename "$PWD")
+url=$(git remote get-url origin)
+url=${url%.git}
+git remote add lang "$url.lang.git"
+
+# 推送分支 
+git push lang
+
+
+```
+
+split-spring-cloud-folders.ps1
+
+
+
+## end
+
+
