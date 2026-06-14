@@ -3,9 +3,9 @@
   - [更新记录](/changelog.md)
 
 - **Java 生态**
-  - [Java 教程](/java/java.md)
+  - [Java 教程](/_local/java.md)
   - [JDK 核心文档](/_local/jdk.md)
-  - [Jakarta EE](/java/jakarta-ee.md)
+  - [Jakarta EE](/_local/jakarta-ee.md)
 
 - **Spring 家族**
   - [Spring 版本汇总](/_local/spring-framework.md)
@@ -49,7 +49,7 @@
 
 - **图形与创意设计**
   - [图形与游戏索引](/graphics/graphics.md)
-  - [Blender](/graphics/blender.md)
+  - [Blender](/_local/blender.md)
 
 - **文章与归档**
   - [我的文章](/_articles/README.md)
