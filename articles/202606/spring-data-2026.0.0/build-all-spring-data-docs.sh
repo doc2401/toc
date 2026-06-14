@@ -48,16 +48,24 @@ fi
 # 5. 安装本地 BOM (spring-data-bom-2026.0.0.pom) 以确保 Maven 编译的版本依赖解析正常
 echo "5. 安装本地 BOM pom 文件..."
 commons_mvnw="$source_dir/spring-data-commons/mvnw"
+default_maven_workdir="$source_dir/spring-data-commons"
 
 if [[ -x "$commons_mvnw" ]]; then
-  maven_cmd=("$commons_mvnw")
+  maven_workdir="$default_maven_workdir"
+  maven_cmd=("./mvnw")
 else
   # 优先使用任意已检出子项目自带的 Maven Wrapper。
   mvnw_path="$(find "$source_dir" -mindepth 2 -maxdepth 2 -type f -name "mvnw" -perm -u+x -print -quit)"
 
   if [[ -n "$mvnw_path" ]]; then
-    maven_cmd=("$mvnw_path")
+    maven_workdir="$(dirname "$mvnw_path")"
+    maven_cmd=("./mvnw")
   elif command -v mvn >/dev/null 2>&1; then
+    if [[ ! -d "$default_maven_workdir" ]]; then
+      echo "错误：Maven 工作目录不存在：$default_maven_workdir" >&2
+      exit 1
+    fi
+    maven_workdir="$default_maven_workdir"
     maven_cmd=("mvn")
   else
     echo "错误：未在子项目或系统 PATH 中找到 Maven。" >&2
@@ -65,9 +73,10 @@ else
   fi
 fi
 
+echo "  Maven 工作目录: $maven_workdir"
 echo "  使用 Maven 命令: ${maven_cmd[*]}"
 (
-  cd "$script_dir"
+  cd "$maven_workdir"
   "${maven_cmd[@]}" install:install-file \
     -Dfile="$script_dir/spring-data-bom-2026.0.0.pom" \
     -DgroupId="org.springframework.data" \
