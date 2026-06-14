@@ -82,20 +82,20 @@
     支持 Spring 中的消费者驱动契约测试。    
     原版: 
       [reference](../../spring-cloud.2025.1.2/spring-cloud-contract/reference/) ，
-      [javadoc api](../../spring-cloud.2025.1.2/spring-cloud-contract/api/) ，   
+       
     中文:
       [reference](../../spring-cloud.2025.1.2.lang/zh/spring-cloud-contract/reference/) ，
-      [javadoc api](../../spring-cloud.2025.1.2.lang/zh/spring-cloud-contract/api/) ，
+      
 
 +   [spring-cloud-function](https://github.com/spring-cloud/spring-cloud-function/) 
     Promotes the implementation of business logic via functions and supports deployment to serverless providers.    
     促进通过函数实现业务逻辑，并支持部署到无服务器（Serverless）提供商。    
     原版: 
       [reference](../../spring-cloud.2025.1.2/spring-cloud-function/reference/) ，
-      [javadoc api](../../spring-cloud.2025.1.2/spring-cloud-function/api/) ，   
+         
     中文:
       [reference](../../spring-cloud.2025.1.2.lang/zh/spring-cloud-function/reference/) ，
-      [javadoc api](../../spring-cloud.2025.1.2.lang/zh/spring-cloud-function/api/) ，
+       
 
 +   [spring-cloud-gateway](https://github.com/spring-cloud/spring-cloud-gateway/) 
     A Spring Boot based API Gateway providing routing and cross-cutting concerns.    
