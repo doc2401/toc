@@ -23,7 +23,7 @@
     *   然而，默认的 `antora-playbook.yml` 中对于 `spring-data-commons` 依赖库的配置仅指定了 `branches: [ main ]`。
     *   由于未声明拉取 `4.1.0` 标签，Antora 无法在文档资源池中找到 `4.1.0` 版本的 Commons 文档，导致 Asciidoctor 转换引擎抛出致命异常并中断构建。
 *   **修复方案**：
-    在 `antora-playbook.yml` 中为 `spring-data-commons` 添加 `tags: [ 4.1.0 ]`，并提前在本地缓存 Git 仓库中执行 `git fetch --tags` 获取对应版本的标签。
+    将 `antora-playbook.yml` 中远程 `spring-data-commons` 内容源替换为本地已 checkout 到 BOM 指定版本的仓库，并使用 `branches: HEAD`。这样不会收集 `3.2.x` 等无关维护分支。
 
 ### 3. Spring 官方扩展插件的 Array 数组配置兼容性缺陷
 *   **问题现象**：在补全 `spring-data-commons` 的 `4.1.0` 标签后，编译会报 `FATAL (antora): The "path" argument must be of type string. Received type undefined` 致命错误。
@@ -58,7 +58,7 @@
         2. 修复了 `yauzl/fd-slicer.js` 中的 `ReadStream.prototype.destroy` 逻辑，移除了 Node 24 自动销毁流时产生的虚假 `stream destroyed` 报错。
         3. 修复了 `@springio/antora-extensions` 中对 `scan` 数组配置的解析并防范 `EEXIST` 创建目录冲突。
 *   **`patch-playbooks.js` (Playbook 补丁脚本)**：
-    *   **职责**：动态扫描所有子项目的 `antora-playbook.yml` 文件。如果包含 `spring-data-commons` 依赖但未配置标签，自动注入 `tags: [ 4.1.0 ]`。
+    *   **职责**：动态扫描所有子项目的 `antora-playbook.yml`，将远程 `spring-data-commons` 内容源替换为已经 checkout 到 BOM 指定版本的本地仓库，并使用 `branches: HEAD`，避免 Antora 收集无关维护分支。
 *   **`spring-data-projects.json` (项目配置文件)**：
     *   **职责**：统一维护 12 个子项目的仓库、版本、文档路径和构建顺序，优先编译 `spring-data-commons`、`spring-data-keyvalue`、`spring-data-relational` 等基础项目。
 
@@ -68,6 +68,12 @@
 
 ```bash
 bash build-all-spring-data-docs.sh
+```
+
+也可以只构建一个或多个项目：
+
+```bash
+bash build-all-spring-data-docs.sh spring-data-mongodb
 ```
 
 Antora Git 缓存目录默认使用
@@ -81,6 +87,6 @@ ANTORA_CACHE_DIR=/path/to/antora/content bash build-all-spring-data-docs.sh
 ### 3. 可复用性设计 (如何应对重新 checkout)
 
 本方案在设计上确保了**完全的可复用性**与**幂等性**，不需要人工介入官方代码的版本控制：
-*   **如果您重新 `checkout` 了干净的官方分支**，本地的 `antora-playbook.yml` 会被还原为未加标签的状态。再次运行 `bash build-all-spring-data-docs.sh` 时，`patch-playbooks.js` 会自动检测并重新打上标签补丁。
+*   **如果您重新 `checkout` 了干净的官方分支**，本地的 `antora-playbook.yml` 会恢复为远程 Commons 内容源。再次运行 `bash build-all-spring-data-docs.sh` 时，`patch-playbooks.js` 会重新指向本地 Commons checkout。
 *   **如果您清理了 `node_modules` 缓存**，脚本在编译前会通过 `npm install` 自动下回官方干净的包，并立即用 `patch-toolchain.js` 重新实施 Node 24 兼容性修补。
 *   **如果您在任何外部目录运行**，脚本均能正确识别路径并把编译产物完美复制到统一的目录 `target/antora/site/` 下。

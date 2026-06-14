@@ -120,6 +120,21 @@ bash build-spring-data-docs.sh \
 bash collect-spring-data-docs.sh spring-data-projects.json ./sources .
 ```
 
+### 按项目构建
+
+`build-all-spring-data-docs.sh` 不传项目名时构建全部项目。传入一个或多个
+项目名时，只构建并收集指定项目：
+
+```bash
+# 只构建 MongoDB
+bash build-all-spring-data-docs.sh spring-data-mongodb
+
+# 构建多个项目
+bash build-all-spring-data-docs.sh \
+  spring-data-commons \
+  spring-data-mongodb
+```
+
  
 - [spring-projects/spring-data-commons: Spring Data Commons. Interfaces and code shared between the various datastore specific implementations. · GitHub](https://github.com/spring-projects/spring-data-commons)
 - [Spring Data JDBC](https://spring.io/projects/spring-data-jdbc)

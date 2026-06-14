@@ -1,69 +1,72 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require('fs')
+const path = require('path')
 
-const sourcesDir = path.join(__dirname, 'sources');
+const sourcesDir = path.join(__dirname, 'sources')
+const commonsDir = path.join(sourcesDir, 'spring-data-commons')
+const selectedProjects = new Set(process.argv.slice(2))
 
-console.log('--- Patching Playbooks to include spring-data-commons 4.1.0 Tag ---');
+console.log('--- Pointing Antora playbooks at the local Spring Data Commons checkout ---')
 
-function walk(dir) {
-  let results = [];
-  const list = fs.readdirSync(dir);
-  list.forEach((file) => {
-    const filePath = path.join(dir, file);
-    const stat = fs.statSync(filePath);
-    if (stat && stat.isDirectory()) {
-      results = results.concat(walk(filePath));
-    } else {
-      if (file === 'antora-playbook.yml') {
-        results.push(filePath);
-      }
-    }
-  });
-  return results;
+if (!fs.existsSync(commonsDir)) {
+  console.error(`Error: Spring Data Commons checkout does not exist at ${commonsDir}`)
+  process.exit(1)
 }
 
-if (!fs.existsSync(sourcesDir)) {
-  console.error(`Error: sources directory does not exist at ${sourcesDir}`);
-  process.exit(1);
-}
+function findPlaybooks(dir) {
+  const results = []
 
-const playbooks = walk(sourcesDir);
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const entryPath = path.join(dir, entry.name)
 
-playbooks.forEach((playbookPath) => {
-  let content = fs.readFileSync(playbookPath, 'utf8');
-  
-  // We want to find the section for spring-data-commons:
-  // - url: https://github.com/spring-projects/spring-data-commons
-  //   branches: [...]
-  // and insert "      tags: [ 4.1.0 ]"
-  
-  const commonsRegex = /(url:\s*https:\/\/github\.com\/spring-projects\/spring-data-commons\s*\r?\n\s*(?:#.*\r?\n\s*)*branches:\s*\[[^\]]*\])/g;
-  
-  if (commonsRegex.test(content)) {
-    // Reset regex lastIndex
-    commonsRegex.lastIndex = 0;
-    
-    // Check if tags [ 4.1.0 ] is already present
-    if (!content.includes('4.1.0') || !content.includes('tags:')) {
-      content = content.replace(commonsRegex, (match) => {
-        // Find line ending of branches line and append the tags line
-        const lines = match.split(/\r?\n/);
-        // Determine line break style
-        const lineBreak = match.includes('\r\n') ? '\r\n' : '\n';
-        // Get the indent of the branches line
-        const lastLine = lines[lines.length - 1];
-        const indentMatch = lastLine.match(/^(\s*)/);
-        const indent = indentMatch ? indentMatch[1] : '      ';
-        
-        return match + lineBreak + indent + 'tags: [ 4.1.0 ]';
-      });
-      
-      fs.writeFileSync(playbookPath, content, 'utf8');
-      console.log(`Patched playbook: ${playbookPath}`);
-    } else {
-      console.log(`Playbook already patched or contains 4.1.0 tag: ${playbookPath}`);
+    if (entry.isDirectory()) {
+      results.push(...findPlaybooks(entryPath))
+    } else if (entry.name === 'antora-playbook.yml') {
+      results.push(entryPath)
     }
-  } else {
-    console.log(`No spring-data-commons source found in playbook: ${playbookPath}`);
   }
-});
+
+  return results
+}
+
+const projectDirs =
+  selectedProjects.size > 0
+    ? [...selectedProjects].map((projectName) => path.join(sourcesDir, projectName))
+    : [sourcesDir]
+
+for (const projectDir of projectDirs) {
+  if (!fs.existsSync(projectDir)) {
+    console.error(`Error: selected project does not exist at ${projectDir}`)
+    process.exitCode = 1
+    continue
+  }
+
+  for (const playbookPath of findPlaybooks(projectDir)) {
+  const original = fs.readFileSync(playbookPath, 'utf8')
+  const lineBreak = original.includes('\r\n') ? '\r\n' : '\n'
+  const playbookDir = path.dirname(playbookPath)
+  let relativeCommonsPath = path.relative(playbookDir, commonsDir).replaceAll('\\', '/')
+
+  if (!relativeCommonsPath.startsWith('.')) {
+    relativeCommonsPath = `./${relativeCommonsPath}`
+  }
+
+  const commonsSourcePattern =
+    /    - url: https:\/\/github\.com\/spring-projects\/spring-data-commons\r?\n[\s\S]*?(?=\r?\n(?:    - url:|asciidoc:))/
+
+  if (!commonsSourcePattern.test(original)) {
+    console.log(`No remote Spring Data Commons source found: ${playbookPath}`)
+    continue
+  }
+
+  const localCommonsSource = [
+    `    - url: ${relativeCommonsPath}`,
+    '      branches: HEAD',
+    '      start_path: src/main/antora',
+    '      worktrees: true',
+  ].join(lineBreak)
+
+  const patched = original.replace(commonsSourcePattern, localCommonsSource)
+  fs.writeFileSync(playbookPath, patched, 'utf8')
+  console.log(`Patched playbook: ${playbookPath}`)
+  }
+}
