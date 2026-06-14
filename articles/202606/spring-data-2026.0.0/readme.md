@@ -186,7 +186,131 @@ bash build-spring-data-docs-with-patch.sh \
 
 
 
+## 创建分支
 
+
+```bash
+
+# 获取文件夹名
+d=$(basename "$PWD")
+
+## 创建新分支
+git worktree add -b lang "../$d.lang" HEAD
+cd "../$d.lang"
+
+
+# 添加名为 `lang` 的**远端仓库地址**
+d=$(basename "$PWD")
+url=$(git remote get-url origin)
+url=${url%.git}
+git remote add lang "$url.lang.git"
+
+# 推送分支 
+git push lang
+
+
+```
+
+## 准备文件
+
+
+拆分子文件夹
+```bash
+
+#!/bin/bash
+
+for parent in spring-data-*/; do
+  parent=${parent%/}
+
+  for child in "$parent"/*/; do
+    [ -d "$child" ] || continue
+    child_name=${child%/}
+    child_name=${child_name##*/}
+    mv "$child" "00.$parent.$child_name"
+  done
+
+  rmdir "$parent"
+done
+
+```
+
+
+**github action**
+```bash
+
+
+
+
+## 忽略翻译的日志文件
+echo "/*.log"  >> ".gitignore"
+
+# 下载 lang.json 配置文件
+curl -fsSL https://raw.githubusercontent.com/doc2401/actions/main/lang/lang.json -o lang.json
+
+# 创建目录并下载工作流文件
+mkdir -p .github/workflows && curl -fsSL https://raw.githubusercontent.com/doc2401/actions/main/lang/deploy-example.yml -o .github/workflows/lang-deploy.yml
+
+## 删除原来的静态网站的 action
+rm .github/workflows/static.yml
+
+git add .
+git commit -m "github action"
+
+
+```
+
+**拆分html**
+```powershell
+
+Get-ChildItem -Directory -Filter "00*" | ForEach-Object {
+    Set-Location $_.FullName
+    pw2401 dir-copy -Extension html -DeleteOriginal
+    Set-Location ..
+} 
+
+
+git add .
+git commit -m "split html files"
+
+
+
+Get-ChildItem -Directory -Filter "00.*.copy" | ForEach-Object {
+    $name = $_.Name -replace "^00\.", "01." -replace "\.copy$", ".html"
+    Rename-Item $_.FullName $name
+}
+
+
+git add .
+git commit -m "00.*.copy -> 01.*.html "
+
+
+git push lang
+
+
+
+```
+
+**!!又忘记要子目录保持了!!**
+
+```powershell
+
+## 00 00 补救一下
+Get-ChildItem -Directory -Filter "01.*" | ForEach-Object {
+    $parts = $_.Name -split '\.', 3
+
+    if ($parts.Count -ge 3) {
+        $projectName = $parts[1]
+        $projectPath = Join-Path $_.FullName $projectName
+
+        New-Item -ItemType Directory -Path $projectPath -Force | Out-Null
+
+        Get-ChildItem $_.FullName -Directory |
+            Where-Object Name -ne $projectName |
+            Move-Item -Destination $projectPath
+    }
+}
+
+```
 
 
 ## sprnig-data
