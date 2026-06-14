@@ -1,0 +1,464 @@
+构建聚合 Javadoc：spring-data-jpa
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/home/codespace/.m2/wrapper/dists/apache-maven-3.9.16-bin/5grr65jo27hi51sujmtcldfovl/apache-maven-3.9.16/lib/jansi-2.4.3.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[INFO] Scanning for projects...
+[WARNING] This build will only read from the build cache, since the clean lifecycle is not part of the build invocation.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Spring Data JPA Parent                                             [pom]
+[INFO] Spring Data JPA                                                    [jar]
+[INFO] Spring Data Envers                                                 [jar]
+[INFO] Spring Data JPA - Distribution                                     [pom]
+[INFO] 
+[INFO] ----------< org.springframework.data:spring-data-jpa-parent >-----------
+[INFO] Building Spring Data JPA Parent 4.1.0                              [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> javadoc:3.12.0:aggregate (default-cli) > compile @ spring-data-jpa-parent >>>
+[INFO] 
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] Forking Spring Data JPA Parent 4.1.0
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-jpa-parent ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-jpa-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-jpa-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] Forking Spring Data JPA 4.1.0
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[WARNING] The artifact org.hibernate.orm:hibernate-jpamodelgen:jar:7.4.0.Final has been relocated to org.hibernate.orm:hibernate-processor:jar:7.4.0.Final
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-jpa ---
+[INFO] 
+[INFO] --- antlr4:4.13.2:antlr4 (default) @ spring-data-jpa ---
+[INFO] ANTLR 4: Processing source directory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa/src/main/antlr4
+[INFO] Processing grammar: org/springframework/data/jpa/repository/query/Hql.g4
+[INFO] Processing grammar: org/springframework/data/jpa/repository/query/Jpql.g4
+[INFO] Processing grammar: org/springframework/data/jpa/repository/query/Eql.g4
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-jpa ---
+[INFO] Copying 15 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-jpa ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-jpa ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 232 source files with javac [debug parameters release 17] to target/classes
+[INFO] Hibernate compile-time tooling 7.4.0.Final
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/query/JpaParameters.java:[91,41] org.springframework.data.jpa.repository.Temporal in org.springframework.data.jpa.repository has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/query/JpaParameters.java:[91,41] org.springframework.data.jpa.repository.Temporal in org.springframework.data.jpa.repository has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/query/JpaParameters.java:[91,41] org.springframework.data.jpa.repository.Temporal in org.springframework.data.jpa.repository has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/query/JpaParameters.java:[91,41] org.springframework.data.jpa.repository.Temporal in org.springframework.data.jpa.repository has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/query/JpaParameters.java:[104,76] org.springframework.data.jpa.repository.Temporal in org.springframework.data.jpa.repository has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/query/JpaParameters.java:[108,49] org.springframework.data.jpa.repository.Temporal in org.springframework.data.jpa.repository has been deprecated and marked for removal
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/query/JpaParameters.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/query/JpaParameters.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa/src/main/java/org/springframework/data/jpa/provider/PersistenceProvider.java: Some input files use unchecked or unsafe operations.
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa/src/main/java/org/springframework/data/jpa/provider/PersistenceProvider.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] Forking Spring Data Envers 4.1.0
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-envers ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-envers ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-envers ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-envers ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 10 source files with javac [debug parameters release 17] to target/classes
+[INFO] 
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] Forking Spring Data JPA - Distribution 4.1.0
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-jpa-distribution ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default) @ spring-data-jpa-distribution ---
+[INFO] Copying 1 resource from ../src/main/antora/resources/antora-resources to target/classes
+[INFO] 
+[INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-jpa-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-jpa-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< javadoc:3.12.0:aggregate (default-cli) < compile @ spring-data-jpa-parent <<<
+[INFO] 
+[WARNING] The artifact org.hibernate.orm:hibernate-jpamodelgen:jar:7.4.0.Final has been relocated to org.hibernate.orm:hibernate-processor:jar:7.4.0.Final
+[INFO] 
+[INFO] --- javadoc:3.12.0:aggregate (default-cli) @ spring-data-jpa-parent ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Spring Data JPA Parent 4.1.0:
+[INFO] 
+[INFO] Spring Data JPA Parent ............................. SUCCESS [ 24.443 s]
+[INFO] Spring Data JPA .................................... SKIPPED
+[INFO] Spring Data Envers ................................. SKIPPED
+[INFO] Spring Data JPA - Distribution ..................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  25.754 s
+[INFO] Finished at: 2026-06-14T06:46:08Z
+[INFO] ------------------------------------------------------------------------
+[INFO] 17 goals, 17 executed
+构建 reference 文档：spring-data-jpa
+[INFO] Scanning for projects...
+[WARNING] This build will only read from the build cache, since the clean lifecycle is not part of the build invocation.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Spring Data JPA Parent                                             [pom]
+[INFO] Spring Data JPA - Distribution                                     [pom]
+[INFO] 
+[INFO] ----------< org.springframework.data:spring-data-jpa-parent >-----------
+[INFO] Building Spring Data JPA Parent 4.1.0                              [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-jpa-parent ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-jpa-parent ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-jpa-parent ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-jpa-parent ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (export-properties) @ spring-data-jpa-parent ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[WARNING] Ant property 'testcontainers=2.0.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'java-module-name=' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.jvm.target=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-javadoc-artifactId=spring-data-jpa' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmolecules=2025.0.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hibernate-74-snapshots=7.4.1-SNAPSHOT' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-asciidoctor-backends.version=0.0.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.javadoc-artifactId=spring-data-jpa' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mysql-connector-java=9.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'smallrye-mutiny=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'oracle=23.26.2.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'webbeans=4.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'querydsl=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jakarta-persistence-api=3.2.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'servlet-api=6.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'assertj=3.27.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hibernate=7.4.0.Final' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'dist.id=spring-data-jpa-parent' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jsqlparser=5.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antlr=4.13.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'releasetrain=2026.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockito=5.23.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-hateoas=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hibernate.groupId=org.hibernate' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson3=3.1.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.baseurl=https://docs.spring.io' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hamcrest=1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-antora=0.0.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'eclipse-collections=11.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.playbook=src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'awaitility=4.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jsonpath=2.6.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'eclipselink=5.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'reactor=2025.0.6' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'maven-antora=1.0.0-alpha.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit5=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer=1.17.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer-tracing=1.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jakarta-annotation-api=2.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring=7.0.8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'aspectj=1.9.25.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'postgresql=42.7.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin-coroutines=1.10.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'springdata.commons=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco=0.8.15' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'sonar.dynamicAnalysis=reuseReports' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.prerelease=false' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'logback=1.5.34' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'apt=1.1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'h2=2.3.232' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava3=3.1.12' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava2=2.2.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hsqldb=2.7.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'vavr=0.11.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson=2.21.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin=2.3.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'commons-io=2.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'source.level=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'eclipselink-next=5.0.0-SNAPSHOT' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'archunit=1.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-plugin=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.version=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.build.sourceEncoding=UTF-8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit-pioneer=2.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'slf4j=2.0.18' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'cdi=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jaxb=3.0.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.spring-javadoc-url=https://docs.spring.io/spring-framework/docs/7.0.8/javadoc-api' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'validation=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[INFO] 
+[INFO] -------< org.springframework.data:spring-data-jpa-distribution >--------
+[INFO] Building Spring Data JPA - Distribution 4.1.0                      [2/2]
+[INFO]   from spring-data-jpa-distribution/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-jpa-distribution ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-jpa-distribution ---
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-jpa-distribution ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-jpa-distribution ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (export-properties) @ spring-data-jpa-distribution ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[WARNING] Ant property 'archunit=1.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.build.sourceEncoding=UTF-8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'testcontainers=2.0.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'dist.id=spring-data-jpa-distribution' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.prerelease=false' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hibernate-74-snapshots=7.4.1-SNAPSHOT' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'validation=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-hateoas=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.playbook=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa-distribution/../src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson=2.21.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'smallrye-mutiny=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'cdi=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jakarta-annotation-api=2.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hsqldb=2.7.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'aspectj=1.9.25.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mysql-connector-java=9.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'vavr=0.11.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jsqlparser=5.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'eclipselink=5.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin-coroutines=1.10.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'eclipselink-next=5.0.0-SNAPSHOT' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'querydsl=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.version=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antlr=4.13.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'maven-antora=1.0.0-alpha.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa-distribution/..' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit5=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'commons-io=2.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer=1.17.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'postgresql=42.7.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hibernate=7.4.0.Final' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'reactor=2025.0.6' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'sonar.dynamicAnalysis=reuseReports' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco=0.8.15' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.jvm.target=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-javadoc-artifactId=spring-data-jpa' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.baseurl=https://docs.spring.io' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer-tracing=1.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'eclipse-collections=11.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hibernate.groupId=org.hibernate' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'oracle=23.26.2.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-plugin=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-antora=0.0.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'servlet-api=6.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-asciidoctor-backends.version=0.0.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jsonpath=2.6.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'awaitility=4.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'assertj=3.27.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmolecules=2025.0.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa-distribution/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'slf4j=2.0.18' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jaxb=3.0.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'logback=1.5.34' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'h2=2.3.232' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'java-module-name=' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson3=3.1.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'webbeans=4.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring=7.0.8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.spring-javadoc-url=https://docs.spring.io/spring-framework/docs/7.0.8/javadoc-api' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava3=3.1.12' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava2=2.2.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hamcrest=1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin=2.3.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.javadoc-artifactId=spring-data-jpa' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'dist.key=DATAJPA' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'springdata.commons=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'source.level=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'releasetrain=2026.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit-pioneer=2.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockito=5.23.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'apt=1.1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jakarta-persistence-api=3.2.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default) @ spring-data-jpa-distribution ---
+[INFO] Copying 1 resource from ../src/main/antora/resources/antora-resources to target/classes
+[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa-distribution/src/main/antora/resources
+[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-jpa/spring-data-jpa-distribution/src/main/antora/resources
+[INFO] 
+[INFO] ----------< org.springframework.data:spring-data-jpa-parent >-----------
+[INFO] Building Spring Data JPA Parent 4.1.0                              [3/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.10.0:unpack (default-cli) @ spring-data-jpa-parent ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Spring Data JPA Parent 4.1.0:
+[INFO] 
+[INFO] Spring Data JPA Parent ............................. SUCCESS [  1.159 s]
+[INFO] Spring Data JPA - Distribution ..................... SUCCESS [  0.276 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.663 s
+[INFO] Finished at: 2026-06-14T06:46:15Z
+[INFO] ------------------------------------------------------------------------
+[INFO] 12 goals, 12 executed
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/home/codespace/.m2/wrapper/dists/apache-maven-3.9.16-bin/5grr65jo27hi51sujmtcldfovl/apache-maven-3.9.16/lib/jansi-2.4.3.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[INFO] Scanning for projects...
+[WARNING] This build will only read from the build cache, since the clean lifecycle is not part of the build invocation.
+[INFO] 
+[INFO] ------------< org.springframework.data:spring-data-commons >------------
+[INFO] Building Spring Data Core 4.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-commons ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-commons ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-commons ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-commons ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (export-properties) @ spring-data-commons ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[WARNING] Ant property 'assertj=3.27.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'logback=1.5.34' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.build.sourceEncoding=UTF-8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'validation=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'source.level=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'dist.id=spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'querydsl=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'eclipse-collections=11.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-javadoc-artifactId=spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.baseurl=https://docs.spring.io' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'vavr=0.11.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin=2.3.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-commons/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'testcontainers=2.0.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'commons-io=2.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer=1.17.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-plugin=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'java-module-name=spring.data.commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'servlet-api=6.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'apt=1.1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson3=3.1.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.prerelease=false' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jakarta-annotation-api=2.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'xmlbeam=1.4.26' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'webbeans=4.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jsonpath=2.6.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava3=3.1.12' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava2=2.2.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'smallrye-mutiny=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco=0.8.15' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-hateoas=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.playbook=src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-asciidoctor-backends.version=0.0.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.javadoc-artifactId=spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'awaitility=4.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'maven-antora=1.0.0-alpha.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-antora=0.0.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit-pioneer=2.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'cdi=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'reactor=2025.0.6' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hamcrest=1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer-tracing=1.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.version=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'archunit=1.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'scala=3.8.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmolecules=2025.0.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockito=5.23.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson=2.21.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.spring-javadoc-url=https://docs.spring.io/spring-framework/docs/7.0.8/javadoc-api' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'slf4j=2.0.18' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit5=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'aspectj=1.9.25.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jaxb=3.0.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.jvm.target=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring=7.0.8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin-coroutines=1.10.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'releasetrain=2026.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-commons ---
+[INFO] Copying 1 resource from src/main/antora/resources/antora-resources to target/classes
+[INFO] Copying 1 resource from src/main/antora/resources to target/classes
+[INFO] Copying 1 resource from src/main/antora/resources to target/classes
+[INFO] 
+[INFO] ------------< org.springframework.data:spring-data-commons >------------
+[INFO] Building Spring Data Core 4.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.10.0:unpack (default-cli) @ spring-data-commons ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.311 s
+[INFO] Finished at: 2026-06-14T06:46:22Z
+[INFO] ------------------------------------------------------------------------
+[INFO] 7 goals, 7 executed
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/home/codespace/.m2/wrapper/dists/apache-maven-3.9.16-bin/5grr65jo27hi51sujmtcldfovl/apache-maven-3.9.16/lib/jansi-2.4.3.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+

@@ -6,15 +6,15 @@
 /artifact-directories/
 
 # Build logs
-/build-logs/
+#/build-logs/
 
 # Collected documentation site
 /site/
 
 # Shared Antora toolchain dependencies
 /antora-tooling/node_modules/
-/antora-tooling/playbooks-before/
-/antora-tooling/playbooks-after/
+#/antora-tooling/playbooks-before/
+#/antora-tooling/playbooks-after/
 
 # Maven, Antora, and Javadoc build output
 **/target/

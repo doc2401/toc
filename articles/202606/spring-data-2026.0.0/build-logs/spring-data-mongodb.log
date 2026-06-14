@@ -1,0 +1,595 @@
+构建聚合 Javadoc：spring-data-mongodb
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/home/codespace/.m2/wrapper/dists/apache-maven-3.9.16-bin/5grr65jo27hi51sujmtcldfovl/apache-maven-3.9.16/lib/jansi-2.4.3.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[INFO] Scanning for projects...
+[WARNING] This build will only read from the build cache, since the clean lifecycle is not part of the build invocation.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Spring Data MongoDB                                                [pom]
+[INFO] Spring Data MongoDB - Core                                         [jar]
+[INFO] Spring Data MongoDB - Distribution                                 [pom]
+[INFO] 
+[INFO] --------< org.springframework.data:spring-data-mongodb-parent >---------
+[INFO] Building Spring Data MongoDB 5.1.0                                 [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> javadoc:3.12.0:aggregate (default-cli) > compile @ spring-data-mongodb-parent >>>
+[INFO] 
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] Forking Spring Data MongoDB 5.1.0
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-mongodb-parent ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-mongodb-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-mongodb-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] Forking Spring Data MongoDB - Core 5.1.0
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-mongodb ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-mongodb ---
+[INFO] Copying 22 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-mongodb ---
+[INFO] Options for KOTLIN DAEMON: CompilationOptions(compilerMode=NON_INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=null, generateCompilerRefIndex=false)
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/MongoOperationsExtensions.kt:27:8 'class MapReduceOptions : Any' is deprecated. Deprecated in Java.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/MongoOperationsExtensions.kt:28:8 'class MapReduceResults<T : Any!> : Any, MutableIterable<T!>' is deprecated. Deprecated in Java.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/MongoOperationsExtensions.kt:181:134 'class MapReduceOptions : Any' is deprecated. Deprecated in Java.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/MongoOperationsExtensions.kt:181:161 'class MapReduceResults<T : Any!> : Any, MutableIterable<T!>' is deprecated. Deprecated in Java.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/MongoOperationsExtensions.kt:182:24 'fun <T : Any!> mapReduce(inputCollectionName: String!, mapFunction: String!, reduceFunction: String!, mapReduceOptions: MapReduceOptions?, entityClass: Class<T!>!): MapReduceResults<T!>!' is deprecated. Deprecated in Java.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/MongoOperationsExtensions.kt:183:8 'fun <T : Any!> mapReduce(inputCollectionName: String!, mapFunction: String!, reduceFunction: String!, entityClass: Class<T!>!): MapReduceResults<T!>!' is deprecated. Deprecated in Java.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/MongoOperationsExtensions.kt:191:148 'class MapReduceOptions : Any' is deprecated. Deprecated in Java.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/MongoOperationsExtensions.kt:191:175 'class MapReduceResults<T : Any!> : Any, MutableIterable<T!>' is deprecated. Deprecated in Java.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/MongoOperationsExtensions.kt:192:24 'fun <T : Any!> mapReduce(query: Query!, inputCollectionName: String!, mapFunction: String!, reduceFunction: String!, mapReduceOptions: MapReduceOptions?, entityClass: Class<T!>!): MapReduceResults<T!>!' is deprecated. Deprecated in Java.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/MongoOperationsExtensions.kt:193:8 'fun <T : Any!> mapReduce(query: Query!, inputCollectionName: String!, mapFunction: String!, reduceFunction: String!, entityClass: Class<T!>!): MapReduceResults<T!>!' is deprecated. Deprecated in Java.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/ReactiveFindOperationExtensions.kt:70:16 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/CriteriaExtensions.kt:51:61 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/CriteriaExtensions.kt:59:63 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:35:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:46:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:57:16 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:68:16 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:79:16 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:90:16 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:101:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:112:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:123:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:134:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:145:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:156:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:167:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:178:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:189:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:200:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:211:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:222:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:233:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:244:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:255:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:264:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:273:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:282:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:298:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:310:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:321:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:334:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:344:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:356:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:366:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:400:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedCriteriaExtensions.kt:416:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:30:23 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:40:13 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:50:21 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:60:15 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:70:13 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:73:13 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:83:14 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:95:14 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:106:18 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:116:18 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:126:13 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:136:14 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:146:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:156:21 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:166:26 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:176:18 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:186:13 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:196:13 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:206:17 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:217:28 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[WARNING] file:///workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/kotlin/org/springframework/data/mongodb/core/query/TypedUpdateExtensions.kt:227:18 'fun KProperty<*>.toDotPath(): String' is deprecated. since 4.1, use the org.springframework.data.core extensions instead.
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-mongodb ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 664 source files with javac [debug parameters release 17] to target/classes
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[18,61] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[19,61] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[18,61] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[19,61] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[18,61] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[19,61] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/aggregation/AggregationOptions.java:[286,35] deprecated item is not annotated with @Deprecated
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/index/MongoPersistentEntityIndexResolver.java:[452,26] background() in org.springframework.data.mongodb.core.index.CompoundIndex has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/index/MongoPersistentEntityIndexResolver.java:[453,40] background() in org.springframework.data.mongodb.core.index.Index has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/index/MongoPersistentEntityIndexResolver.java:[547,26] background() in org.springframework.data.mongodb.core.index.Indexed has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/index/MongoPersistentEntityIndexResolver.java:[548,40] background() in org.springframework.data.mongodb.core.index.Index has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/index/MongoPersistentEntityIndexResolver.java:[551,26] expireAfterSeconds() in org.springframework.data.mongodb.core.index.Indexed has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/index/MongoPersistentEntityIndexResolver.java:[552,53] expireAfterSeconds() in org.springframework.data.mongodb.core.index.Indexed has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/index/MongoPersistentEntityIndexResolver.java:[557,34] expireAfterSeconds() in org.springframework.data.mongodb.core.index.Indexed has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/index/MongoPersistentEntityIndexResolver.java:[560,54] expireAfterSeconds() in org.springframework.data.mongodb.core.index.Indexed has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/index/MongoPersistentEntityIndexCreator.java:[151,40] ensureIndex(org.springframework.data.mongodb.core.index.IndexDefinition) in org.springframework.data.mongodb.core.index.IndexOperations has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/aggregation/UnsetOperation.java:[62,57] non-varargs call of varargs method with inexact argument type for last parameter;
+  cast to java.lang.Object for a varargs call
+  cast to java.lang.Object[] for a non-varargs call and to suppress this warning
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/index/ReactiveMongoPersistentEntityIndexCreator.java:[146,84] ensureIndex(org.springframework.data.mongodb.core.index.IndexDefinition) in org.springframework.data.mongodb.core.index.ReactiveIndexOperations has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/config/GeoJsonConfiguration.java:[28,46] org.springframework.data.web.config.SpringDataJacksonModules in org.springframework.data.web.config has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/config/GeoJsonConfiguration.java:[28,46] org.springframework.data.web.config.SpringDataJacksonModules in org.springframework.data.web.config has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/config/GeoJsonConfiguration.java:[28,46] org.springframework.data.web.config.SpringDataJacksonModules in org.springframework.data.web.config has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/MongoAdmin.java:[37,36] org.springframework.data.mongodb.core.MongoAdminOperations in org.springframework.data.mongodb.core has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/MongoAdmin.java:[37,36] org.springframework.data.mongodb.core.MongoAdminOperations in org.springframework.data.mongodb.core has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/MongoAdmin.java:[37,36] org.springframework.data.mongodb.core.MongoAdminOperations in org.springframework.data.mongodb.core has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/aggregation/ExposedFieldsAggregationOperationContext.java:[164,44] continueOnMissingFieldReference() in org.springframework.data.mongodb.core.aggregation.AggregationOperationContext has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/aggregation/ObjectOperators.java:[242,38] non-varargs call of varargs method with inexact argument type for last parameter;
+  cast to java.lang.Object for a varargs call
+  cast to java.lang.Object[] for a non-varargs call and to suppress this warning
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/aggregation/ObjectOperators.java:[263,42] non-varargs call of varargs method with inexact argument type for last parameter;
+  cast to java.lang.Object for a varargs call
+  cast to java.lang.Object[] for a non-varargs call and to suppress this warning
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/aggregation/TypeBasedAggregationOperationContext.java:[162,44] continueOnMissingFieldReference() in org.springframework.data.mongodb.core.aggregation.AggregationOperationContext has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/convert/DocumentPropertyAccessor.java:[33,40] org.springframework.context.expression.MapAccessor in org.springframework.context.expression has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/convert/DocumentPropertyAccessor.java:[33,40] org.springframework.context.expression.MapAccessor in org.springframework.context.expression has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/convert/DocumentPropertyAccessor.java:[33,40] org.springframework.context.expression.MapAccessor in org.springframework.context.expression has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/convert/DocumentPropertyAccessor.java:[35,22] org.springframework.context.expression.MapAccessor in org.springframework.context.expression has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/convert/DocumentPropertyAccessor.java:[35,22] org.springframework.context.expression.MapAccessor in org.springframework.context.expression has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/convert/DocumentPropertyAccessor.java:[35,22] org.springframework.context.expression.MapAccessor in org.springframework.context.expression has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/ContextProviderFactory.java:[91,25] org.springframework.data.mongodb.observability.MapRequestContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/ContextProviderFactory.java:[91,64] org.springframework.data.mongodb.observability.MapRequestContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/ContextProviderFactory.java:[115,44] org.springframework.data.mongodb.observability.MapRequestContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/ContextProviderFactory.java:[118,36] org.springframework.data.mongodb.observability.MapRequestContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/DefaultMongoHandlerObservationConvention.java:[35,59] org.springframework.data.mongodb.observability.MongoHandlerObservationConvention in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/DefaultMongoHandlerObservationConvention.java:[35,59] org.springframework.data.mongodb.observability.MongoHandlerObservationConvention in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/DefaultMongoHandlerObservationConvention.java:[35,59] org.springframework.data.mongodb.observability.MongoHandlerObservationConvention in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/DefaultMongoHandlerObservationConvention.java:[38,53] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/DefaultMongoHandlerObservationConvention.java:[38,53] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/DefaultMongoHandlerObservationConvention.java:[38,53] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/DefaultMongoHandlerObservationConvention.java:[44,24] org.springframework.data.mongodb.observability.MongoObservation in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/DefaultMongoHandlerObservationConvention.java:[48,41] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/DefaultMongoHandlerObservationConvention.java:[48,41] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/DefaultMongoHandlerObservationConvention.java:[48,41] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoHandlerObservationConvention.java:[33,82] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoHandlerObservationConvention.java:[33,82] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoHandlerObservationConvention.java:[33,82] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoHandlerObservationConvention.java:[37,43] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[70,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[70,37] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[70,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[70,37] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[70,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[70,37] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[70,76] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[71,33] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[73,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[73,37] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[73,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[73,37] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[73,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[73,37] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[73,68] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[74,33] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[76,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[76,37] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[76,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[76,37] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[76,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[76,37] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[76,79] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[77,33] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[82,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[82,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[82,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[82,81] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[87,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[87,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[87,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[87,68] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[88,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[88,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[88,24] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[88,68] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[96,24] org.springframework.data.mongodb.observability.Observer in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[96,24] org.springframework.data.mongodb.observability.Observer in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[96,24] org.springframework.data.mongodb.observability.Observer in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[96,51] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[96,51] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[96,51] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[98,32] org.springframework.data.mongodb.observability.Observer in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[98,62] org.springframework.data.mongodb.observability.Observer in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[98,62] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/MongoObservation.java:[102,43] org.springframework.data.mongodb.observability.MongoHandlerContext in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/Observer.java:[39,28] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/Observer.java:[39,28] org.springframework.data.mongodb.observability.MongoKeyName in org.springframework.data.mongodb.observability has been deprecated and marked for removal
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/convert/MongoConverters.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/convert/MongoConverters.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/Observer.java: Some input files additionally use or override a deprecated API that is marked for removal.
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/convert/MongoCustomConversions.java: Some input files use unchecked or unsafe operations.
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/core/convert/MongoCustomConversions.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] Forking Spring Data MongoDB - Distribution 5.1.0
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] 
+[INFO] --- build-helper:3.4.0:timestamp-property (timestamp-property) @ spring-data-mongodb-distribution ---
+[WARNING] Using platform locale (en actually) to format date/time, i.e. build is platform dependent!
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-mongodb-distribution ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default) @ spring-data-mongodb-distribution ---
+[INFO] Copying 1 resource from ../src/main/antora/resources/antora-resources to target/classes
+[INFO] 
+[INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-mongodb-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-mongodb-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< javadoc:3.12.0:aggregate (default-cli) < compile @ spring-data-mongodb-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- javadoc:3.12.0:aggregate (default-cli) @ spring-data-mongodb-parent ---
+[WARNING] Javadoc Warnings
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb/src/main/java/org/springframework/data/mongodb/observability/package-info.java:6: warning: Tag @deprecated cannot be used in package documentation.  It can only be used in the following types of documentation: module, class/interface, constructor, field, method.
+[WARNING] * @deprecated since 5.1 in favor of native MongoDB Java Driver observability support.
+[WARNING] ^
+[WARNING] 1 warning
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Spring Data MongoDB 5.1.0:
+[INFO] 
+[INFO] Spring Data MongoDB ................................ SUCCESS [ 32.649 s]
+[INFO] Spring Data MongoDB - Core ......................... SKIPPED
+[INFO] Spring Data MongoDB - Distribution ................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  33.708 s
+[INFO] Finished at: 2026-06-14T06:47:02Z
+[INFO] ------------------------------------------------------------------------
+[INFO] 13 goals, 13 executed
+构建 reference 文档：spring-data-mongodb
+[INFO] Scanning for projects...
+[WARNING] This build will only read from the build cache, since the clean lifecycle is not part of the build invocation.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Spring Data MongoDB                                                [pom]
+[INFO] Spring Data MongoDB - Distribution                                 [pom]
+[INFO] 
+[INFO] --------< org.springframework.data:spring-data-mongodb-parent >---------
+[INFO] Building Spring Data MongoDB 5.1.0                                 [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-mongodb-parent ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-mongodb-parent ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-mongodb-parent ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-mongodb-parent ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (export-properties) @ spring-data-mongodb-parent ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'validation=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-antora=0.0.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.javadoc-artifactId=spring-data-mongodb' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.jvm.target=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'java-module-name=' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.prerelease=false' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'aspectj=1.9.25.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mongo=5.8.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin=2.3.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.spring-javadoc-url=https://docs.spring.io/spring-framework/docs/7.0.8/javadoc-api' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin-coroutines=1.10.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'eclipse-collections=11.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit5=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'webbeans=4.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'reactor=2025.0.6' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson3=3.1.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'testcontainers=2.0.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jaxb=3.0.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring=7.0.8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jakarta-annotation-api=2.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'vavr=0.11.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'source.level=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hamcrest=1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.build.sourceEncoding=UTF-8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson=2.21.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockito=5.23.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco=0.8.15' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'dist.id=spring-data-mongodb' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-asciidoctor-backends.version=0.0.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer=1.17.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'assertj=3.27.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'logback=1.5.34' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'cdi=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit-pioneer=2.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'servlet-api=6.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'querydsl=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer-tracing=1.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.version=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'springdata.commons=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'awaitility=4.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-plugin=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'apt=1.1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava3=3.1.12' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmolecules=2025.0.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava2=2.2.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'slf4j=2.0.18' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'releasetrain=2026.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.type=multi' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.baseurl=https://docs.spring.io' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'maven-antora=1.0.0-alpha.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-hateoas=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jsonpath=2.6.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-javadoc-artifactId=spring-data-mongodb-parent' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'commons-io=2.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'smallrye-mutiny=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'archunit=1.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.playbook=src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[INFO] 
+[INFO] -----< org.springframework.data:spring-data-mongodb-distribution >------
+[INFO] Building Spring Data MongoDB - Distribution 5.1.0                  [2/2]
+[INFO]   from spring-data-mongodb-distribution/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-mongodb-distribution ---
+[INFO] 
+[INFO] --- build-helper:3.4.0:timestamp-property (timestamp-property) @ spring-data-mongodb-distribution ---
+[WARNING] Using platform locale (en actually) to format date/time, i.e. build is platform dependent!
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-mongodb-distribution ---
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-mongodb-distribution ---
+[INFO] 
+[INFO] --- build-helper:3.4.0:timestamp-property (timestamp-property) @ spring-data-mongodb-distribution ---
+[WARNING] Using platform locale (en actually) to format date/time, i.e. build is platform dependent!
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-mongodb-distribution ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (export-properties) @ spring-data-mongodb-distribution ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'validation=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-antora=0.0.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.javadoc-artifactId=spring-data-mongodb' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.jvm.target=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'current.year=2026' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'java-module-name=' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.prerelease=false' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'aspectj=1.9.25.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mongo=5.8.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin=2.3.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.spring-javadoc-url=https://docs.spring.io/spring-framework/docs/7.0.8/javadoc-api' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin-coroutines=1.10.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'eclipse-collections=11.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit5=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'webbeans=4.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'reactor=2025.0.6' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb-distribution/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson3=3.1.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'testcontainers=2.0.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jaxb=3.0.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring=7.0.8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jakarta-annotation-api=2.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'vavr=0.11.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'source.level=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hamcrest=1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.build.sourceEncoding=UTF-8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson=2.21.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockito=5.23.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco=0.8.15' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'dist.id=spring-data-mongodb' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-asciidoctor-backends.version=0.0.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer=1.17.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'assertj=3.27.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'logback=1.5.34' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'cdi=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit-pioneer=2.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'servlet-api=6.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'querydsl=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer-tracing=1.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.version=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'springdata.commons=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'awaitility=4.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-plugin=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'apt=1.1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava3=3.1.12' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmolecules=2025.0.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava2=2.2.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'slf4j=2.0.18' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'releasetrain=2026.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.type=multi' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.baseurl=https://docs.spring.io' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'maven-antora=1.0.0-alpha.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb-distribution/..' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-hateoas=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jsonpath=2.6.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-javadoc-artifactId=spring-data-mongodb-distribution' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'commons-io=2.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'smallrye-mutiny=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'archunit=1.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.playbook=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb-distribution/../src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default) @ spring-data-mongodb-distribution ---
+[INFO] Copying 1 resource from ../src/main/antora/resources/antora-resources to target/classes
+[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb-distribution/src/main/antora/resources
+[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-mongodb/spring-data-mongodb-distribution/src/main/antora/resources
+[INFO] 
+[INFO] --------< org.springframework.data:spring-data-mongodb-parent >---------
+[INFO] Building Spring Data MongoDB 5.1.0                                 [3/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.10.0:unpack (default-cli) @ spring-data-mongodb-parent ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Spring Data MongoDB 5.1.0:
+[INFO] 
+[INFO] Spring Data MongoDB ................................ SUCCESS [  2.637 s]
+[INFO] Spring Data MongoDB - Distribution ................. SUCCESS [  0.345 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.469 s
+[INFO] Finished at: 2026-06-14T06:47:11Z
+[INFO] ------------------------------------------------------------------------
+[INFO] 14 goals, 14 executed
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/home/codespace/.m2/wrapper/dists/apache-maven-3.9.16-bin/5grr65jo27hi51sujmtcldfovl/apache-maven-3.9.16/lib/jansi-2.4.3.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[INFO] Scanning for projects...
+[WARNING] This build will only read from the build cache, since the clean lifecycle is not part of the build invocation.
+[INFO] 
+[INFO] ------------< org.springframework.data:spring-data-commons >------------
+[INFO] Building Spring Data Core 4.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-commons ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-commons ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-commons ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-commons ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (export-properties) @ spring-data-commons ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[WARNING] Ant property 'assertj=3.27.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'logback=1.5.34' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.build.sourceEncoding=UTF-8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'validation=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'source.level=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'dist.id=spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'querydsl=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'eclipse-collections=11.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-javadoc-artifactId=spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.baseurl=https://docs.spring.io' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'vavr=0.11.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin=2.3.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-commons/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'testcontainers=2.0.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'commons-io=2.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer=1.17.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-plugin=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'java-module-name=spring.data.commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'servlet-api=6.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'apt=1.1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson3=3.1.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.prerelease=false' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jakarta-annotation-api=2.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'xmlbeam=1.4.26' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'webbeans=4.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jsonpath=2.6.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava3=3.1.12' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava2=2.2.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'smallrye-mutiny=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco=0.8.15' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-hateoas=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.playbook=src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-asciidoctor-backends.version=0.0.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.javadoc-artifactId=spring-data-commons' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'awaitility=4.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'maven-antora=1.0.0-alpha.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-antora=0.0.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit-pioneer=2.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'cdi=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'reactor=2025.0.6' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hamcrest=1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer-tracing=1.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.version=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'archunit=1.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'scala=3.8.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmolecules=2025.0.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockito=5.23.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson=2.21.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.spring-javadoc-url=https://docs.spring.io/spring-framework/docs/7.0.8/javadoc-api' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'slf4j=2.0.18' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit5=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'aspectj=1.9.25.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jaxb=3.0.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.jvm.target=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring=7.0.8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin-coroutines=1.10.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'releasetrain=2026.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-commons ---
+[INFO] Copying 1 resource from src/main/antora/resources/antora-resources to target/classes
+[INFO] Copying 1 resource from src/main/antora/resources to target/classes
+[INFO] Copying 1 resource from src/main/antora/resources to target/classes
+[INFO] 
+[INFO] ------------< org.springframework.data:spring-data-commons >------------
+[INFO] Building Spring Data Core 4.1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.10.0:unpack (default-cli) @ spring-data-commons ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.400 s
+[INFO] Finished at: 2026-06-14T06:47:19Z
+[INFO] ------------------------------------------------------------------------
+[INFO] 7 goals, 7 executed
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/home/codespace/.m2/wrapper/dists/apache-maven-3.9.16-bin/5grr65jo27hi51sujmtcldfovl/apache-maven-3.9.16/lib/jansi-2.4.3.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+

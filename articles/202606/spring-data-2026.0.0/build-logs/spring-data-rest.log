@@ -1,0 +1,724 @@
+构建聚合 Javadoc：spring-data-rest
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/home/codespace/.m2/wrapper/dists/apache-maven-3.9.16-bin/5grr65jo27hi51sujmtcldfovl/apache-maven-3.9.16/lib/jansi-2.4.3.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[INFO] Scanning for projects...
+[WARNING] This build will only read from the build cache, since the clean lifecycle is not part of the build invocation.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Spring Data REST                                                   [pom]
+[INFO] Spring Data REST - Core                                            [jar]
+[INFO] Spring Data REST - WebMVC                                          [jar]
+[INFO] Spring Data REST - Distribution                                    [pom]
+[INFO] Spring Data REST - HAL Explorer                                    [jar]
+[INFO] 
+[INFO] ----------< org.springframework.data:spring-data-rest-parent >----------
+[INFO] Building Spring Data REST 5.1.0                                    [1/5]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> javadoc:3.12.0:aggregate (default-cli) > compile @ spring-data-rest-parent >>>
+[INFO] 
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] Forking Spring Data REST 5.1.0
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-parent ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-rest-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] Forking Spring Data REST - Core 5.1.0
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-core ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-rest-core ---
+[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/resources
+[INFO] 
+[INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-rest-core ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-core ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 99 source files with javac [debug parameters release 17] to target/classes
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/config/ResourceMapping.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/config/ResourceMapping.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/support/DefaultSelfLinkProvider.java: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/support/DefaultSelfLinkProvider.java uses unchecked or unsafe operations.
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/support/DefaultSelfLinkProvider.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] Forking Spring Data REST - WebMVC 5.1.0
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-webmvc ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-rest-webmvc ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-rest-webmvc ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-webmvc ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 140 source files with javac [debug parameters release 17] to target/classes
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java:[207,37] getUrlPathHelper() in org.springframework.web.servlet.handler.AbstractHandlerMapping has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java:[270,28] getPatternsCondition() in org.springframework.web.servlet.mvc.method.RequestMappingInfo has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/alps/AlpsJsonHttpMessageConverter.java:[49,51] org.springframework.http.converter.json.MappingJackson2HttpMessageConverter in org.springframework.http.converter.json has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[45,43] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[95,45] match(jakarta.servlet.http.HttpServletRequest,java.lang.String) in org.springframework.web.servlet.handler.MatchableHandlerMapping has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[95,26] org.springframework.web.servlet.handler.RequestMatchResult in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[158,34] org.springframework.web.servlet.handler.RequestMatchResult in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[160,32] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[161,45] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[161,78] match(jakarta.servlet.http.HttpServletRequest,java.lang.String) in org.springframework.web.servlet.handler.MatchableHandlerMapping has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[227,31] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[244,52] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[245,58] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJacksonModule.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJacksonModule.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] Forking Spring Data REST - Distribution 5.1.0
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-distribution ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default) @ spring-data-rest-distribution ---
+[INFO] Copying 1 resource from ../src/main/antora/resources/antora-resources to target/classes
+[INFO] 
+[INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-rest-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] Forking Spring Data REST - HAL Explorer 5.1.0
+[INFO] >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-hal-explorer ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-rest-hal-explorer ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- dependency:3.10.0:unpack (unpack-hal-explorer) @ spring-data-rest-hal-explorer ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (default) @ spring-data-rest-hal-explorer ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 11 files to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/classes/META-INF/spring-data-rest/hal-explorer
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- kotlin:2.3.21:compile (compile) @ spring-data-rest-hal-explorer ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-hal-explorer ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [debug parameters release 17] to target/classes
+[INFO] 
+[INFO] <<< javadoc:3.12.0:aggregate (default-cli) < compile @ spring-data-rest-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- javadoc:3.12.0:aggregate (default-cli) @ spring-data-rest-parent ---
+[WARNING] Javadoc Warnings
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeDeleteEvent.java:8: warning: invalid input: '<'
+[WARNING] * @author Jon Brisbin <jbrisbin@vmware.com>
+[WARNING] ^
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeLinkSaveEvent.java:8: warning: invalid input: '<'
+[WARNING] * @author Jon Brisbin <jbrisbin@vmware.com>
+[WARNING] ^
+[WARNING] 2 warnings
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Spring Data REST 5.1.0:
+[INFO] 
+[INFO] Spring Data REST ................................... SUCCESS [ 14.862 s]
+[INFO] Spring Data REST - Core ............................ SKIPPED
+[INFO] Spring Data REST - WebMVC .......................... SKIPPED
+[INFO] Spring Data REST - Distribution .................... SKIPPED
+[INFO] Spring Data REST - HAL Explorer .................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.954 s
+[INFO] Finished at: 2026-06-14T06:47:42Z
+[INFO] ------------------------------------------------------------------------
+[INFO] 22 goals, 22 executed
+构建 reference 文档：spring-data-rest
+[INFO] Scanning for projects...
+[WARNING] This build will only read from the build cache, since the clean lifecycle is not part of the build invocation.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Spring Data REST                                                   [pom]
+[INFO] Spring Data REST - Distribution                                    [pom]
+[INFO] 
+[INFO] ----------< org.springframework.data:spring-data-rest-parent >----------
+[INFO] Building Spring Data REST 5.1.0                                    [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-rest-parent ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-parent ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-rest-parent ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-parent ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (export-properties) @ spring-data-rest-parent ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[WARNING] Ant property 'querydsl=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.type=multi' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-javadoc-artifactId=spring-data-rest-parent' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-antora=0.0.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava3=3.1.12' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.baseurl=https://docs.spring.io' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava2=2.2.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'springdata.keyvalue=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson3=3.1.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jakarta-annotation-api=2.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'springdata.commons=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'slf4j=2.0.18' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'reactor=2025.0.6' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'java-module-name=' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.javadoc-artifactId=spring-data-rest-parent' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.playbook=src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'aspectj=1.9.25.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.jvm.target=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit5=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-asciidoctor-backends.version=0.0.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmolecules=2025.0.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-plugin=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'source.level=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin-coroutines=1.10.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'archunit=1.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson=2.21.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer=1.17.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer-tracing=1.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-hateoas=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.version=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'testcontainers=2.0.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'smallrye-mutiny=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'maven-antora=1.0.0-alpha.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'servlet-api=6.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'eclipse-collections=11.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring=7.0.8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'validation=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'webbeans=4.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.spring-javadoc-url=https://docs.spring.io/spring-framework/docs/7.0.8/javadoc-api' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'assertj=3.27.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'dist.id=spring-data-rest' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jaxb=3.0.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'releasetrain=2026.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit-pioneer=2.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockito=5.23.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.build.sourceEncoding=UTF-8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hibernate.version=7.4.0.Final' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'springdata.mongodb=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'logback=1.5.34' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'commons-io=2.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'cdi=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'vavr=0.11.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'apt=1.1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'springdata.jpa=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hamcrest=1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'awaitility=4.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco=0.8.15' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jsonpath=2.6.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.prerelease=false' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin=2.3.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[INFO] 
+[INFO] -------< org.springframework.data:spring-data-rest-distribution >-------
+[INFO] Building Spring Data REST - Distribution 5.1.0                     [2/2]
+[INFO]   from spring-data-rest-distribution/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-rest-distribution ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-distribution ---
+[INFO] 
+[INFO] --- antora-component-version:0.0.4:antora-component-version (default) @ spring-data-rest-distribution ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-distribution ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (export-properties) @ spring-data-rest-distribution ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[WARNING] Ant property 'querydsl=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.type=multi' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-javadoc-artifactId=spring-data-rest-distribution' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-antora=0.0.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava3=3.1.12' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.baseurl=https://docs.spring.io' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'rxjava2=2.2.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'springdata.keyvalue=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson3=3.1.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'microbenchmark=1.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jakarta-annotation-api=2.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'springdata.commons=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'slf4j=2.0.18' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'reactor=2025.0.6' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'java-module-name=' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'guava=31.1-jre' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco.destfile=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/jacoco.exec' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'errorprone=2.46.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.javadoc-artifactId=spring-data-rest-distribution' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.root=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/..' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora.playbook=/workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/../src/main/antora/antora-playbook.yml' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'aspectj=1.9.25.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.jvm.target=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit5=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-asciidoctor-backends.version=0.0.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmolecules=2025.0.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'nullaway=0.13.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-plugin=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin.api.target=2.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'source.level=17' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin-coroutines=1.10.2' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'archunit=1.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jackson=2.21.4' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer=1.17.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'micrometer-tracing=1.7.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring-hateoas=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.version=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'testcontainers=2.0.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockk=1.14.11' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'smallrye-mutiny=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'maven-antora=1.0.0-alpha.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'servlet-api=6.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'eclipse-collections=11.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'spring=7.0.8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jmh=1.37' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'validation=3.1.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'webbeans=4.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit=6.0.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'documentation.spring-javadoc-url=https://docs.spring.io/spring-framework/docs/7.0.8/javadoc-api' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'assertj=3.27.7' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'dist.id=spring-data-rest' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jaxb=3.0.1' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'releasetrain=2026.0.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'junit-pioneer=2.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'mockito=5.23.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'project.build.sourceEncoding=UTF-8' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hibernate.version=7.4.0.Final' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'springdata.mongodb=5.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'logback=1.5.34' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'commons-io=2.5' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'cdi=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'vavr=0.11.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'apt=1.1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'springdata.jpa=4.1.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'hamcrest=1.3' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'awaitility=4.3.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jacoco=0.8.15' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'jsonpath=2.6.0' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'antora-component.prerelease=false' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[WARNING] Ant property 'kotlin=2.3.21' clashes with an existing Maven property, SKIPPING this Ant property propagation.
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default) @ spring-data-rest-distribution ---
+[INFO] Copying 1 resource from ../src/main/antora/resources/antora-resources to target/classes
+[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/src/main/antora/resources
+[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/src/main/antora/resources
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Spring Data REST 5.1.0:
+[INFO] 
+[INFO] Spring Data REST ................................... SUCCESS [  1.328 s]
+[INFO] Spring Data REST - Distribution .................... SUCCESS [  0.295 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.666 s
+[INFO] Finished at: 2026-06-14T06:47:47Z
+[INFO] ------------------------------------------------------------------------
+[INFO] 11 goals, 11 executed
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/home/codespace/.m2/wrapper/dists/apache-maven-3.9.16-bin/5grr65jo27hi51sujmtcldfovl/apache-maven-3.9.16/lib/jansi-2.4.3.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[INFO] Scanning for projects...
+[WARNING] This build will only read from the build cache, since the clean lifecycle is not part of the build invocation.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Spring Data REST                                                   [pom]
+[INFO] Spring Data REST - Core                                            [jar]
+[INFO] Spring Data REST - WebMVC                                          [jar]
+[INFO] Spring Data REST - Distribution                                    [pom]
+[INFO] Spring Data REST - HAL Explorer                                    [jar]
+[INFO] 
+[INFO] ----------< org.springframework.data:spring-data-rest-parent >----------
+[INFO] Building Spring Data REST 5.1.0                                    [1/5]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-parent ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- dependency:3.10.0:unpack-dependencies (unpack-shared-resources) @ spring-data-rest-parent ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (copy-documentation-resources) @ spring-data-rest-parent ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 4 files to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/site/reference/html/images
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-rest-parent ---
+[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/src/jmh/java added.
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (java-test-compile) @ spring-data-rest-parent ---
+[INFO] Skipped
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-rest-parent ---
+[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/src/main/kotlin added.
+[INFO] 
+[INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-rest-parent ---
+[WARNING] Javadoc Warnings
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeDeleteEvent.java:8: warning: invalid input: '<'
+[WARNING] * @author Jon Brisbin <jbrisbin@vmware.com>
+[WARNING] ^
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeLinkSaveEvent.java:8: warning: invalid input: '<'
+[WARNING] * @author Jon Brisbin <jbrisbin@vmware.com>
+[WARNING] ^
+[WARNING] 2 warnings
+[INFO] 
+[INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-rest-parent ---
+[INFO] Executing tasks
+[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/generated-docs/index.epub to copy.
+[INFO] Executed tasks
+[INFO] 
+[INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-rest-parent >>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-parent ---
+[INFO] 
+[INFO] <<< source:3.4.0:jar (attach-sources) < generate-sources @ spring-data-rest-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.4.0:jar (attach-sources) @ spring-data-rest-parent ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-rest-parent ---
+[INFO] Executing tasks
+[INFO]      [copy] Copying 502 files to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/target/antora/modules/ROOT/assets/attachments/api/java
+[INFO] Executed tasks
+[INFO] 
+[INFO] -----------< org.springframework.data:spring-data-rest-core >-----------
+[INFO] Building Spring Data REST - Core 5.1.0                             [2/5]
+[INFO]   from spring-data-rest-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-core ---
+[INFO] 
+[INFO] --- dependency:3.10.0:unpack-dependencies (unpack-shared-resources) @ spring-data-rest-core ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (copy-documentation-resources) @ spring-data-rest-core ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-rest-core ---
+[INFO] skip non existing resourceDirectory /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-core ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-rest-core ---
+[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/jmh/java added.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-data-rest-core ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (java-test-compile) @ spring-data-rest-core ---
+[INFO] Skipped
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ spring-data-rest-core ---
+[INFO] Skipped
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-rest-core ---
+[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/kotlin added.
+[INFO] 
+[INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-rest-core ---
+[WARNING] Javadoc Warnings
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeDeleteEvent.java:8: warning: invalid input: '<'
+[WARNING] * @author Jon Brisbin <jbrisbin@vmware.com>
+[WARNING] ^
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/src/main/java/org/springframework/data/rest/core/event/BeforeLinkSaveEvent.java:8: warning: invalid input: '<'
+[WARNING] * @author Jon Brisbin <jbrisbin@vmware.com>
+[WARNING] ^
+[WARNING] 2 warnings
+[INFO] 
+[INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-rest-core ---
+[INFO] Executing tasks
+[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/generated-docs/index.epub to copy.
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ spring-data-rest-core ---
+[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/spring-data-rest-core-5.1.0.jar
+[INFO] 
+[INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-rest-core >>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-core ---
+[INFO] 
+[INFO] <<< source:3.4.0:jar (attach-sources) < generate-sources @ spring-data-rest-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.4.0:jar (attach-sources) @ spring-data-rest-core ---
+[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-core/target/spring-data-rest-core-5.1.0-sources.jar
+[INFO] 
+[INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-rest-core ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] ----------< org.springframework.data:spring-data-rest-webmvc >----------
+[INFO] Building Spring Data REST - WebMVC 5.1.0                           [3/5]
+[INFO]   from spring-data-rest-webmvc/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-webmvc ---
+[INFO] 
+[INFO] --- dependency:3.10.0:unpack-dependencies (unpack-shared-resources) @ spring-data-rest-webmvc ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (copy-documentation-resources) @ spring-data-rest-webmvc ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-rest-webmvc ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-webmvc ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 140 source files with javac [debug parameters release 17] to target/classes
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java:[207,37] getUrlPathHelper() in org.springframework.web.servlet.handler.AbstractHandlerMapping has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryRestHandlerMapping.java:[270,28] getPatternsCondition() in org.springframework.web.servlet.mvc.method.RequestMappingInfo has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/alps/AlpsJsonHttpMessageConverter.java:[49,51] org.springframework.http.converter.json.MappingJackson2HttpMessageConverter in org.springframework.http.converter.json has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[45,43] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[95,45] match(jakarta.servlet.http.HttpServletRequest,java.lang.String) in org.springframework.web.servlet.handler.MatchableHandlerMapping has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[95,26] org.springframework.web.servlet.handler.RequestMatchResult in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[158,34] org.springframework.web.servlet.handler.RequestMatchResult in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[160,32] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[161,45] org.springframework.web.servlet.handler.MatchableHandlerMapping in org.springframework.web.servlet.handler has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/config/DelegatingHandlerMapping.java:[161,78] match(jakarta.servlet.http.HttpServletRequest,java.lang.String) in org.springframework.web.servlet.handler.MatchableHandlerMapping has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[227,31] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[244,52] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
+[WARNING] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/Jackson2MappingAwareSortTranslator.java:[245,58] org.springframework.data.rest.webmvc.json.WrappedProperties in org.springframework.data.rest.webmvc.json has been deprecated and marked for removal
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJacksonModule.java: Some input files use or override a deprecated API.
+[INFO] /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/json/PersistentEntityJacksonModule.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-rest-webmvc ---
+[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/jmh/java added.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-data-rest-webmvc ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (java-test-compile) @ spring-data-rest-webmvc ---
+[INFO] Skipped
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ spring-data-rest-webmvc ---
+[INFO] Skipped
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-rest-webmvc ---
+[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/src/main/kotlin added.
+[INFO] 
+[INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-rest-webmvc ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-rest-webmvc ---
+[INFO] Executing tasks
+[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/generated-docs/index.epub to copy.
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ spring-data-rest-webmvc ---
+[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/spring-data-rest-webmvc-5.1.0.jar
+[INFO] 
+[INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-rest-webmvc >>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-webmvc ---
+[INFO] 
+[INFO] <<< source:3.4.0:jar (attach-sources) < generate-sources @ spring-data-rest-webmvc <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.4.0:jar (attach-sources) @ spring-data-rest-webmvc ---
+[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-webmvc/target/spring-data-rest-webmvc-5.1.0-sources.jar
+[INFO] 
+[INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-rest-webmvc ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] -------< org.springframework.data:spring-data-rest-distribution >-------
+[INFO] Building Spring Data REST - Distribution 5.1.0                     [4/5]
+[INFO]   from spring-data-rest-distribution/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-distribution ---
+[INFO] 
+[INFO] --- dependency:3.10.0:unpack-dependencies (unpack-shared-resources) @ spring-data-rest-distribution ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (copy-documentation-resources) @ spring-data-rest-distribution ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default) @ spring-data-rest-distribution ---
+[INFO] Copying 1 resource from ../src/main/antora/resources/antora-resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-distribution ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-rest-distribution ---
+[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/src/jmh/java added.
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (java-test-compile) @ spring-data-rest-distribution ---
+[INFO] Skipped
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-rest-distribution ---
+[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/src/main/kotlin added.
+[INFO] 
+[INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-rest-distribution ---
+[INFO] Skipping org.apache.maven.plugins:maven-javadoc-plugin:3.12.0:aggregate-no-fork report goal
+[INFO] 
+[INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-rest-distribution ---
+[INFO] Executing tasks
+[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/generated-docs/index.epub to copy.
+[INFO] Executed tasks
+[INFO] 
+[INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-rest-distribution >>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-distribution ---
+[INFO] 
+[INFO] <<< source:3.4.0:jar (attach-sources) < generate-sources @ spring-data-rest-distribution <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.4.0:jar (attach-sources) @ spring-data-rest-distribution ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-rest-distribution ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- assembly:3.8.0:single (docs) @ spring-data-rest-distribution ---
+[INFO] Reading assembly descriptor: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/shared-resources/assemblies/docs.xml
+[INFO] Copying files to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/spring-data-rest-distribution-5.1.0-docs
+[INFO] 506 files copied to /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/spring-data-rest-distribution-5.1.0-docs
+[WARNING] Assembly file: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/spring-data-rest-distribution-5.1.0-docs is not a regular file (it may be a directory). It cannot be attached to the project build for installation or deployment.
+[INFO] Building zip: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-distribution/target/spring-data-rest-distribution-5.1.0-docs.zip
+[INFO] 
+[INFO] -------< org.springframework.data:spring-data-rest-hal-explorer >-------
+[INFO] Building Spring Data REST - HAL Explorer 5.1.0                     [5/5]
+[INFO]   from spring-data-rest-hal-explorer/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-hal-explorer ---
+[INFO] 
+[INFO] --- dependency:3.10.0:unpack-dependencies (unpack-shared-resources) @ spring-data-rest-hal-explorer ---
+[INFO] 
+[INFO] --- antrun:3.2.0:run (copy-documentation-resources) @ spring-data-rest-hal-explorer ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-data-rest-hal-explorer ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- dependency:3.10.0:unpack (unpack-hal-explorer) @ spring-data-rest-hal-explorer ---
+[INFO] hal-explorer-2.3.0.jar already unpacked.
+[INFO] 
+[INFO] --- antrun:3.2.0:run (default) @ spring-data-rest-hal-explorer ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (java-compile) @ spring-data-rest-hal-explorer ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [debug parameters release 17] to target/classes
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-test-source (add-jmh-source) @ spring-data-rest-hal-explorer ---
+[INFO] Test Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/src/jmh/java added.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-data-rest-hal-explorer ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (java-test-compile) @ spring-data-rest-hal-explorer ---
+[INFO] Skipped
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ spring-data-rest-hal-explorer ---
+[INFO] Skipped
+[INFO] 
+[INFO] --- build-helper:3.6.1:add-source (add-kotlin-source) @ spring-data-rest-hal-explorer ---
+[INFO] Source directory: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/src/main/kotlin added.
+[INFO] 
+[INFO] --- javadoc:3.12.0:aggregate-no-fork (aggregate-javadoc) @ spring-data-rest-hal-explorer ---
+[INFO] Skipped
+[INFO] 
+[INFO] --- antrun:3.2.0:run (rename-reference-docs) @ spring-data-rest-hal-explorer ---
+[INFO] Executing tasks
+[ERROR]      [copy] Warning: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/generated-docs does not exist.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/generated-docs/index.pdf to copy.
+[ERROR]      [copy] Warning: Could not find file /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/generated-docs/index.epub to copy.
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ spring-data-rest-hal-explorer ---
+[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/spring-data-rest-hal-explorer-5.1.0.jar
+[INFO] 
+[INFO] --- jar:3.5.0:jar (empty-javadoc-jar) @ spring-data-rest-hal-explorer ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/spring-data-rest-hal-explorer-5.1.0-javadoc.jar
+[INFO] 
+[INFO] >>> source:3.4.0:jar (attach-sources) > generate-sources @ spring-data-rest-hal-explorer >>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ spring-data-rest-hal-explorer ---
+[INFO] 
+[INFO] <<< source:3.4.0:jar (attach-sources) < generate-sources @ spring-data-rest-hal-explorer <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.4.0:jar (attach-sources) @ spring-data-rest-hal-explorer ---
+[INFO] Building jar: /workspaces/toc/articles/202606/spring-data-2026.0.0/sources/spring-data-rest/spring-data-rest-hal-explorer/target/spring-data-rest-hal-explorer-5.1.0-sources.jar
+[INFO] 
+[INFO] --- antrun:3.2.0:run (copy-javadoc) @ spring-data-rest-hal-explorer ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Spring Data REST 5.1.0:
+[INFO] 
+[INFO] Spring Data REST ................................... SUCCESS [ 10.314 s]
+[INFO] Spring Data REST - Core ............................ SUCCESS [  5.541 s]
+[INFO] Spring Data REST - WebMVC .......................... SUCCESS [  8.961 s]
+[INFO] Spring Data REST - Distribution .................... SUCCESS [  1.287 s]
+[INFO] Spring Data REST - HAL Explorer .................... SUCCESS [  0.826 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  27.800 s
+[INFO] Finished at: 2026-06-14T06:48:18Z
+[INFO] ------------------------------------------------------------------------
+[INFO] 77 goals, 77 executed
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/home/codespace/.m2/wrapper/dists/apache-maven-3.9.16-bin/5grr65jo27hi51sujmtcldfovl/apache-maven-3.9.16/lib/jansi-2.4.3.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
