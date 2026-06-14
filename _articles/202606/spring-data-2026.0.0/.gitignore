@@ -6,7 +6,7 @@
 /artifact-directories/
 
 # Build logs
-#/build-logs/
+/build-logs/
 
 # Collected documentation site
 /site/
