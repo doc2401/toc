@@ -3,8 +3,8 @@
 > 汇总消息系统、服务发现、对象存储、任务调度与分布式应用运行时的官方文档。
 
 ### 消息队列与流处理
-- **[Apache Kafka](/databases/kafka.md)** — 分布式事件流平台 `本地 & 在线`
-- **[RabbitMQ](/databases/rabbitmq.md)** — AMQP 消息代理 `本地 & 在线`
+- **[Apache Kafka](/middleware/kafka.md)** — 分布式事件流平台 `本地 & 在线`
+- **[RabbitMQ](/middleware/rabbitmq.md)** — AMQP 消息代理 `本地 & 在线`
 - **[Apache Pulsar](https://pulsar.apache.org/docs/)** — 云原生消息与流处理平台 `官方在线`
 - **[Apache RocketMQ](https://rocketmq.apache.org/docs/)** — 分布式消息与流平台 `官方在线`
 - **[NATS](https://docs.nats.io/)** — 轻量级云原生消息系统 `官方在线`

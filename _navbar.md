@@ -10,11 +10,11 @@
   - [JDK 核心文档](/java/jdk.md)
   - [Jakarta EE](/java/jakarta-ee.md)
 - Spring 家族
-  - [Spring 版本汇总](/spring/spring-framework.md)
-  - [Framework 详细目录](/spring/spring-framework-toc.md)
-  - [Boot 详细目录](/spring/spring-boot-toc.md)
-  - [Spring Cloud & 其他](/spring/spring-cloud.md)
-  - [Spring AI](/spring/spring-ai.md)
+  - [Spring 版本汇总](/java/spring-framework.md)
+  - [Framework 详细目录](/java/spring-framework-toc.md)
+  - [Boot 详细目录](/java/spring-boot-toc.md)
+  - [Spring Cloud & 其他](/java/spring-cloud.md)
+  - [Spring AI](/java/spring-ai.md)
 - 开发语言与后端生态
   - [Node.js 与 JS/TS](/languages/nodejs.md)
   - [Python 生态](/languages/python.md)
@@ -31,7 +31,7 @@
   - [UI、CSS 与构建工具](/frontend/ui-build.md)
   - [移动与跨平台端](/frontend/cross-platform.md)
 - 数据与中间件
-  - [数据库文档](/databases/databases.md)
+  - [数据库文档](/middleware/databases.md)
   - [中间件索引](/middleware/middleware.md)
   - [Kafka](/middleware/kafka.md)
   - [RabbitMQ](/middleware/rabbitmq.md)
@@ -42,7 +42,7 @@
 - 研发与质量管理
   - [运维与研发工具](/devops/devops.md)
   - [云原生技术索引](/devops/cloud-native.md)
-  - [测试与代码质量](/testing/testing.md)
+  - [测试与代码质量](/devops/testing.md)
 - 图形与创意设计
   - [图形与游戏索引](/graphics/graphics.md)
   - [Blender](/graphics/blender.md)

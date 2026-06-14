@@ -10,11 +10,11 @@
 
 ## 🍃 Spring 家族
 
-- [Spring 版本汇总](/spring/spring-framework.md) `本地镜像`
-- [Framework 详细目录](/spring/spring-framework-toc.md) `本地 & 在线`
-- [Boot 详细目录](/spring/spring-boot-toc.md) `本地 & 在线`
-- [Spring Cloud & 其他](/spring/spring-cloud.md) `官方在线`
-- [Spring AI 1.1.7](/spring/spring-ai.md) `本地 & 在线`
+- [Spring 版本汇总](/java/spring-framework.md) `本地镜像`
+- [Framework 详细目录](/java/spring-framework-toc.md) `本地 & 在线`
+- [Boot 详细目录](/java/spring-boot-toc.md) `本地 & 在线`
+- [Spring Cloud & 其他](/java/spring-cloud.md) `官方在线`
+- [Spring AI 1.1.7](/java/spring-ai.md) `本地 & 在线`
 
 ## 💻 主流开发语言
 
@@ -50,7 +50,7 @@
 
 ## 💾 数据库与搜索
 
-- [主流数据库文档](/databases/databases.md) `官方在线`
+- [主流数据库文档](/middleware/databases.md) `官方在线`
 - [PostgreSQL 🌐](https://www.postgresql.org/docs/) `官方在线`
 - [Redis 🌐](https://redis.io/docs/latest/) `官方在线`
 - [ClickHouse 🌐](https://clickhouse.com/docs/zh) `官方在线`
@@ -59,8 +59,8 @@
 ## 📨 消息与分布式系统
 
 - [中间件完整索引](/middleware/middleware.md) `参考分类`
-- [Apache Kafka](/databases/kafka.md) `本地 & 在线`
-- [RabbitMQ 消息队列](/databases/rabbitmq.md) `本地 & 在线`
+- [Apache Kafka](/middleware/kafka.md) `本地 & 在线`
+- [RabbitMQ 消息队列](/middleware/rabbitmq.md) `本地 & 在线`
 - [Apache Pulsar 🌐](https://pulsar.apache.org/docs/) `官方在线`
 - [NATS 🌐](https://docs.nats.io/) `官方在线`
 
@@ -82,7 +82,7 @@
 ## 🤖 AI 与数据工程
 
 - [AI 与数据技术索引](/ai-data/ai-data.md) `参考分类`
-- [Spring AI 1.1.7](/spring/spring-ai.md) `本地 & 在线`
+- [Spring AI 1.1.7](/java/spring-ai.md) `本地 & 在线`
 - [PyTorch / TensorFlow / Hugging Face](/ai-data/ai-data.md) `官方在线`
 - [LangChain / LlamaIndex / 向量数据库](/ai-data/ai-data.md) `官方在线`
 - [Spark / Flink / dbt](/ai-data/ai-data.md) `官方在线`
@@ -95,10 +95,10 @@
 
 ## ✅ 测试与代码质量
 
-- [测试与质量工具索引](/testing/testing.md) `参考分类`
-- [JUnit / pytest / Vitest](/testing/testing.md) `官方在线`
-- [Playwright / Cypress](/testing/testing.md) `官方在线`
-- [k6 / JMeter / Postman](/testing/testing.md) `官方在线`
+- [测试与质量工具索引](/devops/testing.md) `参考分类`
+- [JUnit / pytest / Vitest](/devops/testing.md) `官方在线`
+- [Playwright / Cypress](/devops/testing.md) `官方在线`
+- [k6 / JMeter / Postman](/devops/testing.md) `官方在线`
 
 ## 🚀 图形与创意设计
 

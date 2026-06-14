@@ -1,9 +1,0 @@
-- [返回首页](/)
-
-- **数据库与搜索**
-  - [数据库文档](/databases/databases.md)
-
-- **消息与流处理**
-  - [中间件索引](/middleware/middleware.md)
-  - [Kafka](/databases/kafka.md)
-  - [RabbitMQ](/databases/rabbitmq.md)
