@@ -313,6 +313,18 @@ Get-ChildItem -Directory -Filter "01.*" | ForEach-Object {
 ```
 
 
+## 
+
+```powershell
+Get-ChildItem -Directory -Filter "01.*.reference.html" | ForEach-Object {
+    Set-Location $_.FullName
+    Write-Host $PWD
+    #translate2401.ps1 
+    Set-Location ..
+} 
+```
+
+
 ## sprnig-data
 
 Spring Data’s mission is to provide a familiar and consistent, Spring-based programming model for data access while still retaining the special traits of the underlying data store.
