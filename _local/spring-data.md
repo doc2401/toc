@@ -14,10 +14,10 @@
     支撑每个 Spring Data 模块的 Spring 核心概念。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-commons/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-commons/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-commons/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-commons/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-commons/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-commons/reference/api/java/) ，
     
 
 +   [Spring Data JDBC](https://spring.io/projects/spring-data-jdbc)   
@@ -25,30 +25,30 @@
     对 JDBC 的 Spring Data 存储库支持。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-relational/reference/jdbc.html) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-relational/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-relational/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-relational/reference/jdbc.html) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-relational/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-relational/reference/api/java/) ，
 
 +   [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc)   
     Spring Data repository support for R2DBC.    
     对 R2DBC 的 Spring Data 存储库支持。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-relational/reference/r2dbc.html) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-relational/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-relational/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-relational/reference/r2dbc.html) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-relational/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-relational/reference/api/java/) ，
 
 +   [Spring Data JPA](https://spring.io/projects/spring-data-jpa)  
      Spring Data repository support for JPA.    
      对 JPA 的 Spring Data 存储库支持。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-jpa/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-jpa/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-jpa/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-jpa/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-jpa/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-jpa/reference/api/java/) ，
 
 +   [Spring Data Envers](https://spring.io/projects/spring-data-jpa)  
      This project is an extension of the Spring Data JPA project to allow access to entity revisions managed by Hibernate Envers. The sources mostly originate from a contribution of Philipp Hügelmeyer @hygl.   
@@ -57,70 +57,70 @@
      从 3.0 版本开始，本项目已合并到 Spring Data JPA。有关最新项目信息，请参阅 Spring Data JPA。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-jpa/reference/envers.html) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-jpa/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-jpa/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-jpa/reference/envers.html) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-jpa/api/) ，      
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-jpa/reference/api/java/) ，      
 
 +   [Spring Data KeyValue](https://github.com/spring-projects/spring-data-keyvalue)   
     `Map` based repositories and SPIs to easily build a Spring Data module for key-value stores.    
     基于 `Map` 的存储库和 SPI，用于轻松构建适用于键值存储的 Spring Data 模块。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-keyvalue/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-keyvalue/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-keyvalue/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-keyvalue/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-keyvalue/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-keyvalue/reference/api/java/) ，
 
 +   [Spring Data LDAP](https://spring.io/projects/spring-data-ldap)   
     Spring Data repository support for [Spring LDAP](https://github.com/spring-projects/spring-ldap).    
     对 [Spring LDAP](https://github.com/spring-projects/spring-ldap) 的 Spring Data 存储库支持。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-ldap/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-ldap/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-ldap/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-ldap/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-ldap/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-ldap/reference/api/java/) ，
 
 +   [Spring Data MongoDB](https://spring.io/projects/spring-data-mongodb)   
     Spring based, object-document support and repositories for MongoDB.    
     基于 Spring 的 MongoDB 对象-文档支持和存储库。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-mongodb/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-mongodb/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-mongodb/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-mongodb/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-mongodb/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-mongodb/reference/api/java/) ，
 
 +   [Spring Data Redis](https://spring.io/projects/spring-data-redis)   
     Easy configuration and access to Redis from Spring applications.    
     在 Spring 应用中轻松配置和访问 Redis。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-redis/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-redis/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-redis/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-redis/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-redis/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-redis/reference/api/java/) ，
 
 +   [Spring Data REST](https://spring.io/projects/spring-data-rest)   
     Exports Spring Data repositories as hypermedia-driven RESTful resources.    
     将 Spring Data 存储库导出为超媒体驱动的 RESTful 资源。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-rest/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-rest/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-rest/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-rest/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-rest/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-rest/reference/api/java/) ，
 
 +   [Spring Data for Apache Cassandra](https://spring.io/projects/spring-data-cassandra)   
     Easy configuration and access to Apache Cassandra or large scale, highly available, data oriented Spring applications.    
     在大型、高可用、面向数据的 Spring 应用中轻松配置和访问 Apache Cassandra。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-cassandra/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-cassandra/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-cassandra/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-cassandra/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-cassandra/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-cassandra/reference/api/java/) ，
 
 
 
@@ -129,10 +129,10 @@
     在大型、高可用、面向数据的 Spring 应用中轻松配置和访问 Apache Couchbase。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-couchbase/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-couchbase/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-couchbase/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-couchbase/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-couchbase/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-couchbase/reference/api/java/) ，
 
 
 +   [Spring Data for Elasticsearch](https://spring.io/projects/spring-data-elasticsearch)   
@@ -140,10 +140,10 @@
     在大型、高可用、面向数据的 Spring 应用中轻松配置和访问 Elasticsearch。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-elasticsearch/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-elasticsearch/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-elasticsearch/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-elasticsearch/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-elasticsearch/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-elasticsearch/reference/api/java/) ，
 
 
 +   [Spring Data Neo4j](https://spring.io/projects/spring-data-neo4j)   
@@ -151,10 +151,10 @@
     在大型、高可用、面向数据的 Spring 应用中轻松配置和访问 Neo4j。    
     原版: 
       [reference](../../spring-data.2026.0.0/spring-data-neo4j/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0/spring-data-neo4j/api/) ，   
+      [javadoc api](../../spring-data.2026.0.0/spring-data-neo4j/reference/api/java/) ，   
     中文:
       [reference](../../spring-data.2026.0.0.lang/zh/spring-data-neo4j/reference/) ，
-      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-neo4j/api/) ，
+      [javadoc api](../../spring-data.2026.0.0.lang/zh/spring-data-neo4j/reference/api/java/) ，
 
 
 
