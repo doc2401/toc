@@ -297,6 +297,15 @@ Get-ChildItem -Directory -Filter "00.*.copy" | ForEach-Object {
     Rename-Item -LiteralPath $_.FullName -NewName $newName
 }
 
+
+## 翻译
+Get-ChildItem -Directory -Filter "01.*.html" | ForEach-Object {
+    Set-Location $_.FullName
+    Write-Host $PWD
+    #translate2401.ps1 
+    Set-Location ..
+} 
+
 ```
 
 ## sprnig-data
