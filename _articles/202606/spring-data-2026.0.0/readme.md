@@ -306,6 +306,13 @@ Get-ChildItem -Directory -Filter "01.*.html" | ForEach-Object {
     Set-Location ..
 } 
 
+
+Get-ChildItem -Directory -Filter "01.*.javadoc" | ForEach-Object {
+    Set-Location $_.FullName
+    Write-Host $PWD
+    translate2401.ps1 --profile javadoc
+    Set-Location ..
+} 
 ```
 
 ## sprnig-data
