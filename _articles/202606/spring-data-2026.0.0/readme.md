@@ -307,12 +307,29 @@ Get-ChildItem -Directory -Filter "01.*.html" | ForEach-Object {
 } 
 
 
+## 翻译 javadoc
 Get-ChildItem -Directory -Filter "01.*.javadoc" | ForEach-Object {
     Set-Location $_.FullName
     Write-Host $PWD
     translate2401.ps1 --profile javadoc
     Set-Location ..
 } 
+
+
+
+## 01.*.数字 -> 02.*.数字
+Get-ChildItem -Directory | ForEach-Object {
+    if ($_.Name -match '^(01\.)(.+)(\.\d+)$') {
+        $newName = "02.$($Matches[2])$($Matches[3])"
+        Rename-Item -LiteralPath $_.FullName -NewName $newName
+    }
+}
+
+
+
+## 获取所有 文件夹 组装文件
+Get-ChildItem -Directory | Where-Object Name -notlike '*pagecache*'
+
 ```
 
 ## sprnig-data
