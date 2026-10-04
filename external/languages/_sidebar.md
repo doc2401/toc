@@ -1,0 +1,13 @@
+- [外部参考目录](/external/README.md)
+
+- **开发语言**
+  - [Node.js 与 JS/TS](/external/languages/nodejs.md)
+  - [Python](/external/languages/python.md)
+  - [Go](/external/languages/go.md)
+  - [Rust](/external/languages/rust.md)
+  - [C# 与 .NET](/external/languages/dotnet.md)
+  - [C 与 C++](/external/languages/c-cpp.md)
+  - [PHP](/external/languages/php.md)
+  - [Ruby](/external/languages/ruby.md)
+  - [其他语言](/external/languages/others.md)
+  - [API 与身份认证](/external/languages/api-auth.md)

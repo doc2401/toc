@@ -1,4 +1,4 @@
 - [首页](/README.md)
-- [我的记录](/_articles/README.md)
-- [我的文档](/_local/README.md)
-- [外部参考](/_external/README.md)
+- [我的记录](/articles/README.md)
+- [我的文档](/local/README.md)
+- [外部参考](/external/README.md)

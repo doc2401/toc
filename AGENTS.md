@@ -4,15 +4,15 @@
 
 This Docsify index serves the owner’s documentation project.
 
-- `_articles/` stores personal records: builds, translation, troubleshooting, and maintenance. Dated folders such as `202606/spring-data-2026.0.0/` also hold supporting utilities.
-- `_local/` connects maintained documentation projects, including versions, translations, and APIs in sibling directories.
-- `_external/` contains third-party references in six category subdirectories. `_external/README.md` is their overview.
+- `articles/` stores personal records: builds, translation, troubleshooting, and maintenance. Dated folders such as `202606/spring-data-2026.0.0/` also hold supporting utilities.
+- `local/` connects maintained documentation projects, including versions, translations, and APIs in sibling directories.
+- `external/` contains third-party references in six category subdirectories. `external/README.md` is their overview.
 - `README.md`, `_sidebar.md`, and `_navbar.md` define main navigation; directory sidebars provide local navigation. `index.html` configures Docsify and `style.css` supplies styling.
-- `.github/workflows/static.yml` deploys on pushes to `main`; `.nojekyll` preserves underscore-prefixed directories.
+- `.github/workflows/static.yml` deploys on pushes to `main`; `.nojekyll` preserves Docsify navigation files.
 
 ## Content & Navigation Priorities
 
-Prioritize personal records and maintained documentation. The top menu has four entries: home, records, documents, and external references. Sidebars list only the current section; avoid cross-section shortcuts. Keep external references secondary. Add records to `_articles/README.md` and documentation entries to `_local/README.md`.
+Prioritize personal records and maintained documentation. The top menu has four entries: home, records, documents, and external references. Sidebars list only the current section; avoid cross-section shortcuts. Keep external references secondary. Add records to `articles/README.md` and documentation entries to `local/README.md`.
 
 ## Build, Test, and Development Commands
 
