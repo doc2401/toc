@@ -44,4 +44,4 @@
 
 ---
 
-[我的记录](/articles/README.md) · [我的文档](/local/README.md) · [返回首页](/README.md)
+[我的记录](/notes/README.md) · [我的文档](/docs/README.md) · [返回首页](/README.md)

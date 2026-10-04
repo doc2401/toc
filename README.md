@@ -6,23 +6,23 @@
 
 构建步骤、翻译过程、问题排查和维护笔记都保存在这里。
 
-- **[Spring Data 2026.0.0](/articles/202606/spring-data-2026.0.0/readme.md)** — 多模块文档构建、收集与整理。
-- **[Spring Cloud 2025.1.2](/articles/202606/spring-cloud.v2025.1.2/readme.md)** — 版本检出、文档构建与目录拆分。
-- **[Spring AI 2.0](/articles/202606/spring-ai-2.0.md)** — 文档编译与翻译准备。
-- **[本地镜像站搭建](/articles/how-to-mirror.md)** — 文档采集、目录布局与访问方式。
+- **[Spring Data 2026.0.0](/notes/202606/spring-data-2026.0.0/README.md)** — 多模块文档构建、收集与整理。
+- **[Spring Cloud 2025.1.2](/notes/202606/spring-cloud-2025.1.2/README.md)** — 版本检出、文档构建与目录拆分。
+- **[Spring AI 2.0](/notes/202606/spring-ai-2.0.md)** — 文档编译与翻译准备。
+- **[本地镜像站搭建](/notes/how-to-mirror.md)** — 文档采集、目录布局与访问方式。
 
-[查看全部记录 →](/articles/README.md)
+[查看全部记录 →](/notes/README.md)
 
 ## 我的文档
 
 这里连接我整理的文档项目，包括不同版本的原文、中文翻译、参考手册与 API 文档。
 
-- **[Spring 文档](/local/spring-framework.md)** — 版本汇总，以及 Framework、Boot 等文档入口。
-- **[Spring Data](/local/spring-data.md)** — 各模块的参考文档与 API。
-- **[Java 与 JDK](/local/jdk.md)** — JDK 版本文档、Java 教程与相关规范。
-- **[Kafka](/local/kafka.md)** · **[RabbitMQ](/local/rabbitmq.md)** · **[Blender](/local/blender.md)** — 已整理的其他文档。
+- **[Spring 文档](/docs/spring-framework.md)** — 版本汇总，以及 Framework、Boot 等文档入口。
+- **[Spring Data](/docs/spring-data.md)** — 各模块的参考文档与 API。
+- **[Java 与 JDK](/docs/jdk.md)** — JDK 版本文档、Java 教程与相关规范。
+- **[Kafka](/docs/kafka.md)** · **[RabbitMQ](/docs/rabbitmq.md)** · **[Blender](/docs/blender.md)** — 已整理的其他文档。
 
-[查看全部文档入口 →](/local/README.md)
+[查看全部文档入口 →](/docs/README.md)
 
 ## 外部参考
 
@@ -32,4 +32,4 @@
 
 ---
 
-> **访问说明：** `toc` 是整个文档项目的索引目录，与各文档目录保持平级。文档入口中的相对链接依赖这一布局；个人记录保存在 `articles/`，外部参考集中在 `external/`。
+> **访问说明：** `toc` 是整个文档项目的索引目录，与各文档目录保持平级。文档入口中的相对链接依赖这一布局；个人记录保存在 `notes/`，外部参考集中在 `external/`。

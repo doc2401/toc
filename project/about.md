@@ -4,8 +4,8 @@
 
 ## 内容范围
 
-- **我的记录（`articles/`）**：文档构建、翻译步骤、问题排查、维护心得与日常笔记。
-- **我的文档（`local/`）**：连接我整理的文档项目，包括版本文档、原文、中文翻译与 API。
+- **我的记录（`notes/`）**：文档构建、翻译步骤、问题排查、维护心得与日常笔记。
+- **我的文档（`docs/`）**：连接我整理的文档项目，包括版本文档、原文、中文翻译与 API。
 - **外部参考（`external/`）**：其下的 `ai-data/`、`devops/`、`frontend/`、`graphics/`、`languages/`、`middleware/` 收藏第三方资料，作为补充查阅。
 - **项目相关（`project/`）**：项目说明、[项目仓库清单](/project/repositories.md)与索引更新记录。
 
@@ -27,4 +27,4 @@
 - v4：基于沉浸式翻译。
 - v5：基于 AI 的 Python 脚本。
 
-[我的记录](/articles/README.md) · [我的文档](/local/README.md)
+[我的记录](/notes/README.md) · [我的文档](/docs/README.md)

@@ -4,8 +4,8 @@
 
 This Docsify index serves the owner’s documentation.
 
-- `articles/` stores personal records: builds, translation, troubleshooting, and maintenance. Dated folders such as `202606/spring-data-2026.0.0/` also hold supporting utilities.
-- `local/` connects maintained documentation projects, including versions, translations, and APIs in sibling directories.
+- `notes/` stores personal records: builds, translation, troubleshooting, and maintenance. Dated folders such as `202606/spring-data-2026.0.0/` also hold supporting utilities.
+- `docs/` connects maintained documentation projects, including versions, translations, and APIs in sibling directories.
 - `external/` contains third-party references in six category subdirectories. `external/README.md` is their overview.
 - `project/` contains `about.md`, `repositories.md`, and `changelog.md`.
 - `README.md`, `_sidebar.md`, and `_navbar.md` define main navigation; directory sidebars provide local navigation. `index.html` configures Docsify and `style.css` supplies styling.
@@ -13,7 +13,7 @@ This Docsify index serves the owner’s documentation.
 
 ## Content & Navigation Priorities
 
-Prioritize personal records and maintained documentation. The top menu has four entries: home, records, documents, and external references. Sidebars list only the current section. Keep external references secondary. Add records to `articles/README.md` and documentation entries to `local/README.md`.
+Prioritize personal records and maintained documentation. The top menu has four entries: home, records, documents, and external references. Sidebars list only the current section. Keep external references secondary. Add records to `notes/README.md` and documentation entries to `docs/README.md`.
 
 ## Build, Test, and Development Commands
 
@@ -26,7 +26,7 @@ The index requires no compilation or root npm installation.
 
 ## Coding Style & Naming Conventions
 
-Use UTF-8 and preserve Chinese text. Match surrounding formatting; HTML, CSS, and JavaScript generally use two-space indentation. No formatter or linter is configured. Use lowercase, hyphenated filenames. Preserve version identifiers and mirror-relative links such as `../../spring-data.2026.0.0/`.
+Use UTF-8 and preserve Chinese text. Match surrounding formatting; HTML, CSS, and JavaScript generally use two-space indentation. No formatter or linter is configured. Use lowercase, hyphenated names, except `README.md`, `AGENTS.md`, and Docsify navigation files. Preserve versions and mirror-relative links such as `../../spring-data.2026.0.0/`.
 
 ## Testing Guidelines
 

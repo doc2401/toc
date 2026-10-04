@@ -121,5 +121,5 @@
 
 ## 版本详细目录
 
-- [Spring Framework](/local/spring-framework-toc.md)
-- [Spring Boot](/local/spring-boot-toc.md)
+- [Spring Framework](/docs/spring-framework-toc.md)
+- [Spring Boot](/docs/spring-boot-toc.md)
