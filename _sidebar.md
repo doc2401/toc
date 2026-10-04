@@ -5,6 +5,7 @@
   - [外部参考](/README.md?id=外部参考)
 
 - **项目相关**
-  - [关于项目](/about.md)
-  - [更新记录](/changelog.md)
+  - [关于项目](/project/about.md)
+  - [项目仓库](/project/repositories.md)
+  - [更新记录](/project/changelog.md)
   - <a href="javascript:void(0)" onclick="localStorage.clear();v='?v='+Date.now();h=window.location.hash.split('?')[0]; window.location.href=window.location.pathname+v+h;">刷新缓存</a>
