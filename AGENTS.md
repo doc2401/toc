@@ -12,7 +12,7 @@ This Docsify index serves the owner’s documentation project.
 
 ## Content & Navigation Priorities
 
-Prioritize personal records and maintained documentation on the homepage and menus. Keep external references secondary behind one entry. Do not expand the site into a comprehensive internet documentation catalog. Add records to `_articles/README.md` and documentation entries to `_local/README.md`.
+Prioritize personal records and maintained documentation. The top menu has four entries: home, records, documents, and external references. Sidebars list only the current section; avoid cross-section shortcuts. Keep external references secondary. Add records to `_articles/README.md` and documentation entries to `_local/README.md`.
 
 ## Build, Test, and Development Commands
 

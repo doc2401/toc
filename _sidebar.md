@@ -1,19 +1,10 @@
-- [首页](/README.md)
+- **首页**
+  - [页面概览](/README.md)
+  - [我的记录](/README.md?id=我的记录)
+  - [我的文档](/README.md?id=我的文档)
+  - [外部参考](/README.md?id=外部参考)
 
-- **我的记录**
-  - [全部记录](/_articles/README.md)
-  - [Spring Data 2026.0.0](/_articles/202606/spring-data-2026.0.0/readme.md)
-  - [Spring Cloud 2025.1.2](/_articles/202606/spring-cloud.v2025.1.2/readme.md)
-  - [Spring AI 2.0](/_articles/202606/spring-ai-2.0.md)
-  - [镜像站搭建](/_articles/how-to-mirror.md)
-
-- **我的文档**
-  - [全部文档入口](/_local/README.md)
-  - [Spring 版本汇总](/_local/spring-framework.md)
-  - [Spring Data](/_local/spring-data.md)
-  - [Java 与 JDK](/_local/jdk.md)
-
-- **其他入口**
-  - [外部参考](/_external/README.md)
+- **项目相关**
   - [关于项目](/about.md)
   - [更新记录](/changelog.md)
+  - <a href="javascript:void(0)" onclick="localStorage.clear();v='?v='+Date.now();h=window.location.hash.split('?')[0]; window.location.href=window.location.pathname+v+h;">刷新缓存</a>

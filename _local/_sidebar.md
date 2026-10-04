@@ -1,5 +1,3 @@
-- [返回首页](/README.md)
-- [我的记录](/_articles/README.md)
 - [文档目录](/_local/README.md)
 
 - **Spring**
