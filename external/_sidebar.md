@@ -1,9 +1,11 @@
 - [外部参考目录](/external/README.md)
 
 - **分类导航**
-  - [开发语言](/external/README.md?id=开发语言)
-  - [前端](/external/README.md?id=前端)
-  - [数据库与中间件](/external/README.md?id=数据库与中间件)
-  - [AI 与数据](/external/README.md?id=ai-与数据)
-  - [运维与质量](/external/README.md?id=运维与质量)
-  - [图形](/external/README.md?id=图形)
+  - [语言与运行时](/external/languages/java-jvm.md)
+  - [前端与跨平台](/external/frontend/frameworks.md)
+  - [服务端与协议](/external/backend/api-protocols.md)
+  - [数据与存储](/external/data/databases.md)
+  - [AI 与机器学习](/external/ai/llm.md)
+  - [研发与运维](/external/devops/development.md)
+  - [测试与代码质量](/external/quality/testing.md)
+  - [图形与游戏](/external/graphics/tools.md)

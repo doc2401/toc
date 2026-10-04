@@ -6,7 +6,7 @@ This Docsify index serves the owner’s documentation.
 
 - `notes/` stores personal records: builds, translation, troubleshooting, and maintenance. Dated folders such as `202606/spring-data-2026.0.0/` also hold supporting utilities.
 - `docs/` connects maintained documentation projects, including versions, translations, and APIs in sibling directories.
-- `external/` contains third-party references in six category subdirectories. `external/README.md` is their overview.
+- `external/` contains third-party references in eight topic directories: languages, frontend, backend, data, ai, devops, quality, and graphics. `external/README.md` is their overview.
 - `project/` contains `about.md`, `repositories.md`, and `changelog.md`.
 - `README.md`, `_sidebar.md`, and `_navbar.md` define main navigation; directory sidebars provide local navigation. `index.html` configures Docsify and `style.css` supplies styling.
 - `.github/workflows/static.yml` deploys on pushes to `main`; `.nojekyll` preserves Docsify navigation files.
@@ -14,6 +14,8 @@ This Docsify index serves the owner’s documentation.
 ## Content & Navigation Priorities
 
 Prioritize personal records and maintained documentation. The top menu has four entries: home, records, documents, and external references. Sidebars list only the current section. Keep external references secondary. Add records to `notes/README.md` and documentation entries to `docs/README.md`.
+
+For external references, prefer direct official documentation; label community translations and historical versions. Keep each URL in one topic page, connect related topics with internal links, and record unresolved access restrictions in `project/external-review.md`.
 
 ## Build, Test, and Development Commands
 
