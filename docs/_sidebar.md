@@ -15,6 +15,9 @@
   - [历史 JDK](/docs/jdk-legacy.md)
   - [Jakarta EE / Java EE](/docs/jakarta-ee.md)
 
+- **开发工具**
+  - [Eclipse](/docs/eclipse.md)
+
 - **消息系统**
   - [Kafka](/docs/kafka.md)
   - [RabbitMQ](/docs/rabbitmq.md)

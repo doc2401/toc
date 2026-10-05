@@ -19,6 +19,10 @@
 - [历史 JDK 版本](/docs/jdk-legacy.md)
 - [Jakarta EE / Java EE](/docs/jakarta-ee.md)
 
+## 开发工具
+
+- [Eclipse 帮助文档与每日提示](/docs/eclipse.md)
+
 ## 消息系统
 
 - [Apache Kafka](/docs/kafka.md)

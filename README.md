@@ -20,6 +20,7 @@
 - **[Spring 文档](/docs/spring-framework.md)** — 版本汇总，以及 Framework、Boot 等文档入口。
 - **[Spring Data](/docs/spring-data.md)** — 各模块的参考文档与 API。
 - **[Java 与 JDK](/docs/jdk.md)** — JDK 版本文档、Java 教程与相关规范。
+- **[Eclipse](/docs/eclipse.md)** — IDE 帮助文档、历史版本与每日提示。
 - **[Kafka](/docs/kafka.md)** · **[RabbitMQ](/docs/rabbitmq.md)** · **[Blender](/docs/blender.md)** — 已整理的其他文档。
 
 [查看全部文档入口 →](/docs/README.md)
